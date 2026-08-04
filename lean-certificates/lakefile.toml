@@ -1,9 +1,0 @@
-name = "PassantCodeQ13Certificates"
-defaultTargets = ["PassantCodeQ13"]
-
-[[require]]
-name = "NodeKayles"
-path = "../../../lean"
-
-[[lean_lib]]
-name = "PassantCodeQ13"
