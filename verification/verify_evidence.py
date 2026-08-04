@@ -25,18 +25,21 @@ def main() -> None:
     assert manifest["schema"] == "q13-passant-code-structural-evidence-v2"
 
     # The formal companion is distributed as its own package, so a checkout of the
-    # manuscript alone cannot check its digests or run its generator. Report exactly
-    # what goes unchecked rather than passing silently over it.
+    # manuscript alone cannot check its digests or run its generator. Records naming
+    # the companion package or the shared Lean library it builds against are skipped
+    # exactly when the companion is absent, and the count of skipped checks is
+    # reported rather than passed over silently.
     companion_present = (PAPER_ROOT / FORMAL_COMPANION).is_dir()
     skipped_files = 0
     skipped_commands = 0
 
     for record in manifest["files"]:
-        if record["paper_iv_path"].startswith(FORMAL_COMPANION + "/"):
-            if not companion_present:
-                skipped_files += 1
-                continue
-        path = PAPER_ROOT / record["paper_iv_path"]
+        entry = record["paper_iv_path"]
+        formal = entry.startswith(FORMAL_COMPANION + "/") or entry.startswith("../")
+        if formal and not companion_present:
+            skipped_files += 1
+            continue
+        path = PAPER_ROOT / entry
         assert path.stat().st_size == record["bytes"], path
         assert digest(path) == record["sha256"], path
 
