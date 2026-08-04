@@ -1,5 +1,7 @@
 # Minimum-word reconstruction of PG(2,13) from a binary conic code
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21783971-blue.svg)](https://doi.org/10.5281/zenodo.21783971)
+
 [Read the paper (PDF).](passant_code_q13.pdf)
 
 Let C be a nonsingular conic in PG(2,13), and form the binary incidence code on
