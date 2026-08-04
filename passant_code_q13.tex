@@ -671,11 +671,11 @@ From the paper root, the public command
 \small\texttt{make check}
 \end{center}
 ends with \texttt{Paper-IV q=13 evidence: PASS} and then builds the
-warning-free PDF.  The persistent repository-relative references are
-\nolinkurl{verification/README.md} for the exact programs and
-\nolinkurl{lean-certificates/README.md} for the formal package.
-The Python evidence uses only the standard library; the full command uses the
-Nix-pinned Lean and \TeX\ environments.
+warning-free PDF.  The exact programs are described in
+\nolinkurl{verification/README.md}; the formal package is distributed
+separately and carries its own README.  The Python evidence uses only the
+standard library, the manuscript build uses a Nix-pinned \TeX\ environment,
+and the formal package a Nix-pinned Lean environment.
 
 The shared Lean library formalizes the normalized conic and incidence code,
 the theta inequality, moment compression, pair-neighborhood interface,

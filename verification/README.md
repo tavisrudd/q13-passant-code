@@ -15,8 +15,8 @@ The current `claim_map.json` records the structural source claims and their
 present trust modes. `evidence_manifest.json` records both the original
 Paper-I migration and the paper-owned structural certificates, including
 paths, byte counts, hashes, commands, and replay relationships. The
-paper-owned Lean package under
-`lean-certificates/`, together with the shared semantic library, checks the q=13 coordinate
+paper-owned Lean package, distributed separately from the manuscript and
+recorded in the manifest under `lean-certificates/`, together with the shared semantic library, checks the q=13 coordinate
 semantics, transports the normalized weight-eight reduction to the cyclic tangent graph, checks
 both weight-ten syndrome profiles, and checks four displayed minimum-word orbits.  Its fixed-point
 weight-twelve leaf exhausts the four pencil-profile domains and identifies their 56 solutions with
@@ -60,8 +60,10 @@ The current paper-local entry points are:
 - `generate_weight_ten_profiles.py --check` for the canonical certificate;
 - `replay_weight_ten_profiles.py` for the independent dynamic program; and
 - `check_q13_tangent_code.py` for the full exact replay.
-- `../lean-certificates/generate_rank_transport.py --check` for byte-identical regeneration of
-  the recovery and expansion masks used by the semantic rank theorem.
+
+Inside the separately distributed formal package,
+`generate_rank_transport.py --check` regenerates, byte-identically, the
+recovery and expansion masks used by the semantic rank theorem.
 - `verify_weight_eight_theta.py --check weight_eight_theta.json` for the exact rank-28 PSD and
   equality-kernel certificate;
 - `verify_weight_ten_moment.py --check weight_ten_moment.json` for the global moment and two

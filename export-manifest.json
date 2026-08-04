@@ -69,7 +69,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "f3a9cf78b507e49484554870dcd4cf808348810c823270955b821c045df84039",
+      "sha256": "1734cce9ef5c3323d9d49c57beca5904c43b726fc420d2a1e4fe67388ea01a00",
       "source_blob": null
     },
     {
@@ -82,31 +82,31 @@
       "source_blob": "2b8cf336a2768ecda6485e4e28abbfc2165a288d"
     },
     {
-      "bytes": 121152,
+      "bytes": 121150,
       "mode": "100644",
       "path": "passant_code_q13.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "3963091209d7bac109ad5dd7f80100e6a1e74185662c0a49a188602ac8ccfc37",
-      "source_blob": "e5b67cf2481051a81da7d63fa6e68a723ea05fe8"
+      "sha256": "604a0c967a38bb3edb260bdf464abacc1744f087dc637277b2fe4e89df420964",
+      "source_blob": "837c32fd1cc9b92616713d52dac4cdceb811c8e5"
     },
     {
-      "bytes": 35061,
+      "bytes": 35077,
       "mode": "100644",
       "path": "passant_code_q13.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "e230262195fc441ae5130f862a19cffc30aabcad9cbc6797c2456e9c79c96a63",
-      "source_blob": "2c2154c878336af37db742712939b39c954d9570"
+      "sha256": "7256a94e34a1b4e6c8e4aa6ffa09c549d36d9453174c01eac5eec3ef20dd3158",
+      "source_blob": "d7feeedba5052799b9cb89071c242cd62578e169"
     },
     {
-      "bytes": 8982,
+      "bytes": 9077,
       "mode": "100644",
       "path": "verification/README.md",
       "rewrites": [],
       "role": "verification",
-      "sha256": "e66d61c4a4f49b2b3da12ac0fa30a52032de1e4e772c672f2ee74dfab19067ef",
-      "source_blob": "78fb655d367d969036b82b83251c36cf822e10e4"
+      "sha256": "105873d40c9f12c2d89ef44aeebb5932c09a8b369619ea20e110fd9b65845372",
+      "source_blob": "dc9207536b5fe6666b7a9adc663e26b9e428c1ca"
     },
     {
       "bytes": 5539,
@@ -293,5 +293,5 @@
   "repository": "q13-passant-code",
   "repository_map_sha256": "cefc87eca06986ec4a613c1b6ff3652e099c8779cfb9dcba178d81bac91ce8dd",
   "schema_version": 1,
-  "source_commit": "0cabe18906de380887b310cc096442174ee3e442"
+  "source_commit": "629cb61abe8d8059e1af608119423f4cd1c64171"
 }
