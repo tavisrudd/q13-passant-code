@@ -28,7 +28,7 @@
   "related_identifiers": [
     {
       "identifier": "https://doi.org/10.5281/zenodo.21650878",
-      "relation": "isSupplementTo",
+      "relation": "isSupplementedBy",
       "resource_type": "software"
     }
   ]
