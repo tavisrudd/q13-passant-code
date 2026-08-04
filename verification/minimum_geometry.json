@@ -1,0 +1,437 @@
+{
+  "families": [
+    {
+      "P1_orbit_sizes": [
+        6,
+        8
+      ],
+      "P1_orbits": [
+        [
+          0,
+          1,
+          2,
+          6,
+          9,
+          13
+        ],
+        [
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          11,
+          12
+        ]
+      ],
+      "element_order_profile": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "internal_orbit_sizes": [
+        6,
+        12,
+        12,
+        12,
+        12,
+        24
+      ],
+      "minimum_word_orbit_size_by_orbit_stabilizer": 91,
+      "octahedral_data": {
+        "S4_generators_orders_4_3_product_2": [
+          [
+            1,
+            0,
+            3,
+            8
+          ],
+          [
+            1,
+            4,
+            3,
+            0
+          ]
+        ],
+        "all_internal_orbit_matching_profiles": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "intrinsic_cross_pair_count": 2,
+        "intrinsic_support_has_zero_passant_syndrome": true,
+        "intrinsic_support_size": 12,
+        "support_matching_profile_within_6_and_8_orbits": [
+          2,
+          3
+        ],
+        "support_point_stabilizer_P1_cycle_profiles": [
+          {
+            "2": 3
+          },
+          {
+            "2": 4
+          }
+        ],
+        "support_point_stabilizer_generator": [
+          1,
+          12,
+          7,
+          12
+        ]
+      },
+      "orbit_Gram_relation_rho": 9,
+      "stabilizer_order": 24,
+      "stabilizer_type": "S4_octahedral",
+      "support_orbit_index": 1,
+      "support_point_stabilizer_order": 2,
+      "toric_data": null
+    },
+    {
+      "P1_orbit_sizes": [
+        2,
+        12
+      ],
+      "P1_orbits": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      ],
+      "element_order_profile": {
+        "1": 1,
+        "2": 13,
+        "3": 2,
+        "4": 2,
+        "6": 2,
+        "12": 4
+      },
+      "internal_orbit_sizes": [
+        6,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "minimum_word_orbit_size_by_orbit_stabilizer": 91,
+      "octahedral_data": null,
+      "orbit_Gram_relation_rho": 9,
+      "stabilizer_order": 24,
+      "stabilizer_type": "D24_split_torus_normalizer",
+      "support_orbit_index": 1,
+      "support_point_stabilizer_order": 2,
+      "toric_data": {
+        "chord": [
+          3,
+          8
+        ],
+        "normalized_support_is_pencil_conic_y2_equals_r_xz_minus_chord": true,
+        "normalizing_transporter": [
+          1,
+          5,
+          1,
+          10
+        ],
+        "support_invariant_y2_over_xz": 5
+      }
+    },
+    {
+      "P1_orbit_sizes": [
+        2,
+        12
+      ],
+      "P1_orbits": [
+        [
+          3,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      ],
+      "element_order_profile": {
+        "1": 1,
+        "2": 13,
+        "3": 2,
+        "4": 2,
+        "6": 2,
+        "12": 4
+      },
+      "internal_orbit_sizes": [
+        6,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "minimum_word_orbit_size_by_orbit_stabilizer": 91,
+      "octahedral_data": null,
+      "orbit_Gram_relation_rho": 12,
+      "stabilizer_order": 24,
+      "stabilizer_type": "D24_split_torus_normalizer",
+      "support_orbit_index": 1,
+      "support_point_stabilizer_order": 2,
+      "toric_data": {
+        "chord": [
+          3,
+          5
+        ],
+        "normalized_support_is_pencil_conic_y2_equals_r_xz_minus_chord": true,
+        "normalizing_transporter": [
+          1,
+          8,
+          1,
+          10
+        ],
+        "support_invariant_y2_over_xz": 11
+      }
+    },
+    {
+      "P1_orbit_sizes": [
+        2,
+        12
+      ],
+      "P1_orbits": [
+        [
+          7,
+          11
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          12,
+          13
+        ]
+      ],
+      "element_order_profile": {
+        "1": 1,
+        "2": 13,
+        "3": 2,
+        "4": 2,
+        "6": 2,
+        "12": 4
+      },
+      "internal_orbit_sizes": [
+        6,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "minimum_word_orbit_size_by_orbit_stabilizer": 91,
+      "octahedral_data": null,
+      "orbit_Gram_relation_rho": 10,
+      "stabilizer_order": 24,
+      "stabilizer_type": "D24_split_torus_normalizer",
+      "support_orbit_index": 1,
+      "support_point_stabilizer_order": 2,
+      "toric_data": {
+        "chord": [
+          7,
+          11
+        ],
+        "normalized_support_is_pencil_conic_y2_equals_r_xz_minus_chord": true,
+        "normalizing_transporter": [
+          1,
+          2,
+          1,
+          6
+        ],
+        "support_invariant_y2_over_xz": 2
+      }
+    }
+  ],
+  "field": 13,
+  "group": "PGL(2,13)",
+  "group_order": 2184,
+  "hidden_F8_module_Brauer_diagnostic": {
+    "Brauer_character_on_2_regular_types": {
+      "identity": "12",
+      "nonsplit_order_7_power_k": "-(zeta^(a*k)+zeta^(-a*k)), with {a,-a} the missing pair",
+      "split_order_3": "0",
+      "unipotent_order_13": "-1"
+    },
+    "chosen_order_7_generator": [
+      1,
+      1,
+      11,
+      1
+    ],
+    "cuspidal_missing_inverse_pair_exponents": [
+      2,
+      5
+    ],
+    "cyclotomic_13_quartic_factors_over_F8": [
+      [
+        1,
+        2,
+        7,
+        2,
+        1
+      ],
+      [
+        1,
+        4,
+        2,
+        4,
+        1
+      ],
+      [
+        1,
+        7,
+        4,
+        7,
+        1
+      ]
+    ],
+    "identification": "degree-12 cuspidal PGL(2,13) module for the missing inverse-pair character of the order-7 quotient of a nonsplit torus, up to Frobenius",
+    "nonsplit_torus_normalizer_order": 28,
+    "order_13_factor_kernel_dimensions": [
+      4,
+      4,
+      4
+    ],
+    "order_7_eigenvalue_multiplicities_for_alpha_powers_0_to_6": [
+      2,
+      2,
+      1,
+      2,
+      2,
+      1,
+      2
+    ],
+    "split_order_3_eigenvalue_multiplicities": [
+      4,
+      4,
+      4
+    ],
+    "split_order_3_generator": [
+      1,
+      0,
+      0,
+      3
+    ],
+    "unipotent_order_13_generator": [
+      1,
+      0,
+      1,
+      1
+    ]
+  },
+  "internal_point_count": 78,
+  "schema": "paper-iv-minimum-geometry-v1",
+  "standard_split_torus_normalizer_order": 24,
+  "standard_split_torus_orbits": [
+    {
+      "invariant": 0,
+      "quadratic_character_invariant": 0,
+      "quadratic_character_invariant_minus_one": 1,
+      "size": 6,
+      "zero_passant_syndrome": false
+    },
+    {
+      "invariant": 2,
+      "quadratic_character_invariant": -1,
+      "quadratic_character_invariant_minus_one": 1,
+      "size": 12,
+      "zero_passant_syndrome": true
+    },
+    {
+      "invariant": 3,
+      "quadratic_character_invariant": 1,
+      "quadratic_character_invariant_minus_one": -1,
+      "size": 12,
+      "zero_passant_syndrome": false
+    },
+    {
+      "invariant": 5,
+      "quadratic_character_invariant": -1,
+      "quadratic_character_invariant_minus_one": 1,
+      "size": 12,
+      "zero_passant_syndrome": true
+    },
+    {
+      "invariant": 9,
+      "quadratic_character_invariant": 1,
+      "quadratic_character_invariant_minus_one": -1,
+      "size": 12,
+      "zero_passant_syndrome": false
+    },
+    {
+      "invariant": 11,
+      "quadratic_character_invariant": -1,
+      "quadratic_character_invariant_minus_one": 1,
+      "size": 12,
+      "zero_passant_syndrome": true
+    },
+    {
+      "invariant": 12,
+      "quadratic_character_invariant": 1,
+      "quadratic_character_invariant_minus_one": -1,
+      "size": 12,
+      "zero_passant_syndrome": false
+    }
+  ]
+}

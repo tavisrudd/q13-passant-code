@@ -1,0 +1,61 @@
+{
+  "paper": "Minimum-word reconstruction of PG(2,13) from a binary conic code",
+  "schema": "paper-iv-structural-claim-map-v2",
+  "status": "structural-human-proof-with-exact-evidence-and-partial-lean-mirror",
+  "claims": [
+    {
+      "id": "dimension",
+      "statement": "The binary passant incidence code has length 78 and dimension 36.",
+      "current_modes": ["published dimension formula", "paper-owned independent exact elimination", "Lean native exact bit-row rank 42", "Lean-checked recovery and expansion maps identifying the 42-column basis with the semantic incidence-map range", "Lean symbolic rank-nullity bridge"],
+      "lean_boundary": "closed: the paper-owned aggregate proves semantic incidence-map rank 42 and code dimension 36"
+    },
+    {
+      "id": "minimum-distance",
+      "statement": "The code has minimum distance 12.",
+      "current_modes": ["human parity and tangent-product reduction", "exact rank-28 positive-semidefinite theta certificate", "human global line-incidence and passant-pair moment", "four line-stabilizer and thirty-three point-stabilizer exact leaves", "explicit weight-twelve witness", "old syndrome and clique programs retained only as independent cross-checks", "Lean structural implication packets with declaration-local finite leaves"],
+      "lean_boundary": "the shared semantic transport reaches the 42-vertex tangent graph and arbitrary weight-ten support; the theta positivity data and the two stabilizer tables are named paper-owned exact leaves, while the quadratic-form clique implication and moment algebra are kernel checked"
+    },
+    {
+      "id": "minimum-layer",
+      "statement": "There are 364 minimum words in four PGL(2,13)-orbits of size 91.",
+      "current_modes": ["paper-owned fixed-base profile exhaustion", "Lean native exhaustion of the four fixed-point pencil-profile domains", "Lean identification of their 56 solutions with four disjoint 14-support orbit slices", "Lean transitivity of the order-28 fixed-point stabilizer on each 14-support slice", "Lean execution of four projective kernel orbits of size 91", "Lean rank-36 check for each orbit", "human projective-transitivity and double-count transport"],
+      "lean_boundary": "the fixed-point exhaustion is closed by PassantCodeQ13.Gates.Main.fixedPointWeightTwelveExhaustion; transport to all 364 supports uses the human projective-transitivity and double-count argument"
+    },
+    {
+      "id": "orbit-spanning",
+      "statement": "Each minimum-word orbit spans the 36-dimensional code.",
+      "current_modes": ["human binary association-algebra proof", "exact hidden-F8 operator-field certificate", "Lean irreducible-cubic scalar-action theorem", "Lean native relation squaring and orbit Gram identities", "Lean theorem that each orbit row space equals the rho-zero kernel"],
+      "lean_boundary": "the compact operator-field and Gram-to-spanning implication are kernel checked relative to the relation and Gram leaves; polarity identifies A0 with the incidence matrix up to row order"
+    },
+    {
+      "id": "reconstruction",
+      "statement": "The weighted 2-section reconstructs the elliptic scheme, the 78 passant incidence rows, and the code; reconstruction arity is exactly two.",
+      "current_modes": ["human polarity-neighborhood proof", "exact pair-concurrence table and common-concurrence-7 split", "exact pair-parity power table and rank", "Lean pair-neighborhood row-recovery interface", "Lean pair-derived coherent split and unary-constancy interface"],
+      "lean_boundary": "the theorem-facing row family is concurrence-8 neighborhood recovery, not the superseded seven-clique/triple filter; concrete pair-table and rank inputs remain named exact leaves"
+    },
+    {
+      "id": "automorphisms",
+      "statement": "The coordinate-permutation automorphism group of the minimum-support system is PGL(2,13).",
+      "current_modes": ["human pair-concurrence and anchor argument", "paper-owned exact stabilizer-chain replay", "Lean concrete regular triple orbit", "Lean forced fourth anchor", "Lean separating four-anchor signatures", "Lean symbolic transport identifying all polar-relation automorphisms with the 2184 normalized symmetric-square maps", "Lean coordinate-automorphism identification interface"],
+      "lean_boundary": "the four-anchor classification is closed for the six-valued polar-relation scheme; transport from support automorphisms now uses weighted-pair equivariance rather than triple concurrence"
+    },
+    {
+      "id": "ambient-plane",
+      "statement": "The weighted 2-section reconstructs all 183 points and lines of PG(2,13), its conic, and its polarity.",
+      "current_modes": ["human adjoint sl2 and trace-polarity proof", "exact Sylow-13 and involution census", "exact 183-point polarity and plane-axiom replay", "Lean abstract recovered-plane data interface", "Lean concrete q=13 incidence leaf"],
+      "lean_boundary": "the group-theoretic incidence rules and recovery implication are theorem-shaped; the concrete enumeration of Sylow subgroups, involutions, and all polarity incidences remains a named paper-owned exact leaf"
+    },
+    {
+      "id": "minimum-geometry",
+      "statement": "The four minimum families are one octahedral and three chord-indexed punctured-conic families.",
+      "current_modes": ["human toric conic-pencil construction and discriminant parity proof", "human involution/matching dictionary", "bounded octahedral matching-profile leaf", "exact orbit, stabilizer, syndrome, and Gram replay", "Lean toric parity packet and octahedral finite interface"],
+      "lean_boundary": "the three toric support constructions and parity implication are semantic theorems; the standard octahedral six-suborbit classification remains a named finite leaf"
+    },
+    {
+      "id": "hidden-field",
+      "statement": "The binary code is a 12-dimensional module over the operator field F8, with A9, A10, A12 the Frobenius-conjugate scalars.",
+      "current_modes": ["human irreducible-cubic argument", "exact relation-rank and primary-polynomial replay", "Lean polynomial-action and dimension interface", "Lean Gram-scalar spanning consequence"],
+      "lean_boundary": "only the compact operator-field theorem needed for spanning is retained; absolute irreducibility, Schur-field completeness, symplectic refinement, and cuspidal identification are deliberately outside the paper"
+    }
+  ]
+}

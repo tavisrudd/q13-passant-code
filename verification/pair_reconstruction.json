@@ -1,0 +1,76 @@
+{
+  "automorphism_group_order_via_full_scheme_rigidity": 2184,
+  "coherent_closure_color_counts_including_diagonal": [
+    6,
+    7,
+    7
+  ],
+  "coherent_closure_verdict": "one refinement splits rho=1 and rho=3 and recovers all six elliptic relations",
+  "color_8_neighborhood_count": 78,
+  "color_8_neighborhood_size": 7,
+  "color_8_neighborhoods_equal_passant_incidence_rows": true,
+  "common_concurrence_7_neighbors_for_concurrence_6_pair": {
+    "rho_1": 2,
+    "rho_3": 4
+  },
+  "independent_closure_checks": [
+    "full coherent signature refinement",
+    "direct common-concurrence-7 count"
+  ],
+  "minimum_orbit_sizes": [
+    91,
+    91,
+    91,
+    91
+  ],
+  "minimum_support_count": 364,
+  "pair_concurrence_distribution": {
+    "12": 546,
+    "6": 1092,
+    "7": 546,
+    "8": 273,
+    "9": 546
+  },
+  "pair_concurrence_parity_operator": {
+    "P+P^3": "code projector e_K",
+    "P^3": "A9=alpha",
+    "P^7": "code projector e_K",
+    "characteristic_polynomial_on_F2^78": "t^42*(t^3+t+1)^12",
+    "image": "binary code K",
+    "minimal_polynomial_on_K": "t^3+t+1",
+    "power_table": {
+      "P^1": "A10+A12",
+      "P^2": "A9+A12",
+      "P^3": "A9",
+      "P^4": "A9+A10",
+      "P^5": "A12",
+      "P^6": "A10",
+      "P^7": "A9+A10+A12=e_K"
+    },
+    "rank_over_F2": 36,
+    "recovered_field": "F2[P]/(P^3+P+e_K)=F8"
+  },
+  "point_count": 78,
+  "rho_to_pair_concurrence": {
+    "0": [
+      8
+    ],
+    "1": [
+      6
+    ],
+    "10": [
+      7
+    ],
+    "12": [
+      9
+    ],
+    "3": [
+      6
+    ],
+    "9": [
+      12
+    ]
+  },
+  "schema": "paper-iv-pair-reconstruction-v1",
+  "weighted_1_section_point_degree": 56
+}

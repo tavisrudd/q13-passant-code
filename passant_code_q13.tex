@@ -1,0 +1,850 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=29mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{array,booktabs}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\F}{\mathbb F}
+\newcommand{\PG}{\operatorname{PG}}
+\newcommand{\PGL}{\operatorname{PGL}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\supp}{\operatorname{supp}}
+
+\title{Minimum-word reconstruction of $\PG(2,13)$\\
+from a binary conic code}
+\author{Tavis Rudd}
+\date{August 2026}
+
+\begin{document}
+\begingroup
+\makeatletter
+\let\clebschmaintitle\@title
+\def\@title{\large\textsc{The Clebsch cubic program --- IV}\\[0.7em]
+  \LARGE\clebschmaintitle}
+\makeatother
+\maketitle
+\endgroup
+
+\begin{abstract}
+Let \(\cC\) be a nonsingular conic in \(\PG(2,13)\), and form the binary
+incidence code on its \(78\) internal points using the \(78\) passant lines.
+We prove that the code has parameters \([78,36,12]_2\) and exactly \(364\)
+minimum words.  Their weighted pair concurrences alone reconstruct the
+passant incidence matrix, the code, and the six-class elliptic association
+scheme.  The resulting group action then reconstructs all points and lines
+of \(\PG(2,13)\), the distinguished conic, and its polarity; no coordinates
+or triple concurrence are required.  Equivalently, the weighted \(2\)-section
+of the minimum-support hypergraph is a complete invariant of this marked
+conic-plane presentation.  The four minimum-word families are one
+octahedral family and three chord-indexed punctured-conic families, and each
+spans the code.  Structurally, the code is \(12\)-dimensional over a canonical
+operator field \(\F_8\); this hidden scalar action explains why every
+minimum-word family spans.  Exact positive-semidefinite and line-moment
+certificates exclude weights eight and ten, replacing the corresponding
+subset and syndrome searches.
+\end{abstract}
+
+\noindent\textbf{Keywords.} binary incidence code; finite conic; passant
+line; minimum word; association scheme; reconstruction.
+
+\section{Introduction and statement}
+
+Incidence codes usually remember less than the structures that define them.
+Row operations erase the chosen parity checks, and minimum distance alone
+does not explain the geometry of the first codewords.  The code studied here
+behaves in the opposite way: the weighted pairs inside its minimum supports
+recover not only the parity checks but the full projective plane in which
+they arose.
+This is the fourth paper in a program on code-theoretic reconstruction around
+the Clebsch cubic.  The first paper begins from the conic code over
+\(\F_{11}\); the present \(q=13\) theorem is logically independent of the
+earlier papers.
+
+Fix a nonsingular conic \(\cC\subset\PG(2,13)\).  A line is
+\emph{passant} when it is disjoint from \(\cC(\F_{13})\).  Conic polarity
+identifies the \(78\) internal points with the \(78\) passant lines.  Let
+\(M\) be their binary incidence matrix and put
+\[
+ K=\ker_{\F_2}M\subseteq\F_2^{78}.
+\]
+The coordinate set is the set of internal points.  Automorphisms below are
+coordinate permutations preserving the indicated code or minimum-support
+system.
+
+Let
+\[
+ \mathcal H=\{\supp(c):c\in K,\ \operatorname{wt}(c)=12\}
+\]
+be the minimum-support hypergraph on the unlabeled coordinate set of \(K\).
+
+\begin{theorem}[Minimum words recover the conic plane]
+\label{thm:main}
+The code \(K\) has parameters \([78,36,12]_2\) and exactly \(364\)
+minimum words.  Under \(\PGL(2,13)\), those words form four orbits of
+size \(91\).  One is an octahedral homogeneous space with stabilizer
+\(S_4\); the other three are chord-indexed punctured conics with stabilizer
+\(D_{24}\).  Every orbit spans \(K\).
+
+Let \(c(P,Q)\) be the number of minimum supports containing \(P,Q\).
+The neighborhoods defined by \(c(P,Q)=8\) are exactly the \(78\) rows of
+\(M\).  The other five elliptic relations are recovered from the remaining
+pair weights and one common-neighbor count.  Moreover, if
+\(P_{PQ}=c(P,Q)\bmod2\) off the diagonal and \(P_{PP}=0\), then
+\(\operatorname{im}P=K\).  Thus the weighted \(2\)-section of
+\(\mathcal H\) reconstructs the incidence matrix, code, and elliptic scheme.
+
+From the reconstructed group, its fourteen Sylow-\(13\) subgroups and
+\(169\) involutions recover all \(183\) points and lines of
+\(\PG(2,13)\), the distinguished conic, and its polarity.  Consequently
+weighted-pair reconstruction has exact arity two, and
+\[
+ \Aut(K)=\Aut(\mathcal H)=\PGL(2,13)
+\]
+in its symmetric-square action on the \(78\) internal points.
+\end{theorem}
+
+Reconstruction is intrinsic, not coordinatized.  It recovers the marked
+plane and polarity up to isomorphism, but it does not choose an ordered
+projective frame, a field labeling, or an equation for the conic.  Such a
+choice is necessarily noncanonical: the \(2184\) ordered triples of distinct
+conic points form a torsor for \(\PGL(2,13)\).
+
+The proof is structural except at small exact endpoints.  A rank-\(28\)
+positive-semidefinite matrix excludes weight eight.  A global line moment
+reduces weight ten to two shapes, which are eliminated on four line-
+stabilizer orbits and thirty-three point-stabilizer orbits.  The minimum
+layer itself is exhausted at one point, the octahedral construction has one
+bounded matching-profile check, and the recovered group/plane dictionary is
+independently replayed in the complete finite model.
+
+The code belongs to the fixed-conic LDPC family introduced by
+Droms--Mellinger--Meyer~\cite{DromsMellingerMeyer2006}.  Their general bounds,
+as recorded in the later comparison table of Ma--Liu--Tian
+\cite[Table~1]{MaLiuTian2024}, specialize here to \(8\le d\le12\).
+Madison and Wu proved the general nullity formula
+\((q-1)^2/4\)~\cite[Corollary~6.3]{MadisonWu2012}.  Hollmann and Xiang
+constructed the elliptic association scheme afforded by the same conic
+action~\cite[Sections~3--5]{HollmannXiang2006}.  The identification of
+involutions with off-conic points, with involution axis equal to polar line,
+is classical and is stated explicitly by Tranchida
+\cite[Section~2]{Tranchida2024}.  We determine the upper endpoint of the
+distance interval at \(q=13\), classify its minimum words, and prove that
+their weighted pair data recovers these established ambient structures.
+
+\section{Distance twelve}
+\label{sec:distance}
+
+We use the model \(\cC:XZ-Y^2=0\).  Every row and column of \(M\) has
+weight seven, and conic polarity identifies the two index sets.  The
+Madison--Wu formula gives \(\dim K=36\); direct binary elimination is an
+independent check of rank \(42\).
+
+Summing all row equations gives the all-one functional, so every word of
+\(K\) has even weight.  If a nonzero word contains an internal point \(P\),
+each of the seven passants through \(P\) contains a second support point.
+Those seven points are distinct.  Thus every nonzero word has weight at
+least eight.
+
+\subsection{The tangent obstruction in weight eight}
+
+Suppose that a word has weight eight and fix a support point \(P\).  Each of
+the seven passants through \(P\) must contain another support point.  Since
+only seven points remain, each passant contains exactly one of them.  Applying
+the same argument at every support point shows that every support join is
+passant and that no three support points are collinear.  Thus the support is
+an eight-arc, and every passant pencil at a support point is saturated.  The
+seven remaining lines through each support point are therefore both the
+combinatorial tangents to the arc and the conic secants through that point.
+
+For each secant line choose a nonzero linear equation.  For an internal point
+\(P\), put
+\[
+ T_P(X)=\prod_{\substack{\ell\ni P\\
+                    \ell\text{ secant to }\cC}}\ell(X).
+\]
+For a pairwise-passant triple define
+\[
+ h(P,Q,R)=
+ \frac{T_P(Q)T_Q(R)T_R(P)}
+      {T_P(R)T_R(Q)T_Q(P)}.
+\]
+Every displayed evaluation is nonzero because the three joins are passant.
+Rescaling a line equation multiplies one numerator and one denominator factor
+by the same scalar, so \(h\) is well defined.  The saturated-pencil
+identification above makes the factors of \(T_P\) precisely the combinatorial
+tangents at \(P\).
+Segre's lemma of tangents in the coordinate-free form of
+Ball--Lavrauw~\cite[Lemma~27]{BallLavrauw2019} gives
+\(h(P,Q,R)=1\) for every triple in the hypothetical support.  Indeed, its
+hypotheses apply to this eight-arc over the odd field \(\F_{13}\), and with
+the cyclic order \(P,Q,R\) its tangent-product quotient is exactly the
+displayed \(h\) (not its negative; reversing the cycle only inverts it).  Fix
+\(P=(1:0:2)\).  Its other seven points would form a clique in the graph on
+the \(42\) passant-join neighbors of \(P\), where \(Q\) and \(R\) are
+adjacent when \(QR\) is passant and \(h(P,Q,R)=1\).
+
+The projective map
+\[
+ \gamma(x:y:z)=
+ (x+6y+9z:7x+9y+3z:10x+y+z)
+\]
+fixes \(P\) and has order \(14\) on its passant-join neighbors.  With indices
+in \(\mathbf Z/14\), put
+\[
+ A_i=\gamma^i(1:1:7),\qquad
+ B_i=\gamma^i(1:1:6),\qquad
+ C_i=\gamma^i(1:2:10).
+\]
+These three orbits are disjoint and contain all \(42\) neighbors.  Direct
+substitution in the product above gives
+\[
+\begin{array}{c|c}
+\text{orbit pair}&j-i\pmod {14}\\ \hline
+AA&4,6,8,10\\
+AB&6,7,11,12\\
+AC&1,3\\
+BB&6,8\\
+BC&3,5,6,8,9,11\\
+CC&2,4,10,12.
+\end{array}
+\]
+Let \(C\) be the symmetric \(42\)-square matrix in the displayed vertex
+order, written in \(14\)-square circulant blocks.  Its six upper-block first
+rows are
+\[
+\begin{array}{c|rrrrrrrrrrrrrr}
+00&40&9&8&-8&-10&0&-10&-2&-10&0&-10&-8&8&9\\
+01&7&6&6&6&7&-1&-10&-10&-8&0&-8&-10&-10&-1\\
+02&0&-10&2&-10&0&3&2&9&2&4&2&9&2&3\\
+11&40&15&10&10&-6&-3&-10&-22&-10&-3&-6&10&10&15\\
+12&-13&3&0&-10&8&-10&-10&14&-10&-10&8&-10&0&3\\
+22&40&-9&-10&19&-10&2&8&-12&8&2&-10&19&-10&-9.
+\end{array}
+\]
+The lower blocks are the transposes.  Comparison with the six difference
+sets shows that \(C\) has diagonal \(40\) and entry \(-10\) on every edge
+of the local graph.
+
+The matrix is positive semidefinite.  Exact cyclic Fourier traces and Newton
+identities give
+\[
+ \chi_C(x)=x^{14}(x^2-94x+279)(x^2-26x+135)f(x)^2g(x)^2,
+\]
+where
+\[
+\begin{aligned}
+f(x)={}&x^6-247x^5+22466x^4-910807x^3
+ +15948097x^2-111043270x+189747571,\\
+g(x)={}&x^6-533x^5+105578x^4-9736765x^3
+ +438572569x^2-9062718662x+68467048091.
+\end{aligned}
+\]
+Every nonzero factor has alternating coefficients.  Its value at \(-t\) is
+therefore positive for \(t\ge0\).  Since \(C\) is real symmetric, it has no
+negative eigenvalue; the displayed factorization also gives rank \(28\).
+An independent rational Schur elimination gives the same twenty-eight
+positive pivots.
+
+If \(v\) is the characteristic vector of a clique of size \(c>0\), then
+\[
+ 0\le v^{\mathsf T}Cv
+   =40c-20\binom c2=10c(5-c).
+\]
+Thus \(c\le5\).  The set
+\(\{A_0,B_6,B_{12},C_1,C_3\}\) is a five-clique, so the bound is sharp.
+Moreover, its fourteen translates are linearly independent kernel vectors;
+nullity fourteen makes them a basis of \(\ker C\).  Equality in the
+quadratic-form bound puts every maximum-clique vector in this kernel, and
+solving the resulting \(0\)--\(1\) constraints in that basis gives precisely
+the fourteen translates.  In particular the seven-clique required by a
+weight-eight word cannot occur.
+
+\subsection{The two weight-ten profiles}
+
+Let \(S\) be a hypothetical weight-ten support, and let \(n_i\) be the
+number of passants meeting \(S\) in exactly \(i\) points.  Code parity makes
+every occurring \(i\) even, and incidence counting gives
+\[
+ \sum_i i n_i=70.
+\]
+At a selected point, pencil parity gives secant degree zero or two.  The
+secant graph induced on \(S\) is therefore a union of cycles and isolated
+vertices.  If \(m\) is the number of its cycle vertices, then it has \(m\)
+edges, and the other \(45-m\) pairs have passant join.  Hence
+\[
+ \sum_i\binom{i}{2}n_i=45-m.
+\]
+Subtracting half the first identity yields the decisive moment
+\begin{equation}
+ 4n_4+12n_6+24n_8+\cdots=10-m.       \label{eq:weight-ten-moment}
+\end{equation}
+No \(n_i\) with \(i\ge6\) can occur.  The degree condition and
+\eqref{eq:weight-ten-moment} leave exactly
+\[
+\begin{array}{c|c|c}
+m&(n_2,n_4)&\text{shape}\\ \hline
+6&(33,1)&\text{four isolated vertices on one four-point passant and six cycle vertices},\\
+10&(35,0)&\text{ten cycle vertices; every passant meets }S\text{ in }0\text{ or }2.
+\end{array}
+\]
+Indeed two degree-two vertices cannot by themselves form a cycle; in the
+first case uniqueness of the four-point passant puts all isolated vertices
+on that line.
+
+The first shape has only four normalized cases.  The effective stabilizer of
+a passant acts as \(D_{14}\) on its seven internal points, with four orbits
+on four-subsets:
+\[
+\begin{array}{c|c|c|c}
+\text{representative}&\text{orbit size}&|X|&
+ \text{secant degrees in }X\\ \hline
+0123&7&7&(3,3,4,4,4,4,4)\\
+0124&14&3&(0,0,0)\\
+0134&7&5&(2,2,2,4,4)\\
+0135&7&5&(2,2,2,3,3).
+\end{array}
+\]
+Here \(X\) is the set of internal points passantly joined to all four fixed
+points; retaining the three unused points of the fixed line only enlarges
+it.  None of the four induced secant graphs contains a six-vertex
+two-regular subgraph, so the \(m=6\) shape is impossible.
+
+For \(m=10\), fix \(P\in S\).  The remaining points consist of one point in
+each of the seven six-point passant fibres through \(P\) and an unordered
+pair among its \(35\) secant neighbors.  The stabilizer
+\(G_P\cong D_{28}\) has thirty-three orbits on the \(595\) pairs: five of
+size \(7\), sixteen of size \(14\), and twelve of size \(28\).  For one
+representative of each orbit, add the seven fibre points in order, rejecting
+a prefix once a passant contains three selected points or a selected point
+has more than two secant neighbors.  The complete certificate has last
+surviving-depth mass
+\[
+\begin{array}{c|rrrrr}
+\text{depth}&0&1&2&3&4\\ \hline
+\text{pair mass}&28&35&91&238&203.
+\end{array}
+\]
+The masses sum to \(595\), and no representative survives the fifth fibre.
+Thus \(m=10\) is impossible as well.
+
+Finally, the twelve internal points
+\[
+\begin{gathered}
+(1:0:2),(1:3:2),(1:4:5),(1:1:8),
+(1:4:8),(1:1:7),\\
+(1:7:12),(1:3:3),(1:9:11),(1:10:11),
+(1:0:5),(1:8:7)
+\end{gathered}
+\]
+have zero syndrome.  Their stabilizer is dihedral of order \(24\).
+Therefore \(d(K)=12\).
+
+\section{Minimum geometry and weighted pairs}
+
+Fix one support point \(P\).  Its seven passant fibres again have six eligible
+points each, and it has \(35\) secant neighbors.  Pencil parity leaves
+\(s=0,2,4\) secant neighbors.
+The corresponding multiplicities in the seven passant fibres, followed by
+the number of secant neighbors, are
+\[
+ (5,1^6;0),\qquad (3,3,1^5;0),\qquad
+ (3,1^6;2),\qquad (1^7;4).
+\]
+A syndrome-indexed exact check exhausts these four fixed-point domains.  Its
+input sizes are respectively
+\[
+ 7\binom65 6^6,\quad
+ \binom72\binom63^2 6^5,\quad
+ 7\binom63 6^6\binom{35}{2},\quad
+ 6^7\binom{35}{2}^2,
+\]
+with disjoint secant pairs in the last domain.  The certificate specifies the
+four partitions, proves their coverage, tests zero syndrome, and deduplicates
+only after conversion to unordered supports.  The four domains contribute
+\(0,0,0,56\) words.  The canonical replay generates the four projective
+\(\PGL(2,13)\)-orbits, and intersects each orbit with the supports containing
+\(P\).  These four fixed-point slices are disjoint, each has size \(14\), and
+their union is checked for equality with the exhaustive \(56\)-word set.
+The order-\(28\) stabilizer of the fixed point acts transitively on each
+slice; the stabilizer of a support inside it has order \(2\).
+Transitivity, or equivalently the count \(56\cdot78/12=364\), proves global
+exhaustion.
+
+The replay generates each orbit from its recorded representative and checks
+every support against \(M\).  The following constructions identify those
+orbits without representatives.
+
+\subsection{One octahedral and three toric families}
+
+Parametrize the conic by \((t^2:t:1)\), with its usual point at infinity.
+An internal point \(P=(x:y:z)\) defines the fixed-point-free involution
+\[
+ j_P(t)=\frac{yt-x}{zt-y},\qquad
+ J_P=\begin{pmatrix}y&-x\\z&-y\end{pmatrix},\qquad
+ J_P^2=(y^2-xz)I.
+\]
+The seven secants through \(P\) are the seven pairs
+\(\{t,j_P(t)\}\).  Thus internal points may be read as perfect matchings of
+the fourteen conic points.
+
+Fix a chord \(e\), carry its endpoints to \(\{0,\infty\}\), and let
+\(N_e\cong D_{24}\) be their setwise stabilizer.  The three supports over
+\(e\) are
+\[
+ S_r(e)=\{(x:1:r^{-1}x^{-1}):x\in\F_{13}^{\times}\},
+ \qquad r\in\{2,5,11\}.
+\]
+Intrinsically, these three parameters satisfy
+\(\chi(r)=-1\) and \(\chi(r-1)=1\).  The support \(S_r(e)\) is the
+punctured pencil conic
+\[
+ \{y^2=rxz\}(\F_{13})\setminus e,
+\]
+so it has size twelve and stabilizer exactly \(N_e\).  At each displayed
+point, \(\Delta=1-r^{-1}=(r-1)/r\) is a nonsquare; hence all twelve points
+are internal.  The set is a codeword for a structural reason.  If a passant
+\(AX+BY+CZ=0\) met \(S_r(e)\) with odd multiplicity, the polynomial
+\(Ax^2+Bx+C/r\) would have a double root.  Then
+\[
+ B^2-4AC=B^2(1-r)
+\]
+would be a square, contrary to the line being passant.  Hence every passant
+meets \(S_r(e)\) in zero or two points.
+
+For the remaining family, take the octahedral subgroup
+\(O\cong S_4\) whose conic-point orbits have sizes six and eight.  Let
+\(X_O\) consist of the internal points whose matching has two pairs inside
+the six-set, three inside the eight-set, and two crossing pairs.  In a
+standard octahedral frame, the six internal-point suborbits have sizes
+\(6,12,12,12,12,24\); the displayed matching profile selects one of the
+twelve-orbits, and direct incidence parity makes it a codeword.  Thus
+\(|X_O|=12\) and \(\operatorname{Stab}_G(X_O)=O\).
+
+All four stabilizers have order \(24\).  Each family therefore has
+\(2184/24=91=\binom{14}{2}\) supports, agreeing with the fixed-point
+exhaustion above.
+
+\subsection{Exact arity-two reconstruction}
+
+For distinct coordinates put
+\[
+ c(P,Q)=\#\{S\in\mathcal H:\{P,Q\}\subseteq S\}.
+\]
+The exact pair table is
+\[
+\begin{array}{c|rrrrrr}
+\rho&0&1&3&9&10&12\\ \hline
+c&8&6&6&12&7&9.
+\end{array}
+\]
+Only the relations \(A_1\) and \(A_3\) are fused.  For a concurrence-six
+pair define
+\[
+ d_7(P,Q)=\#\{R:c(P,R)=c(R,Q)=7\}.
+\]
+The \(A_{10}^2\) intersection row gives
+\[
+ d_7(P,Q)=2\quad\text{on }A_1,
+ \qquad d_7(P,Q)=4\quad\text{on }A_3.
+\]
+This pair-derived common-neighbor count recovers the full six-color elliptic
+scheme.
+
+The incidence rows require no coherent closure.  Polarity sends
+\(P=(x:y:z)\) to \(P^\perp=(-z:2y:-x)\), and
+\[
+ Q\in P^\perp
+ \iff \beta(P,Q)=0
+ \iff \rho(P,Q)=0
+ \iff c(P,Q)=8.
+\]
+Consequently the seventy-eight concurrence-eight neighborhoods are exactly
+the seventy-eight rows of \(M\).
+
+The pair data also recovers the code without first naming a row.  Let
+\(P_{PQ}=c(P,Q)\bmod2\) off the diagonal and \(P_{PP}=0\).  Then
+\[
+ P=A_{10}+A_{12},\qquad \operatorname{rank}P=36,
+ \qquad A_0P=0,
+\]
+so \(\operatorname{im}P=K\).  Every coordinate occurs in
+\(364\cdot12/78=56\) minimum supports, making unary data constant.  Pair
+data suffices and unary data does not; reconstruction arity is exactly two.
+
+\section{The hidden field, spanning, and automorphisms}
+
+For internal points \(P=(x_P:y_P:z_P)\) and \(Q\), set
+\[
+ \Delta(P)=y_P^2-x_Pz_P,\qquad
+ \beta(P,Q)=2y_Py_Q-x_Pz_Q-z_Px_Q,
+\]
+and
+\[
+ \rho(P,Q)=\frac{\beta(P,Q)^2}{\Delta(P)\Delta(Q)}.
+\]
+On distinct internal points, \(\rho\) takes the six values
+\(0,1,3,9,10,12\).  Its level relations are the elliptic scheme; write
+\(A_r\) for their adjacency matrices.  Polarity identifies \(A_0\) with
+\(M\), up to row order.
+
+The needed part of the integral intersection table reduces modulo two to
+\begin{equation}
+\label{eq:scheme}
+\begin{split}
+ A_0^2&=I+A_9+A_{10}+A_{12},\\
+ A_0A_r&=0\quad(r=9,10,12),\\
+ A_9^2&=A_{10},\qquad A_{10}^2=A_{12},\qquad A_{12}^2=A_9.
+\end{split}
+\end{equation}
+These are parity reductions of intersection numbers.  The
+\(\PGL(2,13)\)-action is transitive on each relation, so fixing one point and
+substituting one representative of every relation checks all entries.
+
+Put \(B=A_9\).  Since \(A_0B=0\), the image of \(B\) lies in \(K\).  If
+\(x\in K\) and \(Bx=0\), then \eqref{eq:scheme} gives
+\[
+ 0=A_0^2x=(I+B+B^2+B^4)x=x.
+\]
+Thus \(B\) is injective on the 36-dimensional space \(K\), so
+\(\operatorname{im}B=K\), and \(B,B^2,B^4\) all have rank 36.
+
+\begin{proposition}[The operator field]
+\label{prop:hidden-field}
+The action of the binary Bose--Mesner algebra on \(K\) has image \(\F_8\).
+If \(\alpha\) is a root of \(t^3+t^2+1\), then
+\[
+ K\cong\F_8^{12},\qquad
+ (A_9,A_{10},A_{12})=(\alpha,\alpha^2,\alpha^4).
+\]
+The identification of a named \(\alpha\) is canonical up to Frobenius.
+\end{proposition}
+
+Indeed, exact elimination gives \(\operatorname{rank}(B+I)=78\).  Restricting
+the first identity in \eqref{eq:scheme} to \(K\) and factoring
+\[
+ 1+t+t^2+t^4=(t+1)(t^3+t^2+1)
+\]
+therefore gives \(B^3+B^2+I=0\).  The cubic has no root in \(\F_2\), so it
+is irreducible and makes \(K\) a vector space of dimension \(36/3=12\) over
+\(\F_8\).  The squaring identities in \eqref{eq:scheme} give the three
+displayed scalar operators.  This is an operator-field structure on the
+binary code, not a relabeling as a length-26 code over \(\F_8\).
+
+If \(N_i\) is the 91-by-78 support matrix of the \(i\)-th minimum-word
+orbit, direct pair counting in one intrinsic representative gives
+\[
+ (N_1^{\mathsf T}N_1,N_2^{\mathsf T}N_2,
+   N_3^{\mathsf T}N_3,N_4^{\mathsf T}N_4)
+ =(A_9,A_9,A_{12},A_{10}).
+\]
+These are nonzero scalars on \(\F_8^{12}\), hence automorphisms of \(K\).
+Thus \(\operatorname{im}(N_i^{\mathsf T}N_i)=K\) lies in the row space of
+\(N_i\).  Its rows already lie in \(K\), so every orbit spans \(K\).
+
+It remains to determine the scheme automorphisms.  Use the four anchors
+\[
+ P_0=(1:0:2),\quad P_1=(1:1:7),\quad
+ P_2=(1:0:7),\quad P_3=(1:1:3).
+\]
+The rigidity mechanism is summarized by
+\[
+ \underbrace{(P_0,P_1,P_2)}_{(10,3,9)\text{ regular orbit}}
+ \quad\Longrightarrow\quad
+ \underbrace{P_3}_{(3,1,9)\text{ is unique}}
+ \quad\Longrightarrow\quad
+ \underbrace{P\longmapsto
+   \bigl([P=P_i],\rho(P,P_i)\bigr)_{i=0}^{3}}
+   _{\text{injective on the 78 points}}.
+\]
+The first three satisfy
+\[
+ \bigl(\rho(P_0,P_1),\rho(P_0,P_2),\rho(P_1,P_2)\bigr)=(10,3,9).
+\]
+There are
+\(78\cdot14\cdot2=2184\) ordered triples with this pattern: \(A_{10}\)
+has valency 14 and \(p_{3,9}^{10}=2\).  Substitution in the symmetric-square
+action shows that the stabilizer of \((P_0,P_1,P_2)\) in
+\(\PGL(2,13)\) is trivial.  Since the group also has order 2184, it acts
+simply transitively on these triples.
+
+For a fixed triple, \(P_3\) is the unique point with relation signature
+\((3,1,9)\).  The four values
+\[
+ \bigl(\rho(P,P_0),\rho(P,P_1),\rho(P,P_2),\rho(P,P_3)\bigr),
+\]
+with equality to an anchor recorded on the diagonal, distinguish all 78
+points.  Consequently a scheme automorphism can be composed with a unique
+element of \(\PGL(2,13)\) to fix the first three anchors; it then fixes the
+fourth and every point.  Thus the reconstructed scheme has automorphism
+group \(\PGL(2,13)\).
+
+Every coordinate automorphism of \(K\) preserves \(\mathcal H\).
+Conversely, \(\mathcal H\) spans \(K\), so every automorphism of
+\(\mathcal H\) preserves \(K\).  The two coordinate-permutation groups
+coincide.
+
+\section{Recovery of the ambient conic plane}
+
+It remains to recover the plane rather than only its internal-point scheme.
+Let
+\[
+ G=\Aut(\mathcal H)\cong\PGL(2,13),\qquad
+ \Omega=\operatorname{Syl}_{13}(G).
+\]
+A Sylow-\(13\) subgroup has normalizer of order \(156\), so \(|\Omega|=14\).
+Conjugation gives a sharply three-transitive action: in the standard model a
+Sylow subgroup is the unipotent group fixing one point of
+\(\mathbf P^1(\F_{13})\), and both \(G\) and the set of ordered distinct
+triples have size \(2184\).  Thus \(\Omega\) is intrinsically the recovered
+conic-point set.
+
+Let \(\mathcal I\) be the set of \(169\) involutions of \(G\), and put
+\(\Pi=\Omega\sqcup\mathcal I\).  Index both points and polar lines by
+\(\Pi\).  Define incidence by
+\begin{enumerate}[label=(\roman*)]
+\item \(U\in U^\perp\) for \(U\in\Omega\), with no other
+  \(\Omega\)--\(\Omega\) incidences;
+\item \(U\in j^\perp\) for \(U\in\Omega\), \(j\in\mathcal I\), exactly
+  when \(j\) normalizes \(U\);
+\item \(i\in j^\perp\) for distinct \(i,j\in\mathcal I\) exactly when
+  \(ij\) is an involution.
+\end{enumerate}
+
+These rules are the trace polarity on the adjoint module.  Identify the
+standard plane with \(\mathbf P(\mathfrak{sl}_2(\F_{13}))\).  For traceless
+\(A\), Cayley--Hamilton gives \(A^2=-\det(A)I\).  The fourteen singular
+matrix lines are the nilpotent conic and correspond to the Sylow subgroups;
+the nonsingular lines correspond bijectively to projective involutions.
+Moreover
+\[
+ \langle A,B\rangle=\operatorname{tr}(AB)
+\]
+is the polar form of the determinant conic.  Orthogonality of two nilpotent
+lines means equality, orthogonality of a nilpotent and an involution means
+normalization of the Sylow subgroup, and for distinct involutions it is
+equivalent to their product being an involution.  The three intrinsic rules
+therefore recover \(\PG(2,13)\), its conic \(\Omega\), and its polarity.
+
+The \(78\) original coordinates are also intrinsic inside this plane.  A
+coordinate stabilizer is a nonsplit-torus normalizer \(D_{28}\); its unique
+central involution identifies the coordinate with the involution class of
+centralizer order \(28\).  The other involution class has size \(91\).
+Consequently the old matrix \(M\) is exactly the internal--internal block of
+the recovered polarity matrix.  Since Section~3 reconstructed \(G\) and
+\(M\) from weighted pairs alone, the whole marked plane is reconstructed at
+arity two.  This completes the proof of Theorem~\ref{thm:main}.
+
+\section{Proof and verification boundary}
+
+The human proof owns the reductions: tangent products produce the local
+weight-eight graph, line moments produce the two weight-ten shapes, conic
+pencils produce the toric words, weighted pairs produce the polarity rows,
+and the adjoint representation produces the ambient plane.  Exact execution
+enters only after those reductions.
+
+The accompanying \nolinkurl{verification/} directory contains separate
+canonical certificates for the theta matrix, moment--stabilizer leaves,
+weighted-pair reconstruction, toric--octahedral geometry, ambient plane, and
+hidden operator field.  The earlier clique and syndrome programs remain as
+independent checks but are not theorem-facing proof leaves.  The minimum-word
+exhaustion and four-anchor rigidity retain their original exact replays.
+The entry point \nolinkurl{verify_evidence.py} checks byte counts and SHA-256
+hashes before running every program.  All arithmetic is exact and
+deterministic.
+From the paper root, the public command
+\begin{center}
+\small\texttt{make check}
+\end{center}
+ends with \texttt{Paper-IV q=13 evidence: PASS} and then builds the
+warning-free PDF.  The persistent repository-relative references are
+\nolinkurl{verification/README.md} for the exact programs and
+\nolinkurl{lean-certificates/README.md} for the formal package.
+The Python evidence uses only the standard library; the full command uses the
+Nix-pinned Lean and \TeX\ environments.
+
+The shared Lean library formalizes the normalized conic and incidence code,
+the theta inequality, moment compression, pair-neighborhood interface,
+pencil discriminant identity, and hidden-cubic cancellation.  The
+paper-owned package checks pair-only recovery, unary constancy, the three
+toric parities, the hidden cubic on the relation-operator image, and both
+projective-plane uniqueness axioms on the normalized \(183\)-point model.
+Table~\ref{tab:trust} records the remaining division of proof.
+
+\begin{table}[ht]
+\centering
+\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.17\textwidth}
+  >{\raggedright\arraybackslash}p{0.24\textwidth}
+  >{\raggedright\arraybackslash}p{0.49\textwidth}@{}}
+\toprule
+claim & proof mode & exact boundary\\
+\midrule
+dimension \(36\)
+& published theorem; Lean theorem
+& Madison--Wu gives the formula; exact elimination and semantic recovery maps
+  prove rank \(42\) at \(q=13\).\\
+weight \(8\)
+& human/classical reduction; exact PSD certificate; Lean implication
+& Segre's lemma gives the 42-vertex graph.  Exact Fourier traces and rational
+  Schur elimination certify the rank-28 form; Lean proves the quadratic-form
+  clique implication.\\
+weight \(10\)
+& human moment proof; exact stabilizer leaves; Lean algebra
+& Incidence and pair counts give \eqref{eq:weight-ten-moment}; four
+  \(D_{14}\) and thirty-three \(D_{28}\) representatives close the two
+  shapes.\\
+minimum layer
+& Lean native evaluation; trusted Python; human transport
+& Both executions exhaust the \(56\) fixed-point words; projective
+  transitivity and the double count give all \(364\).\\
+minimum geometry
+& human conic proof; bounded exact leaf; Lean parity checks
+& The toric families have a discriminant proof.  One octahedral matching
+  profile and the four stabilizers are checked in standard form.\\
+pair reconstruction
+& human polarity proof; trusted exact data; Lean theorem
+& Pair counts and one common-neighbor count recover the scheme; color-eight
+  neighborhoods recover the rows, and pair parity recovers the code.\\
+ambient plane
+& human adjoint proof; trusted exact replay; Lean incidence gate
+& The Sylow/involution rules are identified with trace polarity.  Lean checks
+  the 183-point plane axioms; the group-theoretic census is exact Python.\\
+hidden field and spanning
+& human algebra; trusted matrix data; Lean theorem
+& The irreducible cubic makes \(K\cong\F_8^{12}\); checked Gram scalars and a
+  kernel-checked image argument prove that every orbit spans.\\
+\bottomrule
+\end{tabular}
+\caption{Proof modes and trust boundaries for Theorem~\ref{thm:main}.}
+\label{tab:trust}
+\end{table}
+
+The paper-owned aggregate namespace is
+\nolinkurl{PassantCodeQ13.Gates.Main}; its terminals are
+\begin{flushleft}
+\small
+\nolinkurl{incidenceRankAndCodeDimension}\\
+\nolinkurl{fixedPointWeightTwelveExhaustion}\\
+\nolinkurl{minimumOrbitsSpanRhoZeroKernel}\\
+\nolinkurl{ellipticSchemeAutomorphismsAreProjective}\\
+\nolinkurl{pairOnlyReconstruction}\\
+\nolinkurl{toricMinimumSupports}\\
+\nolinkurl{hiddenFieldCubicOnImage}\\
+\nolinkurl{ambientPlaneIncidence}.
+\end{flushleft}
+The shared low-weight namespace is
+\nolinkurl{RelativeConicArcs.Gates.PassantCodeQ13}; its terminals are
+\begin{flushleft}
+\small
+\nolinkurl{weightEight_semantic_transport}\\
+\nolinkurl{arbitrary_weightTen_profile_transport}.
+\end{flushleft}
+
+Native evaluation compiles and runs finite decision procedures rather than
+reducing them entirely in the kernel.  Under Lean \(4.32.0\)-rc1, the
+tracked \texttt{\#print axioms} audit therefore exposes each such use as a
+declaration-local axiom; the symbolic transport theorems remain
+kernel-checked relative to those finite leaves.
+Thus ``Lean theorem'' in Table~\ref{tab:trust} means kernel-checked relative
+to its printed axioms, whereas ``Lean native evaluation'' and ``trusted
+Python'' are executions.  Hash checks identify the executed sources and
+outputs but do not turn either execution into a kernel-checked certificate;
+no finite leaf in the table is described that way.
+The formal scope retains three explicit human transports.  Projective
+transitivity and double counting carry the fixed-point exhaustion to all
+\(364\) minimum words.  Weighted-pair equivariance carries support
+automorphisms to the polar-relation scheme.  The adjoint trace model
+identifies the abstract Sylow/involution incidence with the conic polarity.
+Segre's lemma of tangents remains the cited classical input to the
+weight-eight transport.
+
+\section{Conclusion}
+
+The minimum words retain the geometry that row reduction forgets.  Their
+weighted pairs recover the parity checks and code, then the elliptic scheme,
+and finally the full conic plane and polarity.  The theta form and global
+line moment explain why this reconstruction first appears in weight twelve;
+the toric--octahedral families explain what appears there; and the hidden
+\(\F_8\) action explains why each family spans.  Thus, in this \(q=13\)
+instance, the weighted minimum-support \(2\)-section, passant incidence
+matrix, binary code, elliptic scheme, and marked conic plane are mutually
+recoverable up to the stated isomorphisms.
+
+Within the Clebsch cubic program, this is the endpoint of the reconstruction
+theme: a code-theoretic shadow recovers its complete ambient geometry.  The
+argument is nevertheless standalone.  It uses neither the earlier papers nor
+a chosen Clebsch model, and it claims no uniform minimum-distance theorem
+beyond \(q=13\).
+
+\begin{thebibliography}{9}
+
+\bibitem{BallLavrauw2019}
+S.~Ball and M.~Lavrauw,
+\newblock Arcs in finite projective spaces,
+\newblock \emph{EMS Surveys in Mathematical Sciences} \textbf{6} (2019),
+133--172.
+\newblock arXiv:1908.10772.
+
+\bibitem{DromsMellingerMeyer2006}
+S.~V.~Droms, K.~E.~Mellinger, and C.~Meyer,
+\newblock LDPC codes generated by conics in the classical projective plane,
+\newblock \emph{Designs, Codes and Cryptography} \textbf{40} (2006),
+343--356.
+\newblock doi:10.1007/s10623-006-0022-6.
+
+\bibitem{HollmannXiang2006}
+H.~D.~L.~Hollmann and Q.~Xiang,
+\newblock Association schemes from the action of
+\(\PGL(2,q)\) fixing a nonsingular conic in \(\PG(2,q)\),
+\newblock \emph{Journal of Algebraic Combinatorics} \textbf{24} (2006),
+157--193.
+\newblock doi:10.1007/s10801-006-0005-8; arXiv:math/0503573.
+
+\bibitem{MadisonWu2012}
+A.~L.~Madison and J.~Wu,
+\newblock On binary codes from conics in \(\PG(2,q)\),
+\newblock \emph{European Journal of Combinatorics} \textbf{33} (2012),
+33--48.
+\newblock doi:10.1016/j.ejc.2011.08.001; arXiv:1104.0324.
+
+\bibitem{MaLiuTian2024}
+L.~Ma, S.~Liu, and Z.~Tian,
+\newblock The binary codes generated from quadrics in projective spaces,
+\newblock \emph{AIMS Mathematics} \textbf{9} (2024), 29333--29345.
+\newblock doi:10.3934/math.20241421.
+
+\bibitem{Tranchida2024}
+P.~Tranchida,
+\newblock Triples of involutions in \(\PGL(2,q)\) and their incidence
+geometries,
+\newblock arXiv:2411.10299, 2024.
+
+\end{thebibliography}
+
+\enlargethispage{5\baselineskip}
+\section*{AI assistance disclosure}
+
+This project was developed with extensive assistance from OpenAI Codex and
+Anthropic Claude. Under the author's direction, the systems assisted with
+proof exploration, literature research, symbolic and finite computation,
+code and formal-proof development, verification, and manuscript drafting and
+revision. The author checked the resulting arguments, computations, code,
+and cited sources, reviewed and edited all AI-assisted material, and assumes
+responsibility for all content.
+
+\end{document}

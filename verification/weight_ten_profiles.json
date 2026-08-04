@@ -1,0 +1,138 @@
+{
+  "base_point": [
+    1,
+    0,
+    2
+  ],
+  "certified_conclusion": "no weight-ten kernel word containing the fixed base point",
+  "conic": "XZ-Y^2=0",
+  "field": 13,
+  "incidence_column_sha256": "7be0fc23d53fb862589d310657eb8671fb8550bfb83732ded4008ec2bfc26354",
+  "local_partition": {
+    "passant_fibres": 7,
+    "points_per_fibre_excluding_base": 6,
+    "secant_neighbors": 35
+  },
+  "parity_derivation": {
+    "global_secant_graph": "every support vertex has secant degree 0 or 2, so the induced secant-join graph is a disjoint union of cycles and isolated vertices",
+    "passant_fibre_occupancies": "seven positive odd integers summing to 9-s",
+    "secant_neighbor_count": "s is even",
+    "solutions": [
+      {
+        "occupancies": [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "s": 0
+      },
+      {
+        "occupancies": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "s": 2
+      }
+    ]
+  },
+  "profile_s0": [
+    {
+      "intersection_size": 0,
+      "left_raw": 216,
+      "left_sha256": "a740526c0c39c86ae4119241cad55301ce3106fe3e9f6f179b6b9d3cfb623b21",
+      "left_unique": 216,
+      "raw_domain": 933120,
+      "right_raw": 4320,
+      "right_sha256": "14561c4540d0211aa9997e5967047a9a838c2f9d7841227ebc262b108cf3522e",
+      "right_unique": 4320,
+      "special_fibre": 0
+    },
+    {
+      "intersection_size": 0,
+      "left_raw": 216,
+      "left_sha256": "9a964a2456df0942672b5056cfa55c295744730498b6ad2bb3b85067bc0b9982",
+      "left_unique": 216,
+      "raw_domain": 933120,
+      "right_raw": 4320,
+      "right_sha256": "90228f56733e872d6929384f713b7992fb8817cc994438fd8e056daabbb7d94b",
+      "right_unique": 4320,
+      "special_fibre": 1
+    },
+    {
+      "intersection_size": 0,
+      "left_raw": 216,
+      "left_sha256": "5a5c5e104924097d3b6ae2ed646bb13c0ee8baddfa320804f7fad18fd1d12d5e",
+      "left_unique": 216,
+      "raw_domain": 933120,
+      "right_raw": 4320,
+      "right_sha256": "05e1d1d829ecf6160571c5055ea8516b182121b817a211d8cf5db9e45cec9a7a",
+      "right_unique": 4320,
+      "special_fibre": 2
+    },
+    {
+      "intersection_size": 0,
+      "left_raw": 216,
+      "left_sha256": "c6b86d9df478345cf3cdc07520688bc6251a277a50110f8c9a904b21ee619245",
+      "left_unique": 216,
+      "raw_domain": 933120,
+      "right_raw": 4320,
+      "right_sha256": "31c29041cd3eb6bd54c066120acec8f9e06ea1de4efa1759027c1cc90a238657",
+      "right_unique": 4320,
+      "special_fibre": 3
+    },
+    {
+      "intersection_size": 0,
+      "left_raw": 216,
+      "left_sha256": "c6b86d9df478345cf3cdc07520688bc6251a277a50110f8c9a904b21ee619245",
+      "left_unique": 216,
+      "raw_domain": 933120,
+      "right_raw": 4320,
+      "right_sha256": "464b39083034c39f779560aa2f0337f6c5cacd3877f2f4db4fbbbe5a5ec5f8e6",
+      "right_unique": 4320,
+      "special_fibre": 4
+    },
+    {
+      "intersection_size": 0,
+      "left_raw": 216,
+      "left_sha256": "c6b86d9df478345cf3cdc07520688bc6251a277a50110f8c9a904b21ee619245",
+      "left_unique": 216,
+      "raw_domain": 933120,
+      "right_raw": 4320,
+      "right_sha256": "8712550f5242d43e0f1ffd6a518afff1bd5c2847534c0569aff94454e402a6e8",
+      "right_unique": 4320,
+      "special_fibre": 5
+    },
+    {
+      "intersection_size": 0,
+      "left_raw": 216,
+      "left_sha256": "c6b86d9df478345cf3cdc07520688bc6251a277a50110f8c9a904b21ee619245",
+      "left_unique": 216,
+      "raw_domain": 933120,
+      "right_raw": 4320,
+      "right_sha256": "0127fa28de4b4a7bdd3ff6c65f104a9a4a5f739fb469d1da9882dcc19387c64a",
+      "right_unique": 4320,
+      "special_fibre": 6
+    }
+  ],
+  "profile_s2": {
+    "intersection_size": 0,
+    "left_raw": 216,
+    "left_sha256": "c6b86d9df478345cf3cdc07520688bc6251a277a50110f8c9a904b21ee619245",
+    "left_unique": 216,
+    "raw_domain": 166561920,
+    "right_raw": 771120,
+    "right_sha256": "e09e4a9c4fff45f98dce3c15098751c1f9916563e8d876fa8bc6c72ab518e753",
+    "right_unique": 771024
+  },
+  "schema": "q13-passant-code-weight-ten-profiles-v1",
+  "symmetry_boundary": "PGL(2,13) is transitive on internal points, so the fixed-base exclusion is global"
+}

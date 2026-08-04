@@ -1,0 +1,236 @@
+{
+  "boundary": {
+    "not_recovered_without_choices_or_more_data": [
+      "a preferred ordered projective frame or F13 coordinate",
+      "a preferred quadratic equation for a plane conic"
+    ],
+    "recovered": [
+      "the canonical 14-element Sylow-13 G-set",
+      "its sharply 3-transitive projective-line action",
+      "all 91 abstract chords",
+      "the 78-by-91 internal-point/secant incidence",
+      "all 183 points and lines of PG(2,13) with the conic polarity"
+    ]
+  },
+  "field": 13,
+  "group": {
+    "element_order_histogram": {
+      "1": 1,
+      "2": 169,
+      "3": 182,
+      "4": 182,
+      "6": 182,
+      "7": 468,
+      "12": 364,
+      "13": 168,
+      "14": 468
+    },
+    "name": "PGL(2,13)",
+    "order": 2184,
+    "order_13_element_count": 168
+  },
+  "intrinsic_ambient_plane": {
+    "conic_identification_checked": true,
+    "conic_points_as_sylow_13_subgroups": 14,
+    "coordinate_identification_with_PG_2_13_checked": true,
+    "distinct_point_pairs_with_unique_line": 16653,
+    "external_involution_class_size": 91,
+    "internal_involution_class_size": 78,
+    "internal_point_identification_checked": true,
+    "involution_centralizer_size_histogram": {
+      "24": 91,
+      "28": 78
+    },
+    "line_count_via_polarity": 183,
+    "lines_through_point": 14,
+    "off_conic_points_as_involutions": 169,
+    "point_count": 183,
+    "points_per_line": 14,
+    "polarity_incidence_sha256": "d2833fa8e348eaf37626200b124e5458268b83e7806014c4bc0a40b083ac3c6b",
+    "projective_plane_axioms_checked": true
+  },
+  "intrinsic_projective_line": {
+    "action": "sharply 3-transitive",
+    "conjugation_action_kernel_order": 1,
+    "conjugation_action_sha256": "68de5ace8509af8a1d79fedf9719a3aea013331ad4f528d73d589b451842c4e3",
+    "coordinate_equivariance_checked": true,
+    "coordinate_fixed_point_bijection_checked": true,
+    "normalizer_order": 156,
+    "ordered_distinct_triple_count": 2184,
+    "ordered_triple_stabilizer_order": 1,
+    "subgroup_order": 13,
+    "sylow_13_subgroup_count": 14,
+    "sylow_subgroups": [
+      {
+        "canonical_generator": [
+          0,
+          1,
+          1,
+          3
+        ],
+        "fixed_projective_point": 5,
+        "index": 0,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          0,
+          1,
+          1,
+          10
+        ],
+        "fixed_projective_point": 8,
+        "index": 1,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          0,
+          1,
+          3,
+          1
+        ],
+        "fixed_projective_point": 2,
+        "index": 2,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          0,
+          1,
+          3,
+          12
+        ],
+        "fixed_projective_point": 11,
+        "index": 3,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "fixed_projective_point": 9,
+        "index": 4,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          0,
+          1,
+          4,
+          7
+        ],
+        "fixed_projective_point": 4,
+        "index": 5,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          0,
+          1,
+          9,
+          4
+        ],
+        "fixed_projective_point": 7,
+        "index": 6,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          0,
+          1,
+          9,
+          9
+        ],
+        "fixed_projective_point": 6,
+        "index": 7,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          0,
+          1,
+          10,
+          5
+        ],
+        "fixed_projective_point": 3,
+        "index": 8,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          0,
+          1,
+          10,
+          8
+        ],
+        "fixed_projective_point": 10,
+        "index": 9,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          0,
+          1,
+          12,
+          2
+        ],
+        "fixed_projective_point": 1,
+        "index": 10,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          0,
+          1,
+          12,
+          11
+        ],
+        "fixed_projective_point": 12,
+        "index": 11,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "fixed_projective_point": 0,
+        "index": 12,
+        "normalizer_order": 156
+      },
+      {
+        "canonical_generator": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "fixed_projective_point": 13,
+        "index": 13,
+        "normalizer_order": 156
+      }
+    ]
+  },
+  "intrinsic_secant_incidence": {
+    "G_equivariance_checked": true,
+    "central_involution_cycle_type_on_conic_points": "2^7",
+    "chord_count": 91,
+    "chord_stabilizer_order": 24,
+    "chords_per_internal_vertex": 7,
+    "distinct_central_involutions": 78,
+    "geometric_collinearity_checked": true,
+    "internal_vertex_count": 78,
+    "internal_vertices_per_chord": 6,
+    "secant_incidence_pair_count": 546,
+    "secant_incidence_sha256": "48778063bb7ccf091dfdf431d278339ae112ffd663618a358bcdce822b87a02e",
+    "vertex_stabilizer_center_order": 2,
+    "vertex_stabilizer_order": 28
+  },
+  "schema": "paper-iv-ambient-plane-v1"
+}

@@ -1,0 +1,776 @@
+{
+  "certified_conclusion": "both weight-ten global shapes are impossible using moments, line caps, secant degrees, and stabilizer orbits; no syndrome meet-in-the-middle enumeration is used",
+  "checked_domain": {
+    "all_orbits_stop_before_seven_fibres": true,
+    "four_set_stabilizer_orbits": 4,
+    "four_subsets_on_standard_passant": 35,
+    "projective_group_elements": 2184,
+    "secant_neighbor_pairs_at_base": 595,
+    "secant_pair_stabilizer_orbits": 33
+  },
+  "field": 13,
+  "global_moment_reduction": {
+    "identity": "4*n4+12*n6+24*n8+...=10-m",
+    "incidences": 70,
+    "pairs": 45,
+    "solutions": [
+      {
+        "passant_line_counts": {
+          "n2": 33,
+          "n4": 1
+        },
+        "secant_cycle_vertices_m": 6,
+        "shape": "four isolated points on the unique 4-line plus six cycle vertices"
+      },
+      {
+        "passant_line_counts": {
+          "n2": 35
+        },
+        "secant_cycle_vertices_m": 10,
+        "shape": "ten cycle vertices and every passant meets the support in 0 or 2 points"
+      }
+    ],
+    "support_size": 10
+  },
+  "m10_secant_pair_orbits": {
+    "depth_mass": {
+      "0": 28,
+      "1": 35,
+      "2": 91,
+      "3": 238,
+      "4": 203
+    },
+    "maximum_surviving_prefix_depth": 4,
+    "orbit_count": 33,
+    "records": [
+      {
+        "last_nonzero_depth": 3,
+        "orbit_size": 7,
+        "pair_join": "secant",
+        "representative": [
+          1,
+          2
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          4,
+          6,
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 3,
+        "orbit_size": 14,
+        "pair_join": "secant",
+        "representative": [
+          1,
+          3
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 2,
+        "orbit_size": 14,
+        "pair_join": "secant",
+        "representative": [
+          1,
+          4
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 0,
+        "orbit_size": 14,
+        "pair_join": "secant",
+        "representative": [
+          1,
+          5
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 4,
+        "orbit_size": 28,
+        "pair_join": "passant",
+        "representative": [
+          1,
+          6
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          6,
+          16,
+          15,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 3,
+        "orbit_size": 28,
+        "pair_join": "secant",
+        "representative": [
+          1,
+          11
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          3,
+          5,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 3,
+        "orbit_size": 28,
+        "pair_join": "secant",
+        "representative": [
+          1,
+          13
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          1,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 4,
+        "orbit_size": 28,
+        "pair_join": "passant",
+        "representative": [
+          1,
+          14
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          6,
+          22,
+          32,
+          7,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 1,
+        "orbit_size": 28,
+        "pair_join": "secant",
+        "representative": [
+          1,
+          16
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 3,
+        "orbit_size": 28,
+        "pair_join": "passant",
+        "representative": [
+          1,
+          23
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          6,
+          14,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 4,
+        "orbit_size": 14,
+        "pair_join": "passant",
+        "representative": [
+          1,
+          24
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          5,
+          17,
+          8,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 4,
+        "orbit_size": 14,
+        "pair_join": "passant",
+        "representative": [
+          1,
+          28
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          6,
+          13,
+          13,
+          3,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 3,
+        "orbit_size": 28,
+        "pair_join": "passant",
+        "representative": [
+          1,
+          29
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          5,
+          15,
+          14,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 4,
+        "orbit_size": 14,
+        "pair_join": "passant",
+        "representative": [
+          1,
+          31
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          5,
+          15,
+          9,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 4,
+        "orbit_size": 28,
+        "pair_join": "passant",
+        "representative": [
+          1,
+          32
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          6,
+          14,
+          11,
+          5,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 3,
+        "orbit_size": 14,
+        "pair_join": "secant",
+        "representative": [
+          1,
+          34
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          2,
+          7,
+          7,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 4,
+        "orbit_size": 28,
+        "pair_join": "passant",
+        "representative": [
+          1,
+          35
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          5,
+          14,
+          17,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 3,
+        "orbit_size": 14,
+        "pair_join": "secant",
+        "representative": [
+          1,
+          37
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          3,
+          9,
+          6,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 2,
+        "orbit_size": 14,
+        "pair_join": "secant",
+        "representative": [
+          1,
+          40
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 1,
+        "orbit_size": 7,
+        "pair_join": "secant",
+        "representative": [
+          3,
+          4
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 0,
+        "orbit_size": 14,
+        "pair_join": "secant",
+        "representative": [
+          3,
+          5
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 4,
+        "orbit_size": 14,
+        "pair_join": "passant",
+        "representative": [
+          3,
+          6
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          5,
+          13,
+          13,
+          4,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 2,
+        "orbit_size": 14,
+        "pair_join": "secant",
+        "representative": [
+          3,
+          11
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 2,
+        "orbit_size": 14,
+        "pair_join": "secant",
+        "representative": [
+          3,
+          13
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 3,
+        "orbit_size": 14,
+        "pair_join": "secant",
+        "representative": [
+          3,
+          14
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 3,
+        "orbit_size": 28,
+        "pair_join": "passant",
+        "representative": [
+          3,
+          16
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          6,
+          11,
+          5,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 2,
+        "orbit_size": 28,
+        "pair_join": "passant",
+        "representative": [
+          3,
+          23
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          5,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 3,
+        "orbit_size": 28,
+        "pair_join": "secant",
+        "representative": [
+          3,
+          29
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 4,
+        "orbit_size": 14,
+        "pair_join": "passant",
+        "representative": [
+          3,
+          32
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          5,
+          10,
+          19,
+          4,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 4,
+        "orbit_size": 14,
+        "pair_join": "passant",
+        "representative": [
+          3,
+          35
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          6,
+          15,
+          13,
+          3,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 3,
+        "orbit_size": 7,
+        "pair_join": "passant",
+        "representative": [
+          5,
+          16
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          6,
+          16,
+          8,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 2,
+        "orbit_size": 7,
+        "pair_join": "passant",
+        "representative": [
+          5,
+          23
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          6,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "last_nonzero_depth": 4,
+        "orbit_size": 7,
+        "pair_join": "passant",
+        "representative": [
+          5,
+          29
+        ],
+        "surviving_prefixes_after_0_to_7_fibres": [
+          1,
+          6,
+          20,
+          8,
+          8,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "total_pairs": 595
+  },
+  "m6_four_set_orbits": [
+    {
+      "common_passant_neighbor_count": 7,
+      "cyclic_representative": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_line_orbit_size": 7,
+      "global_four_set_count": 546,
+      "secant_degree_sequence": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "six_subsets_checked": 7,
+      "two_regular_six_subsets": 0
+    },
+    {
+      "common_passant_neighbor_count": 3,
+      "cyclic_representative": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "fixed_line_orbit_size": 14,
+      "global_four_set_count": 1092,
+      "secant_degree_sequence": [
+        0,
+        0,
+        0
+      ],
+      "six_subsets_checked": 0,
+      "two_regular_six_subsets": 0
+    },
+    {
+      "common_passant_neighbor_count": 5,
+      "cyclic_representative": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "fixed_line_orbit_size": 7,
+      "global_four_set_count": 546,
+      "secant_degree_sequence": [
+        2,
+        2,
+        2,
+        4,
+        4
+      ],
+      "six_subsets_checked": 0,
+      "two_regular_six_subsets": 0
+    },
+    {
+      "common_passant_neighbor_count": 5,
+      "cyclic_representative": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "fixed_line_orbit_size": 7,
+      "global_four_set_count": 546,
+      "secant_degree_sequence": [
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "six_subsets_checked": 0,
+      "two_regular_six_subsets": 0
+    }
+  ],
+  "schema": "paper-iv-weight-ten-moment-v1",
+  "simpler_dual_obstructions": {
+    "linear_separator_coefficient_and_augmented_ranks": {
+      "s0": [
+        32,
+        33
+      ],
+      "s2": [
+        34,
+        35
+      ]
+    },
+    "quadratic_s2_coefficient_and_augmented_ranks": [
+      595,
+      596
+    ],
+    "quadratic_s2_subset_size": 596
+  }
+}

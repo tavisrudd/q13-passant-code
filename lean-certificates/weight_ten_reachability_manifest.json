@@ -1,0 +1,539 @@
+{
+  "distinguished_fibres": 7,
+  "distinguished_triple_choices": 20,
+  "field_order": 13,
+  "files": [
+    {
+      "bytes": 1295,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/Base.lean",
+      "sha256": "cbfe88dc13ddb33c2dc180c8d7767f4399877252929cceb6eec1cc3eec10d4e6"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/DistinguishedTriple.lean",
+      "sha256": "9401bc1f48fb0c56ec7a21296d9042b986a13149893a84a5d88d2d5c2873349f"
+    },
+    {
+      "bytes": 1660,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/LeftOptions.lean",
+      "sha256": "f222bf4ea3258a3bdce6a7e166d9aedaaa7256704c27ca7dfcafe917b512844f"
+    },
+    {
+      "bytes": 1318,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/LeftOrdinaryA.lean",
+      "sha256": "4510210333d617326c901afde8209307a657fd844a63870d50775c6c76e6ccc6"
+    },
+    {
+      "bytes": 1456,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/LeftOrdinaryB.lean",
+      "sha256": "896bddbcfc8b8414c984dc7b37c302e66044b783c82bfca732537f12fb7c7786"
+    },
+    {
+      "bytes": 1525,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/LeftOrdinaryC.lean",
+      "sha256": "e5d473cc3d83b04b535e91693f364c59072f379e956c99e49ca2d946009a07cb"
+    },
+    {
+      "bytes": 1678,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/RightOptions.lean",
+      "sha256": "7933f09004ca387b3851d858a054464ad6f044d91fc1e6d9b3ae8eef9363a7a6"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/RightOrdinaryA.lean",
+      "sha256": "8edc42a0b811146f5b2981dedd0ffd3ca39de6fd0dcb073683f260fac397b16d"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/RightOrdinaryB.lean",
+      "sha256": "a93bdf0db00a671080d9b8b0df9cdf2ee8a3dc313c5cae466bc79397984f1aeb"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/RightOrdinaryC.lean",
+      "sha256": "6216f12d2e343d3b868993c0831b89b16e234674e2326e9ee61acad503b13b33"
+    },
+    {
+      "bytes": 1197,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/TerminalDisjoint/FirstThird.lean",
+      "sha256": "df59cc7f4f4782127a7ce76d08d6fe1eff64d91013b5252babd6aac23c6d2e56"
+    },
+    {
+      "bytes": 1193,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/TerminalDisjoint/LastThird.lean",
+      "sha256": "830fcfac4c2f0c7c1945389b4492b8dc3a57d658c75654a9a131bc87ce3ddab3"
+    },
+    {
+      "bytes": 1201,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/TerminalDisjoint/MiddleThird.lean",
+      "sha256": "564caebb1f586f0f0ff7789da3d3a49e0aa0cde11da1c10176af8234d760a231"
+    },
+    {
+      "bytes": 4479,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0.lean",
+      "sha256": "ad6876c11d45def3d229d82f53254565abc60987fc407a9a939d9474caa33e9c"
+    },
+    {
+      "bytes": 1295,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/Base.lean",
+      "sha256": "6060479ae86a15f3fb57fedec3cf2e5f4ec7d981252325b5ed2a066c7c3f214a"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/DistinguishedTriple.lean",
+      "sha256": "d3c9c324970540cd4874a51d57c3f807b08346da93237e49505d30aafe5e0b50"
+    },
+    {
+      "bytes": 1660,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/LeftOptions.lean",
+      "sha256": "0fc3bdbb18d26042c5d04224addac54d3077280fffb8600e84334f702ab3a15a"
+    },
+    {
+      "bytes": 1318,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/LeftOrdinaryA.lean",
+      "sha256": "5e54d80c66cbc85630ffc29322e3961d422f91fc1a2476d793902b652dcb383c"
+    },
+    {
+      "bytes": 1456,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/LeftOrdinaryB.lean",
+      "sha256": "177f3c54e7aff1d23a4c795fef6c67c77ae3963bb291f9b6b0f42cc7635151a4"
+    },
+    {
+      "bytes": 1525,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/LeftOrdinaryC.lean",
+      "sha256": "ee788bf9d36a84b115c7ec7e8ad56f6d015af373ea2f42cac3e0397aec27369a"
+    },
+    {
+      "bytes": 1678,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/RightOptions.lean",
+      "sha256": "806187896559246ea81068bed31249c82dc68ecd2c80fee782813f0b182f646d"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/RightOrdinaryA.lean",
+      "sha256": "b0ac322f8d60cfb902f29b8b7a1aef85be5be508c4de3f5b747e60962b2b4f67"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/RightOrdinaryB.lean",
+      "sha256": "6b8a0f757d8ee767fd8cacafd0231fbb562a94da08472d095efe8a71d335ed13"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/RightOrdinaryC.lean",
+      "sha256": "4e41fc346ae8b1527c76e0ef9cc1435fd32b34920feb2e84f15694d4968d29ba"
+    },
+    {
+      "bytes": 1197,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/TerminalDisjoint/FirstThird.lean",
+      "sha256": "6952111e272522d0214a7c621fd4e83da16d9308e71f599f6de018d40fb810c2"
+    },
+    {
+      "bytes": 1193,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/TerminalDisjoint/LastThird.lean",
+      "sha256": "c6a1bd43d97384c9448bd9e6022733a46091634165ff64b53e621df8d39fe49f"
+    },
+    {
+      "bytes": 1201,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/TerminalDisjoint/MiddleThird.lean",
+      "sha256": "88f1b6d5016a6e821750c47e3107da6c1c8a41908f4fa5401d2f7ce25db649ee"
+    },
+    {
+      "bytes": 4479,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1.lean",
+      "sha256": "48db0a43da0066cb7a4f29a62d83fa9343eb468037eeb36119e838067c756058"
+    },
+    {
+      "bytes": 1295,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/Base.lean",
+      "sha256": "c46b4b4b57c80ff7acbe9b5583d09db252ae1ce9d79816b0f718571f9f3838be"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/DistinguishedTriple.lean",
+      "sha256": "6cd879beb9f1bd9f3424bbe542e65b073cf75269808c8f47318224805fa439ec"
+    },
+    {
+      "bytes": 1660,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/LeftOptions.lean",
+      "sha256": "c1930e58e5ee3409af36f8a174ac582e0431e95b1f820b8c8e7838de1e032aed"
+    },
+    {
+      "bytes": 1318,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/LeftOrdinaryA.lean",
+      "sha256": "0224fce491adac18e9672ad6e240c8ae507f290c9d29e3a2cd29f77fbfcdc277"
+    },
+    {
+      "bytes": 1456,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/LeftOrdinaryB.lean",
+      "sha256": "c71621310cd693c77b4fb21c82e25d76e34de4802345ac0d7a87b64d13db54a3"
+    },
+    {
+      "bytes": 1525,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/LeftOrdinaryC.lean",
+      "sha256": "5f7dfc7779021e416a37ba74aea808e98e91bb4c42d85d8808e026ff942054e9"
+    },
+    {
+      "bytes": 1678,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/RightOptions.lean",
+      "sha256": "7b8f50daf4b5d462a347a9c456b96cd004eb44d530bb878f6ddc3cadb96114c4"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/RightOrdinaryA.lean",
+      "sha256": "c222ad6a82c75f349788be59921825a9c710d71ce38f81e474f07b427396c7bf"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/RightOrdinaryB.lean",
+      "sha256": "f6507706d8a981c2da0402b8870fb0ca53bbb3dfa973f106d0ed2131b3a045b3"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/RightOrdinaryC.lean",
+      "sha256": "84f6b3adc88ad1bb78018e6b15c4b65af473fcf95117dab43a1afd0f5e7f2ea9"
+    },
+    {
+      "bytes": 1197,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/TerminalDisjoint/FirstThird.lean",
+      "sha256": "980c2a0885dc22d185a9b95fb00f51332f1592de243861210d0a277fc9cd040e"
+    },
+    {
+      "bytes": 1193,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/TerminalDisjoint/LastThird.lean",
+      "sha256": "379b31a740011cbe8858e0ca57557f4d5d200b5066dcee4333c96d2f5b2e9237"
+    },
+    {
+      "bytes": 1201,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/TerminalDisjoint/MiddleThird.lean",
+      "sha256": "4bdabd0d85d71ade32c90ece1782c285a843d8bd4a049c54d9c8ba53f3dedee4"
+    },
+    {
+      "bytes": 4479,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2.lean",
+      "sha256": "34be5e8a9202456c11899d7e58679c9e3b458d73976e9edd1810165740a12424"
+    },
+    {
+      "bytes": 1295,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/Base.lean",
+      "sha256": "f6fcee631ad2eced65eeccd145be5da7a899a38415e0e51471c2254ec0210d6e"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/DistinguishedTriple.lean",
+      "sha256": "addff0a386fb5464267f4c09f8784f4720d4d0c537784864c1b191cb2dc26321"
+    },
+    {
+      "bytes": 1660,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/LeftOptions.lean",
+      "sha256": "0b8ea05082cba85ef20cb46bbbccfee4abc0cea700b41e4737844bb253aa0e21"
+    },
+    {
+      "bytes": 1318,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/LeftOrdinaryA.lean",
+      "sha256": "adda21616c0821485909f12ee67329b2dfc9890658125b7e3d18f5accc06d264"
+    },
+    {
+      "bytes": 1456,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/LeftOrdinaryB.lean",
+      "sha256": "4b94f9fefdb91288cff657b1d65df327b4d99eee948dab8842e8b8e32d7eb61e"
+    },
+    {
+      "bytes": 1525,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/LeftOrdinaryC.lean",
+      "sha256": "fb8ec389f8dd3c1ed0c8564753e6475fec05f1ff23780ea254eb1cbe92f2bc03"
+    },
+    {
+      "bytes": 1678,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/RightOptions.lean",
+      "sha256": "352b42b4c4cb5d9eb1b5b8ae091f502bf18cc483e9323f1a1469df56d7b13962"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/RightOrdinaryA.lean",
+      "sha256": "bfccd525c02652a80f5eea8d313b762f4e94e7189630ca71743581db4124fcbe"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/RightOrdinaryB.lean",
+      "sha256": "8a8d96602475f4dcf6557192376e3bd4899c76689a815ebb39d5e7cb5fd3d286"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/RightOrdinaryC.lean",
+      "sha256": "251559777e1b273413a05d5b5c0e486875aef398a413e740beffd3edebfbf7cf"
+    },
+    {
+      "bytes": 1197,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/TerminalDisjoint/FirstThird.lean",
+      "sha256": "c5bd34b175317a58401f96d5fe95af624bc8f986232ccecc3e57546bb8555510"
+    },
+    {
+      "bytes": 1193,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/TerminalDisjoint/LastThird.lean",
+      "sha256": "efbe1673153a2c5089e993a700eb8cec751bbd71470b95e25389a5f8d9f6208b"
+    },
+    {
+      "bytes": 1201,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/TerminalDisjoint/MiddleThird.lean",
+      "sha256": "5d8bac6fe5fb681efca4e396742101ca460fe76e50c37026dadb382b32b06510"
+    },
+    {
+      "bytes": 4479,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3.lean",
+      "sha256": "180dc403da00cda96f4aa0e5e0f9f26efa37032b41ee473b3791ec76cc72f990"
+    },
+    {
+      "bytes": 1295,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/Base.lean",
+      "sha256": "f70175a7654a1ce212f363cbc3256360ab2df3fd1e88d9c8335c4cef793be143"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/DistinguishedTriple.lean",
+      "sha256": "93f39fb14bfb9b1bdbc54e47ca8b94e27e5c6210428d2679300d43f5bf89eb34"
+    },
+    {
+      "bytes": 1660,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/LeftOptions.lean",
+      "sha256": "4b0eb9b223b56eb5bc3c223a60941599a07c027bb4b55a86c08bfb6393394eca"
+    },
+    {
+      "bytes": 1318,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/LeftOrdinaryA.lean",
+      "sha256": "015bdd30459b7cd868b5cadba66cf3d639e24056fbb7023bf6c36d32264d00e7"
+    },
+    {
+      "bytes": 1456,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/LeftOrdinaryB.lean",
+      "sha256": "b8d451ccfc672ba4e023bc20dbfad47455489a279359aaad337ff5b0651e6df7"
+    },
+    {
+      "bytes": 1525,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/LeftOrdinaryC.lean",
+      "sha256": "57929174f3c096871bff48f38ea11928b3a6657c551771c1a7dcd924579548a1"
+    },
+    {
+      "bytes": 1678,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/RightOptions.lean",
+      "sha256": "d653a8b2c4b2b32be4783c3b70e89ccf3397b5e290fd63d85c96d0f4de47550e"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/RightOrdinaryA.lean",
+      "sha256": "39de4594cafd4296cb59b78cfb502c11fb14a705ae4f64873fe891c2db7bf0a4"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/RightOrdinaryB.lean",
+      "sha256": "e2bcb53c662741850700627c6db72da085b9e946924762a326dbacd545ab6891"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/RightOrdinaryC.lean",
+      "sha256": "dac9f4a372e3c0682e8d6c83d7c5ee13f2b573c0c5e5fb4d70ce4a124c99b6ff"
+    },
+    {
+      "bytes": 1197,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/TerminalDisjoint/FirstThird.lean",
+      "sha256": "46f2137f630111e0ea316830d39b9ddb6d81287ccc2633683374431d9390a0ac"
+    },
+    {
+      "bytes": 1193,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/TerminalDisjoint/LastThird.lean",
+      "sha256": "2fb23631e1cd1bc2b8c1a70912114d45b633c38e86fbc21e4e9377aa70045db6"
+    },
+    {
+      "bytes": 1201,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/TerminalDisjoint/MiddleThird.lean",
+      "sha256": "00470802af9a29e7da5629952fc810b20177941480b566f818e1e12686d46d9e"
+    },
+    {
+      "bytes": 4479,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4.lean",
+      "sha256": "14b80818983bb49fb0b561354bbfe274d022bc80c45f9e854ac0b3d6fd75b4e8"
+    },
+    {
+      "bytes": 1295,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/Base.lean",
+      "sha256": "080e1ce32a45d3eaf71b5273680b39a420525fcdaf0153a53c8fd84068b2d624"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/DistinguishedTriple.lean",
+      "sha256": "5c8e8bbf1de3f9d12e7231f519b49215ad5a7cfdae870f8bcd096dd0d5e19ca5"
+    },
+    {
+      "bytes": 1660,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/LeftOptions.lean",
+      "sha256": "717337082e5ccb52771304c934c79fbd26978270c3309c7759491aa20111532c"
+    },
+    {
+      "bytes": 1318,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/LeftOrdinaryA.lean",
+      "sha256": "f2db91c0e54f5ad8069a00a9250d1358626e11c0675b0e43c66a4538d5706327"
+    },
+    {
+      "bytes": 1456,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/LeftOrdinaryB.lean",
+      "sha256": "016fdc3952444055e7bfc372b2afa1929b73065704f408f4faeae73bca5e6cf8"
+    },
+    {
+      "bytes": 1525,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/LeftOrdinaryC.lean",
+      "sha256": "057feda3f25a10743d3afb1eb60aadee7abe0d9935de5163e5038d159c041df8"
+    },
+    {
+      "bytes": 1678,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/RightOptions.lean",
+      "sha256": "166be5c56eb2e5fd7b6414bdfb686e62513e3db775793c7d2364784a8ac133d1"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/RightOrdinaryA.lean",
+      "sha256": "cd40f26de5f649ed0a571b1e00a39562c2e63ba7989ccf538740fb13ba8fe27d"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/RightOrdinaryB.lean",
+      "sha256": "11f2ddcb7fb4c3853d63fbd13f6e284ed4f32ced3553d3734534e2e6d9050c5f"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/RightOrdinaryC.lean",
+      "sha256": "a534eb5ebb90d81d586f6f2f20ba3f9d1943c4a889e99d675fb22a6951cc0d01"
+    },
+    {
+      "bytes": 1197,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/TerminalDisjoint/FirstThird.lean",
+      "sha256": "e791fed999f37182d3921c0f6122afe6cbd361a28cb80831b9b6fe1d13755bed"
+    },
+    {
+      "bytes": 1193,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/TerminalDisjoint/LastThird.lean",
+      "sha256": "ad1210b858e0335464a5ae84b56714aa7ef8baba59bfbf1cd0769b53cc18bd64"
+    },
+    {
+      "bytes": 1201,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/TerminalDisjoint/MiddleThird.lean",
+      "sha256": "cbb05c393774f632e99fc2e95af42d613dc8ead1d72b6a028c15fa25f1017b24"
+    },
+    {
+      "bytes": 4479,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5.lean",
+      "sha256": "aaf73c701f73cc973ccf7d967a2946ff3f49ffde9a49a46688de27788d8cfd95"
+    },
+    {
+      "bytes": 1295,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/Base.lean",
+      "sha256": "09f64d3df34b95ac23836dc7691d5b72b1a43d71d0fce2b71c8f7ba0f984513d"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/DistinguishedTriple.lean",
+      "sha256": "674b7d1ae85b19b7f423389abe01f74d5af18fde8b56446da83cb27c6d46495d"
+    },
+    {
+      "bytes": 1660,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/LeftOptions.lean",
+      "sha256": "653e92e4315878e849e37dee0b43a9a4b5b6e96baffc80c64ee7e5f694f376ac"
+    },
+    {
+      "bytes": 1318,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/LeftOrdinaryA.lean",
+      "sha256": "51358b779674b7602a0a9521cb336a3ed1b92e443a29685a714861379b435130"
+    },
+    {
+      "bytes": 1456,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/LeftOrdinaryB.lean",
+      "sha256": "0f52baae082de4487986824c7783ef798df491bef6495a206972895aff6a886a"
+    },
+    {
+      "bytes": 1525,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/LeftOrdinaryC.lean",
+      "sha256": "6d18de6619f920136ef1166e656ba9ceeb1d3862c101a085db95a8187ea0bb34"
+    },
+    {
+      "bytes": 1678,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/RightOptions.lean",
+      "sha256": "8d3803dfbb397432db25c3c954f84d12b956e1a93a2026ad19f06e5c14816b12"
+    },
+    {
+      "bytes": 1485,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/RightOrdinaryA.lean",
+      "sha256": "e2deae7c139fc73a1aa690fbfcaeb8d97314a9abdf66869d182c3aa8346ffd54"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/RightOrdinaryB.lean",
+      "sha256": "5504652d65eae0406be307e4860cbc27ffa71b8a7aad130fc13fe26a70055db0"
+    },
+    {
+      "bytes": 1465,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/RightOrdinaryC.lean",
+      "sha256": "59929767cee4d31641f83e64976812d69d965c957ad6a6e0cdc7918f2f7ddf54"
+    },
+    {
+      "bytes": 1197,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/TerminalDisjoint/FirstThird.lean",
+      "sha256": "3785255c63ac8989a166dfc08f3e3484cb8354b1dbb8f81124c0cef6ed537198"
+    },
+    {
+      "bytes": 1193,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/TerminalDisjoint/LastThird.lean",
+      "sha256": "9454099d18ec4513fd66df9a014f39e13f840f1c234194682bb594a6836e9ffe"
+    },
+    {
+      "bytes": 1201,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/TerminalDisjoint/MiddleThird.lean",
+      "sha256": "5467342b7511ce602622517a1f2810dfaa6bd0daedfed295fd5e393cb63aecd2"
+    },
+    {
+      "bytes": 4479,
+      "path": "PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6.lean",
+      "sha256": "5758066d7a12ded5e8e7b0609a4a07e925f8ba458977123724a2f7239bd306fd"
+    },
+    {
+      "bytes": 143469,
+      "path": "PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre0.lean",
+      "sha256": "4822b12b1ab90fdc0fe5068c40ea341db2f3c64d78794bb9cfad1aafb1a25c80"
+    },
+    {
+      "bytes": 144752,
+      "path": "PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre1.lean",
+      "sha256": "ff49f63e9c24373f60b2d000ed3e2f5253f53a780ad347a1feb56a37d14d4828"
+    },
+    {
+      "bytes": 144629,
+      "path": "PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre2.lean",
+      "sha256": "f3c201d8dcc160a0ffec2ceb184dcfd41536db77f84c95364bbfe78dc0ede598"
+    },
+    {
+      "bytes": 144277,
+      "path": "PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre3.lean",
+      "sha256": "2cc809f9380a188d4487bbd69d13a83b4bb712a56a43ead09527c8482c432ba9"
+    },
+    {
+      "bytes": 144065,
+      "path": "PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre4.lean",
+      "sha256": "6260f54316c27b73d380d4906ecd83bfb71da1d05ee7e45285b829c742d5fd5f"
+    },
+    {
+      "bytes": 144417,
+      "path": "PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre5.lean",
+      "sha256": "88713d3561653167c3a7d2a2e3cbcbbbf45cca216aeeecdd6f898acae0d7dce6"
+    },
+    {
+      "bytes": 144435,
+      "path": "PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre6.lean",
+      "sha256": "f56841d7fb2307f1fb5676f16647bf101b561756abf01495ce0e9d6f4e27407c"
+    }
+  ],
+  "generator": {
+    "bytes": 19868,
+    "path": "generate_weight_ten_reachability.py",
+    "sha256": "73555dca92062bc65595cfd53d561a85c46076dffd2be9af130955344ad19db7"
+  },
+  "ordinary_choices_per_fibre": 6,
+  "schema": "q13-isolated-weight-ten-reachability-v1"
+}

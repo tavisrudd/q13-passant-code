@@ -1,0 +1,1964 @@
+{
+  "excluded_path_count": 0,
+  "excluded_release_outputs": [],
+  "excluded_symlinks": [],
+  "exporter_blob": "7bc6af6a40123bfa071466d9ed3faeaafb7e8d60",
+  "files": [
+    {
+      "bytes": 108,
+      "mode": "100644",
+      "path": ".gitignore",
+      "role": "export-support",
+      "sha256": "8aec252fe1e8e2a04924eeac30581deea8368b151c9e82d6601a1d6393be8b27",
+      "source_blob": null
+    },
+    {
+      "bytes": 935,
+      "mode": "100644",
+      "path": "Makefile",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "507e95ef9c9ecb6271c5fec8fec4aa8de52676fc4be2f4bceba0eb511e06b9f6",
+      "source_blob": "fe31cf7706be914e2f808970441623c7ba18b8ab"
+    },
+    {
+      "bytes": 297,
+      "mode": "100644",
+      "path": "PROVENANCE.md",
+      "role": "provenance",
+      "sha256": "04e53e89dc7ff1def93828766e39e079dbfa4fa02d7781e2751ddddb0cb88878",
+      "source_blob": null
+    },
+    {
+      "bytes": 1435,
+      "mode": "100644",
+      "path": "README.md",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "8956e7053c5e2aa2928d10e662407a30c1de440f2a9a1010e3f49b39a33147fb",
+      "source_blob": "a0b2c98e04f855304cef35b2a870a1d9b6d66593"
+    },
+    {
+      "bytes": 8,
+      "mode": "100644",
+      "path": "lean-certificates/.gitignore",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "5375c2c5e323f40c0031aa8c82f66bb9197214001039e6a8c9ff2a5eb3aa24a9",
+      "source_blob": "4080d07dfc31f2b8ff0a971431e329a34ae3674c"
+    },
+    {
+      "bytes": 3144,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/AssociationAlgebra.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "a3c479aa434545f6a5cbdcb2e770fc2d61f3d024ef13a4aead1f1b48740402b5",
+      "source_blob": "4b9cdbc5a44518b16c7eeffc2c34d4600757b8a6"
+    },
+    {
+      "bytes": 5923,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/AssociationTransport.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "40f1e69613a8ce54e1cef5137b41d605ecb0dd304518140495664da756d95039",
+      "source_blob": "1814b35f77832e83a99532681cf561edb4a138bc"
+    },
+    {
+      "bytes": 6551,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/AssociationTransport/Base.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "dd82cd31429c215552740ac08e410da010d5c8e3401394768d659c260403e997",
+      "source_blob": "1c735461250d491f37561f47a86cd9f5c25bd849"
+    },
+    {
+      "bytes": 2056,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/AssociationTransport/OrbitDihedralA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "e0326eb6ff42256a66bf725901bccf733246ac6e53953e98afa56b68cfadd6da",
+      "source_blob": "03181929ca276613252e4062c13385ee6921c5a5"
+    },
+    {
+      "bytes": 2068,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/AssociationTransport/OrbitDihedralB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "8610f1a7dd1c95bdc6018a47e258fc4899580dd99a481db7bb4f5f75f93d646d",
+      "source_blob": "9a3045fa1c09a215f101ee1d4d52a08e3032ed94"
+    },
+    {
+      "bytes": 2065,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/AssociationTransport/OrbitDihedralC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "0d3aae209c996ccdf51149447b7fd607c346e46f84fa374e75ae23199901b2cd",
+      "source_blob": "713ba33f86727186725c0413a05c3b652e1607eb"
+    },
+    {
+      "bytes": 1997,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/AssociationTransport/OrbitS4.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "67a480ab9de7965dadee2c22cda3555d654ceae1b17967d9528da06673edda91",
+      "source_blob": "f375376019a754e48e069971d03e62f1e9c8555b"
+    },
+    {
+      "bytes": 1113,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/AssociationTransport/RelationSquares.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "849197fa6973514d0d740595876553d2cdcf43ce9a6738f5f4fcf111f6cc703a",
+      "source_blob": "336092f060dd6203a27549e2c0ba09ab9e4a22a9"
+    },
+    {
+      "bytes": 872,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/AssociationTransport/RelationSquares/Nine.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "69e8db21b3e3812261946cd338884f06dd834c0dbdc15231a78fa2a672d4239c",
+      "source_blob": "9423f966c764098677bdb94315605aa6a439bf67"
+    },
+    {
+      "bytes": 1203,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/AssociationTransport/RelationSquares/RhoZero.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "3327558169e114e906e026c2554ceb26b135c162fa74cecd253ef3f936c8df7c",
+      "source_blob": "88fd24e5ebed7ebc16e3b8ca0a1cb1ef56753db4"
+    },
+    {
+      "bytes": 874,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/AssociationTransport/RelationSquares/Ten.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "7d6a7ebc43e65e8645cf56e765a07d11ca27ae30d4caf05efc0d8ea64206ce8b",
+      "source_blob": "e417117f7a83670d975ccf0484c563bb142c385e"
+    },
+    {
+      "bytes": 882,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/AssociationTransport/RelationSquares/Twelve.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "61cdc9cf0b3d1a6c6c00643df6d161490ac16cc30b34bdab619a2b5ebf06384f",
+      "source_blob": "c2eb76a8598be342feef960b9cf020d668ebf8c7"
+    },
+    {
+      "bytes": 2482,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/Automorphisms/Base.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "41d375441796ba2b9e56e53233742a2040f4c19655af56e2a2194fcd282ecc68",
+      "source_blob": "c2ff262e73552621ea495f81bee3995706e2865c"
+    },
+    {
+      "bytes": 596,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/Automorphisms/FourthAnchor.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "3babe2cd2b6fc688f0aa20d9b809222bf7a7138587c787821827b511f6c15979",
+      "source_blob": "a5afcb788afbe3a04f65deef69455fd01ac0c6f5"
+    },
+    {
+      "bytes": 549,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/Automorphisms/Signatures.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "c91b07e56a4b4814aa949756cc85e3ff8fd7b0596a352a36b3b093d95abbf4c2",
+      "source_blob": "d5aa2242a8840a290f79b3c34992da1e018aeb11"
+    },
+    {
+      "bytes": 7030,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/Automorphisms/Transport.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "8bb6a5ea40ed4e85dda6ecdc56f3ca5ff71ce88bfe813684b07db1cb11d6d6c6",
+      "source_blob": "e98d0c64b24c5ba9312f237f2c74d5170790b5d8"
+    },
+    {
+      "bytes": 1878,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/Automorphisms/TripleOrbit.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "6ed6f94c63b8d71a1fc2421a9c65c835ba09ec60a3a213ad1832e4220f5a697b",
+      "source_blob": "1fdf4b65c93369ac502ee8300da82f6263032aee"
+    },
+    {
+      "bytes": 6456,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/Gates/AxiomAudit.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "b34f5bbe8627acc7deae98bc41c72c1e949285995234627581f369dedebb4630",
+      "source_blob": "3ddbc09e92406588e54f24a12c5f58d7e289f18c"
+    },
+    {
+      "bytes": 11150,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/Gates/Main.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "cd8b9a7a1e48fa3ab1e43606d867f426f41c68d8ccd077a4ebf160edf96fdc6b",
+      "source_blob": "2ab79beef006badce25fadbe9fffadc08a87c23f"
+    },
+    {
+      "bytes": 5057,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/Base.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "159262bc445f22d7245601887661a1d455156efc3553122d9fd5ea7c708f2567",
+      "source_blob": "08cc2dac71dad0a71eeb31d71d2916ac3ec77cf4"
+    },
+    {
+      "bytes": 7676,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/Exhaustion.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "d117c2e90deba2d849e4a1a6e90ddf728fcad020bb94b6f056517c007a720006",
+      "source_blob": "c73a2a242faf3ee2185b74096c2eace7e8a9dbe5"
+    },
+    {
+      "bytes": 828,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/OrbitDihedral.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "9d7e728a06c9c3b16a664178348f42f33478b7033c90d6198d7ece4c8c44ad00",
+      "source_blob": "81dd9684b45f100fc58c189b50ca24b9a9215e2c"
+    },
+    {
+      "bytes": 631,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/OrbitDihedralA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "6be5676d61331749d8aee4e42c0286156e2108a73a82c7422b359557dd24c043",
+      "source_blob": "7fd9f80f748909d8ba2138eff564444d013a9177"
+    },
+    {
+      "bytes": 633,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/OrbitDihedralB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "2dabe269c964436a48dd5865ce554b8ea5cf7ccb117858b4ee5a22f745001f2a",
+      "source_blob": "8442eb995ff076a789a572010f686f57ad7033cd"
+    },
+    {
+      "bytes": 631,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/OrbitDihedralC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "14baf57e99057037178b96d7dc10d482f497816c810b0453e937dd9318c7bee2",
+      "source_blob": "d8f2f43cd1ff5914d3b9206d3d052ebd0bb0a3f8"
+    },
+    {
+      "bytes": 776,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/OrbitS4.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "28b546c810d07894fd06a202c753f68efb282933177192239273e33c27c60677",
+      "source_blob": "76e91f92797b15dce21adeab82229cf8516c4d6f"
+    },
+    {
+      "bytes": 3484,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/Reconstruction.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "ee4cb833a5ce76c4c5e301df183f2d16bdecc6c3699a4a7dd9a62ef045af1934",
+      "source_blob": "058087c86e398e993d2d66e5ee506df3e7b7cdaf"
+    },
+    {
+      "bytes": 5421,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/Aggregate.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "407c371d4bf7a93fa2d093d819803a2e87e60e5a4f67f137c6c2d4a4efddbdb6",
+      "source_blob": "497c39d0a69e275d57d007aac9ba6e7a458199e7"
+    },
+    {
+      "bytes": 13960,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/Base.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "9b8aadf31a14f7271831dd3f5437046ec67e9df44696077453f02b5819d0ec97",
+      "source_blob": "6bd26d201822f4c4fa400f8c57f04a34f07ecab2"
+    },
+    {
+      "bytes": 5618,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/ConcurrenceTransport.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "83577d0c119972eb796142ceca3a362c3052097bd16d2895902087e481636488",
+      "source_blob": "3e4b2b0b88e04dbd1e062a8f9c4aed65df72d7fe"
+    },
+    {
+      "bytes": 492,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/DecodeInjective.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "e8d5de969c86c1451634c30a7a149bc113628b2d2c303951de7cfa312d919231",
+      "source_blob": "0068b0884b022d4099d5aa2b62635f08bf28d466"
+    },
+    {
+      "bytes": 423,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/GeometricRows.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "f1e602dcc91985b4e68a1600c4aac53fe479a24426425deb4c8affaa4a01ae41",
+      "source_blob": "c9ea962678d244b23953e33693e6094c552dc92f"
+    },
+    {
+      "bytes": 609,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/PairTransport.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "4c663b2d0d7dfe9482ebe6b9994b42f5e7a5038b155015a36e34b957caa5423e",
+      "source_blob": "5ec039b400a5235e9a2552c9aa5dd0854a340ff5"
+    },
+    {
+      "bytes": 404,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/ResidueFive.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "3d23c31bb2af77cf56a1964156e1010b15a7d6a6e1118a76ee2f421165a80543",
+      "source_blob": "b960461eb59c8e8165416c69b92e557bf2552166"
+    },
+    {
+      "bytes": 404,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/ResidueFour.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "ecc5ea36ef110af0aa6a33f0147b3cdf3d73c58bbbef97f825871af0d16646ad",
+      "source_blob": "efd4da3475b73b5580fdd3fe4b978c915d6558c0"
+    },
+    {
+      "bytes": 402,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/ResidueOne.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "91d9756f72b4979865b86b807ff232443b570840e59592a6f07e01e9aed7d7fc",
+      "source_blob": "0f33fd0fa30d9fa1ecd38e6e9ff39a55af5e8524"
+    },
+    {
+      "bytes": 402,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/ResidueSix.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "d5b3736584c4fcc48827ff70966318dfc815342493648bcd092bee4124dabc32",
+      "source_blob": "866e28004571e8d0b8d3fd163e7378c21b9d91b8"
+    },
+    {
+      "bytes": 406,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/ResidueThree.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "9788a1b98973b0f2035245f24508156478eb3c7d9f0ecd02b4917920113d132e",
+      "source_blob": "d4e9f8f54cb720873a59208f24c0eeda29470914"
+    },
+    {
+      "bytes": 402,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/ResidueTwo.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "5d04e06dcaf280c39221b8f9ff02d00e01a8d93d2ec71ad209784d45e97b2f31",
+      "source_blob": "6c3c8221a701ae7c06ee547a9e7be2a9587d3473"
+    },
+    {
+      "bytes": 404,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/ResidueZero.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "dcf5649c8138c5a271a3278e29e480d9e2bd22321c49ab9f48c10c4f9cfdc0fd",
+      "source_blob": "99ce48b1f2f435eb1d543cbec3c543be4ed77085"
+    },
+    {
+      "bytes": 12857,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/MinimumWords/RowUniqueness/Transport.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "136ede5d2a48a1760d225d04d7531b5c2bf9a4438342c3df84348fbfe3d73033",
+      "source_blob": "8868f79b5740bd0691903dcd05f9a1a1108d0c7e"
+    },
+    {
+      "bytes": 1080,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/Rank.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "16a146917dd3e5168d9700cef2a3dc91cbeb5790ad567715864e7979e25c0c5f",
+      "source_blob": "429b9824716c70d00d95d12bdd0462a348c3c72f"
+    },
+    {
+      "bytes": 2203,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/RankTransportData.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "c90ff8da881611960c875ec3b337cb8d40a92d645ed4d77eb841e3e7dc1668f6",
+      "source_blob": "894bdcbb02db23f4919d92745becb8d514dc4189"
+    },
+    {
+      "bytes": 4359,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/SemanticTransports.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "28ef54a2ded2d4717860613a2f7696f6fd3d2ee4a4037a264bbc68feca6cb3f6",
+      "source_blob": "d9b2dc59b57dbdb63cea0ed39fa094e2d00bd48f"
+    },
+    {
+      "bytes": 5211,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/StructuralUpgrade.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "d96f5b714386a1b47aed6c07fcba67a740affa196e94387a9223c5e6d13c2a41",
+      "source_blob": "2d34eb9ada3794e2271726cb1f83281415a35218"
+    },
+    {
+      "bytes": 3296,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/Aggregate.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "942ff4aaf483b7ee6cf42802bc8a0e2726bdb6a683998356a11e0b766c2e9b3b",
+      "source_blob": "8366626aea96aabbc9208924d1e2d5d1216c19f3"
+    },
+    {
+      "bytes": 6106,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/Base.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "ff70a9bb8bafe97ed4a97ee2b3d2b81789775b5678f65bd47ee3dff5e831fb44",
+      "source_blob": "a82b14ce658cc7effc73d684da5bd5fc7033d8e4"
+    },
+    {
+      "bytes": 11552,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleExclusion.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "b51642e25a0cb4aea93fe29b3aa55116d4d127f519077d2549d4725c3c2db111",
+      "source_blob": "171f167bdf36b506cef8aade813740c478f1cb20"
+    },
+    {
+      "bytes": 2386,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleExclusion/Aggregate.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "2b090f93a8f9badf3841d09615d9861525d7a4f97ffa1a0f91e7e6b512f79bb3",
+      "source_blob": "0bd04545b4d6bbaaaf23bc4cacbadffb84be2a44"
+    },
+    {
+      "bytes": 863,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleExclusion/Residue0.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "c8c5c08c71d7cbec7c99d839e73bff2c3e7430d462e97bdc4c9999b468a35c32",
+      "source_blob": "1f1f0b8a6bf4fcf996474a39e6db75856c66ae14"
+    },
+    {
+      "bytes": 863,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleExclusion/Residue1.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "86b159f3cd13742b5e89e86d9a51b75457af6ffb451ef15852f318ec036ef714",
+      "source_blob": "5aa50d0767b85247e281cb41d20068d00a36d778"
+    },
+    {
+      "bytes": 863,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleExclusion/Residue2.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "c7fec097d2fdb52788091397b6bf25cb650aa1618ba010f551fc5cda2dc7e064",
+      "source_blob": "f325a38b6d1392374c66578f947e107f91b4b265"
+    },
+    {
+      "bytes": 863,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleExclusion/Residue3.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "d4550826700c24af1230c8ca96037486cfc33731b632708da62b0191d9215c4e",
+      "source_blob": "dd124a97bd84eb94623326b8288e21ac55e55f29"
+    },
+    {
+      "bytes": 863,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleExclusion/Residue4.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "87eec811355d29bd095fe3daaddab7f7820745f92a51bef89edf921e9268c580",
+      "source_blob": "fe8c81e6af56550a4853f2ba12777631c3fada10"
+    },
+    {
+      "bytes": 863,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleExclusion/Residue5.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "6fd29a204d07239ed1e7c457fc9e0d9b5e8f009a943a18a1dcaff923a063fa13",
+      "source_blob": "96c0c7aa49c8b7d563414c5b98d75a57bf55d54e"
+    },
+    {
+      "bytes": 863,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleExclusion/Residue6.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "9498826f3111e433fd00b1bbee4692fb6c58a721c089620f98d13598adf58918",
+      "source_blob": "257212c89a9e5c5f79d47437a04f16942586b33e"
+    },
+    {
+      "bytes": 527,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleProfile/Residue0.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "681b0c1dc0a4328a7b0f4fbf136a67c834922d0a83512ca16d49e7eebc7b34d4",
+      "source_blob": "73d6c93b4cf97a8c39a7ec005b9b6b01e0c66121"
+    },
+    {
+      "bytes": 527,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleProfile/Residue1.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "630e724f4ef0d545b2d515d378159e39b603c3a76c2b443e483082fc36ddcbcf",
+      "source_blob": "fcc8a72c4105e76bf117d22b42f9874efbe6de89"
+    },
+    {
+      "bytes": 527,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleProfile/Residue2.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "7970d893e8925c42c3e805142bc89c428bedbc5fc4645f539fa077a2bb0a8025",
+      "source_blob": "9d9cf84038917b837ec5509a98674d93d3cf50db"
+    },
+    {
+      "bytes": 527,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleProfile/Residue3.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "6cb9b7aeea4e60b3c0afcae9acb34c481ecd5c6f593f35b5b03688f5bae37211",
+      "source_blob": "b1bf3e50ce7eef32b9611c3dcfb5d7b298f61ae8"
+    },
+    {
+      "bytes": 527,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleProfile/Residue4.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "96d2979535c47bed11c6963ee20d0415b876c2502a85b03c3f1087f90fc76964",
+      "source_blob": "53a5e5f8544561f6ad385ed26519485427cddabe"
+    },
+    {
+      "bytes": 527,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleProfile/Residue5.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "7d5dae0595b77baa311827055232c87d3c9c10d9f0f5225597467dee5040df05",
+      "source_blob": "1376cc06ae8c41457e0a14616275c9ef72d9fcee"
+    },
+    {
+      "bytes": 527,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/CycleProfile/Residue6.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "ecd0077c24c8892679adddc358fb3fc4c2c41556849db0e6d0c34672c3167d65",
+      "source_blob": "30f6659ab2fa64ec9b8e29daf7c5c9dd62fbdb7d"
+    },
+    {
+      "bytes": 550,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedProfile/Fibre0.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "f77a84d1ef65888d1f8cbce6d9216d61860f00b887d8ad867eb853fbfe11ef27",
+      "source_blob": "124c69c856034a7bb652b904827793ca02752456"
+    },
+    {
+      "bytes": 550,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedProfile/Fibre1.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "af04dbd99526d0e994a592dcf096a68c712424fde49c30208bf91e539a81e3f0",
+      "source_blob": "ffba86e235bf08549698ac8d96b8a4b1cdd3b560"
+    },
+    {
+      "bytes": 550,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedProfile/Fibre2.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "c681a0b1b588bf5f86aaa760ab6a0c61a07ea455f014fe98e736e08f90a21cd2",
+      "source_blob": "0dced8f1ab26bb343b107d3f5487f831ff8489c5"
+    },
+    {
+      "bytes": 550,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedProfile/Fibre3.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "1d419c4df6bc4fdc7472ddbff7bac10f1ba7dea12ffc587d946822bf65ef3c7a",
+      "source_blob": "29224c3f45785c0374f80fc35720d1a038e93099"
+    },
+    {
+      "bytes": 550,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedProfile/Fibre4.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "cb710b062979735f4657080dfa94abe5bc492726b6241bef3b745942f4b61cbe",
+      "source_blob": "3349a91ecaf28643849cca18fe52f41459304988"
+    },
+    {
+      "bytes": 550,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedProfile/Fibre5.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "54148dc3c576370093b68d6476cbd88901815768b14d2484db444a44f8699430",
+      "source_blob": "008319573512ce2e8463c2647a91c8ff59e0a13d"
+    },
+    {
+      "bytes": 550,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedProfile/Fibre6.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "a989d87d9ed8743dd052b7cedd3dce8285f99486a2ec6f8d1cf3f0535643a1e8",
+      "source_blob": "3bd2a1abb0f41cd96bcd691de00721b714bfcc71"
+    },
+    {
+      "bytes": 2294,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Aggregate.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "02b93eede111a6804bb5628add536f362d57d031e0804e2b196f1132a94bdef0",
+      "source_blob": "169c3fd6f7b361e0eaa6c4ac29aa0d8ce8fb4259"
+    },
+    {
+      "bytes": 1040,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/AxiomAudit.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "cf799e59fa4cb77cff0d3bf4721beb15edd908e92706ed186ef7df6eba3829ba",
+      "source_blob": "59b7d522ca3423504768850ff6dd6fff00e11e87"
+    },
+    {
+      "bytes": 4479,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "ad6876c11d45def3d229d82f53254565abc60987fc407a9a939d9474caa33e9c",
+      "source_blob": "1452107fffa94a336be763ed80aa1a2fd1b26199"
+    },
+    {
+      "bytes": 1295,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/Base.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "cbfe88dc13ddb33c2dc180c8d7767f4399877252929cceb6eec1cc3eec10d4e6",
+      "source_blob": "391a5b04b394cdc114e2b9405db548767b889f8c"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/DistinguishedTriple.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "9401bc1f48fb0c56ec7a21296d9042b986a13149893a84a5d88d2d5c2873349f",
+      "source_blob": "ef6549b39aca9cda3bdd3e0462f51da1be27b7da"
+    },
+    {
+      "bytes": 1660,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/LeftOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "f222bf4ea3258a3bdce6a7e166d9aedaaa7256704c27ca7dfcafe917b512844f",
+      "source_blob": "71e85067145ec798cdf6e089c1623abb498ad0ab"
+    },
+    {
+      "bytes": 1318,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/LeftOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "4510210333d617326c901afde8209307a657fd844a63870d50775c6c76e6ccc6",
+      "source_blob": "414e1fb8414510963377575eacbb860c414ba5d4"
+    },
+    {
+      "bytes": 1456,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/LeftOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "896bddbcfc8b8414c984dc7b37c302e66044b783c82bfca732537f12fb7c7786",
+      "source_blob": "06f1f9ad357c1898390ff6893d345d24be05077d"
+    },
+    {
+      "bytes": 1525,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/LeftOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "e5d473cc3d83b04b535e91693f364c59072f379e956c99e49ca2d946009a07cb",
+      "source_blob": "10a16a1e17faa541ab7b2a4b3e4a0a1881f3942c"
+    },
+    {
+      "bytes": 1678,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/RightOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "7933f09004ca387b3851d858a054464ad6f044d91fc1e6d9b3ae8eef9363a7a6",
+      "source_blob": "ad066d417178f546b73e4daa2161dc280cd56f1e"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/RightOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "8edc42a0b811146f5b2981dedd0ffd3ca39de6fd0dcb073683f260fac397b16d",
+      "source_blob": "dfb467e9a28c0e63ab2c453fe0dd7c9a366a9ea4"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/RightOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "a93bdf0db00a671080d9b8b0df9cdf2ee8a3dc313c5cae466bc79397984f1aeb",
+      "source_blob": "4ecd6564a9d4c7c21831111050b9e271a067bd58"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/RightOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "6216f12d2e343d3b868993c0831b89b16e234674e2326e9ee61acad503b13b33",
+      "source_blob": "7593f95d8672d821b6f0d209e530e29258c42e97"
+    },
+    {
+      "bytes": 1197,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/TerminalDisjoint/FirstThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "df59cc7f4f4782127a7ce76d08d6fe1eff64d91013b5252babd6aac23c6d2e56",
+      "source_blob": "9ab12040252dcfd7dcc1a3a3ef55fa83ad47e024"
+    },
+    {
+      "bytes": 1193,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/TerminalDisjoint/LastThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "830fcfac4c2f0c7c1945389b4492b8dc3a57d658c75654a9a131bc87ce3ddab3",
+      "source_blob": "1ccf5ca25da72dcf5893566df96a3bcba6239567"
+    },
+    {
+      "bytes": 1201,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre0/TerminalDisjoint/MiddleThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "564caebb1f586f0f0ff7789da3d3a49e0aa0cde11da1c10176af8234d760a231",
+      "source_blob": "1d14a4b0dc028db821e11f198ae0168c3dd5d1bf"
+    },
+    {
+      "bytes": 4479,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "48db0a43da0066cb7a4f29a62d83fa9343eb468037eeb36119e838067c756058",
+      "source_blob": "d8c5bb982053d17cbae32cfdf8a8c39da03a9c51"
+    },
+    {
+      "bytes": 1295,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/Base.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "6060479ae86a15f3fb57fedec3cf2e5f4ec7d981252325b5ed2a066c7c3f214a",
+      "source_blob": "74f72999e5413d2390905df1a10d98d1b2c4473b"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/DistinguishedTriple.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "d3c9c324970540cd4874a51d57c3f807b08346da93237e49505d30aafe5e0b50",
+      "source_blob": "4eb99b42940a295a317978c3d26aa750db826e57"
+    },
+    {
+      "bytes": 1660,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/LeftOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "0fc3bdbb18d26042c5d04224addac54d3077280fffb8600e84334f702ab3a15a",
+      "source_blob": "e506a0e7c9b0ba1343ca0f65e4775fbbccb4a4cd"
+    },
+    {
+      "bytes": 1318,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/LeftOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "5e54d80c66cbc85630ffc29322e3961d422f91fc1a2476d793902b652dcb383c",
+      "source_blob": "14c4b39bcd5933ad43a1b1350253c817b8f4a908"
+    },
+    {
+      "bytes": 1456,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/LeftOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "177f3c54e7aff1d23a4c795fef6c67c77ae3963bb291f9b6b0f42cc7635151a4",
+      "source_blob": "3303350c6c0c8e66d82cc51b25d39334cb28d5b6"
+    },
+    {
+      "bytes": 1525,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/LeftOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "ee788bf9d36a84b115c7ec7e8ad56f6d015af373ea2f42cac3e0397aec27369a",
+      "source_blob": "3ee42cddbb5d278f721d08f2f2ac82cc4650fdec"
+    },
+    {
+      "bytes": 1678,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/RightOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "806187896559246ea81068bed31249c82dc68ecd2c80fee782813f0b182f646d",
+      "source_blob": "bdbfff4a9d804c44ed86429f40746f61272bcdae"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/RightOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "b0ac322f8d60cfb902f29b8b7a1aef85be5be508c4de3f5b747e60962b2b4f67",
+      "source_blob": "2fec5eb7bf327d818b637f0af27ab784b1cabb6b"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/RightOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "6b8a0f757d8ee767fd8cacafd0231fbb562a94da08472d095efe8a71d335ed13",
+      "source_blob": "430ecee013a10d0c78fac1fe61a4da969fbda7e3"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/RightOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "4e41fc346ae8b1527c76e0ef9cc1435fd32b34920feb2e84f15694d4968d29ba",
+      "source_blob": "90079ce83b35ef42f18ebff733b2b9a81aaa1690"
+    },
+    {
+      "bytes": 1197,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/TerminalDisjoint/FirstThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "6952111e272522d0214a7c621fd4e83da16d9308e71f599f6de018d40fb810c2",
+      "source_blob": "af6c864b672f8ca6cf2bcd8113e1a06b9af1945c"
+    },
+    {
+      "bytes": 1193,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/TerminalDisjoint/LastThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "c6a1bd43d97384c9448bd9e6022733a46091634165ff64b53e621df8d39fe49f",
+      "source_blob": "66f043795b9b02401345d87ba53adb6db4611bd2"
+    },
+    {
+      "bytes": 1201,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre1/TerminalDisjoint/MiddleThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "88f1b6d5016a6e821750c47e3107da6c1c8a41908f4fa5401d2f7ce25db649ee",
+      "source_blob": "f15b5e7a67ef897fa672d25ee2ba2e9d7f781854"
+    },
+    {
+      "bytes": 4479,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "34be5e8a9202456c11899d7e58679c9e3b458d73976e9edd1810165740a12424",
+      "source_blob": "644122dc89a8cffcfdefdc5c1baf1620f986a82c"
+    },
+    {
+      "bytes": 1295,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/Base.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "c46b4b4b57c80ff7acbe9b5583d09db252ae1ce9d79816b0f718571f9f3838be",
+      "source_blob": "66cd9cc6417d9de8a1747d69d0a210e8718b6a6a"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/DistinguishedTriple.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "6cd879beb9f1bd9f3424bbe542e65b073cf75269808c8f47318224805fa439ec",
+      "source_blob": "92151941289620599dd7a5650a04b23f627175a7"
+    },
+    {
+      "bytes": 1660,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/LeftOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "c1930e58e5ee3409af36f8a174ac582e0431e95b1f820b8c8e7838de1e032aed",
+      "source_blob": "7e7601730b22a6bb2b376ed076aae0e815f8d721"
+    },
+    {
+      "bytes": 1318,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/LeftOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "0224fce491adac18e9672ad6e240c8ae507f290c9d29e3a2cd29f77fbfcdc277",
+      "source_blob": "477bcb7ac75912947faa7603b83697ce1be19ad0"
+    },
+    {
+      "bytes": 1456,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/LeftOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "c71621310cd693c77b4fb21c82e25d76e34de4802345ac0d7a87b64d13db54a3",
+      "source_blob": "736bce1b9a76b76d874f3ac3e40cd916941819c8"
+    },
+    {
+      "bytes": 1525,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/LeftOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "5f7dfc7779021e416a37ba74aea808e98e91bb4c42d85d8808e026ff942054e9",
+      "source_blob": "3194c9702b8c3091b4d0dc992a590dc684db7b7b"
+    },
+    {
+      "bytes": 1678,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/RightOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "7b8f50daf4b5d462a347a9c456b96cd004eb44d530bb878f6ddc3cadb96114c4",
+      "source_blob": "8e4885fe6fc658b1e343a9bf1aeaa86453a837ba"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/RightOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "c222ad6a82c75f349788be59921825a9c710d71ce38f81e474f07b427396c7bf",
+      "source_blob": "a5a7119207b7d9f69b24cd1a388147a3f2b6d50a"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/RightOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "f6507706d8a981c2da0402b8870fb0ca53bbb3dfa973f106d0ed2131b3a045b3",
+      "source_blob": "5dc20a430f0d89c1cc078d32da60bedf127f5f7d"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/RightOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "84f6b3adc88ad1bb78018e6b15c4b65af473fcf95117dab43a1afd0f5e7f2ea9",
+      "source_blob": "03dc1b65e07ea93c21fbc5e2563d0ef94735b6c4"
+    },
+    {
+      "bytes": 1197,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/TerminalDisjoint/FirstThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "980c2a0885dc22d185a9b95fb00f51332f1592de243861210d0a277fc9cd040e",
+      "source_blob": "97f144b29c92f21cfac44af0aa83075b85ad87d2"
+    },
+    {
+      "bytes": 1193,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/TerminalDisjoint/LastThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "379b31a740011cbe8858e0ca57557f4d5d200b5066dcee4333c96d2f5b2e9237",
+      "source_blob": "388afa8e34ad4a2c803c1138f516dadd5ba03f09"
+    },
+    {
+      "bytes": 1201,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre2/TerminalDisjoint/MiddleThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "4bdabd0d85d71ade32c90ece1782c285a843d8bd4a049c54d9c8ba53f3dedee4",
+      "source_blob": "41016e567e32cb08d7579d6e47a4391c6f6a1efc"
+    },
+    {
+      "bytes": 4479,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "180dc403da00cda96f4aa0e5e0f9f26efa37032b41ee473b3791ec76cc72f990",
+      "source_blob": "793eb42c76739b709e25dcb66b5b0982f81a4453"
+    },
+    {
+      "bytes": 1295,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/Base.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "f6fcee631ad2eced65eeccd145be5da7a899a38415e0e51471c2254ec0210d6e",
+      "source_blob": "0b2cdd618cc6e2c9a4b7ef238df5db0f2d3b803e"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/DistinguishedTriple.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "addff0a386fb5464267f4c09f8784f4720d4d0c537784864c1b191cb2dc26321",
+      "source_blob": "ff1955ce39d5f13625f9dd39baf1ccaa5cdf8b8d"
+    },
+    {
+      "bytes": 1660,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/LeftOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "0b8ea05082cba85ef20cb46bbbccfee4abc0cea700b41e4737844bb253aa0e21",
+      "source_blob": "f6b582a89d61efe3dad28f0fa54be95962458b73"
+    },
+    {
+      "bytes": 1318,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/LeftOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "adda21616c0821485909f12ee67329b2dfc9890658125b7e3d18f5accc06d264",
+      "source_blob": "329edc289ae3b55ee6194d50efff0d72d54f1a87"
+    },
+    {
+      "bytes": 1456,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/LeftOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "4b94f9fefdb91288cff657b1d65df327b4d99eee948dab8842e8b8e32d7eb61e",
+      "source_blob": "f507997a68ad26f390f17c18c4342b184755e15c"
+    },
+    {
+      "bytes": 1525,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/LeftOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "fb8ec389f8dd3c1ed0c8564753e6475fec05f1ff23780ea254eb1cbe92f2bc03",
+      "source_blob": "af2012e11a4b9a4069154495ca2a95e3f4d40ad6"
+    },
+    {
+      "bytes": 1678,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/RightOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "352b42b4c4cb5d9eb1b5b8ae091f502bf18cc483e9323f1a1469df56d7b13962",
+      "source_blob": "c2cf72b0e78c4c71edc90c4e36d466e2ea99fe81"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/RightOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "bfccd525c02652a80f5eea8d313b762f4e94e7189630ca71743581db4124fcbe",
+      "source_blob": "3bb31bd087dcbdd01cf47c162bf08fa9fdee67cc"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/RightOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "8a8d96602475f4dcf6557192376e3bd4899c76689a815ebb39d5e7cb5fd3d286",
+      "source_blob": "2b948cce5307f5ab88c3ce04817c046439947d40"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/RightOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "251559777e1b273413a05d5b5c0e486875aef398a413e740beffd3edebfbf7cf",
+      "source_blob": "98639323b82739dd90cc9154c8e14e1bc0a32146"
+    },
+    {
+      "bytes": 1197,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/TerminalDisjoint/FirstThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "c5bd34b175317a58401f96d5fe95af624bc8f986232ccecc3e57546bb8555510",
+      "source_blob": "9cad31e77d328a8b078e9d5ce7772edf4e0733f2"
+    },
+    {
+      "bytes": 1193,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/TerminalDisjoint/LastThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "efbe1673153a2c5089e993a700eb8cec751bbd71470b95e25389a5f8d9f6208b",
+      "source_blob": "8ab09b6b515fb32172699cfcf9a1f76d1cace8d6"
+    },
+    {
+      "bytes": 1201,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre3/TerminalDisjoint/MiddleThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "5d8bac6fe5fb681efca4e396742101ca460fe76e50c37026dadb382b32b06510",
+      "source_blob": "6b138e1c925f9970c191ef2ce2e80d34e2f64c5f"
+    },
+    {
+      "bytes": 4479,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "14b80818983bb49fb0b561354bbfe274d022bc80c45f9e854ac0b3d6fd75b4e8",
+      "source_blob": "352fa96ba5b29ba240d6b0ece2a9d6ecd65997dd"
+    },
+    {
+      "bytes": 1295,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/Base.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "f70175a7654a1ce212f363cbc3256360ab2df3fd1e88d9c8335c4cef793be143",
+      "source_blob": "d4dd755f644da9255b56ad28155398b9c8f6ab29"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/DistinguishedTriple.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "93f39fb14bfb9b1bdbc54e47ca8b94e27e5c6210428d2679300d43f5bf89eb34",
+      "source_blob": "1bd1f226348703c36d69cca337871409e5171edf"
+    },
+    {
+      "bytes": 1660,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/LeftOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "4b0eb9b223b56eb5bc3c223a60941599a07c027bb4b55a86c08bfb6393394eca",
+      "source_blob": "15e07fa384aef07cbe73149133f4aeb74f57474a"
+    },
+    {
+      "bytes": 1318,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/LeftOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "015bdd30459b7cd868b5cadba66cf3d639e24056fbb7023bf6c36d32264d00e7",
+      "source_blob": "11beafb3d15e0f37a03ce4b9714bd829f124e557"
+    },
+    {
+      "bytes": 1456,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/LeftOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "b8d451ccfc672ba4e023bc20dbfad47455489a279359aaad337ff5b0651e6df7",
+      "source_blob": "ef56ef5911e580c8d5a154ca2126e0477b7b19c9"
+    },
+    {
+      "bytes": 1525,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/LeftOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "57929174f3c096871bff48f38ea11928b3a6657c551771c1a7dcd924579548a1",
+      "source_blob": "e425d7ce8dd8a3fbe4180274c082c66c9ffcfa18"
+    },
+    {
+      "bytes": 1678,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/RightOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "d653a8b2c4b2b32be4783c3b70e89ccf3397b5e290fd63d85c96d0f4de47550e",
+      "source_blob": "5046f438250367adcd10eabc1195eb2aa303c4aa"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/RightOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "39de4594cafd4296cb59b78cfb502c11fb14a705ae4f64873fe891c2db7bf0a4",
+      "source_blob": "f0d183970fef0611e1b1b3df32ffde0e44ed3e9a"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/RightOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "e2bcb53c662741850700627c6db72da085b9e946924762a326dbacd545ab6891",
+      "source_blob": "fabc6c61cbd80239b7e1a2b73a1c97d11d056835"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/RightOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "dac9f4a372e3c0682e8d6c83d7c5ee13f2b573c0c5e5fb4d70ce4a124c99b6ff",
+      "source_blob": "15a1d31902fa82091e4216b5a03c2433dcc48c57"
+    },
+    {
+      "bytes": 1197,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/TerminalDisjoint/FirstThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "46f2137f630111e0ea316830d39b9ddb6d81287ccc2633683374431d9390a0ac",
+      "source_blob": "d22d62bce235714903512fa36805e359afcba3cf"
+    },
+    {
+      "bytes": 1193,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/TerminalDisjoint/LastThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "2fb23631e1cd1bc2b8c1a70912114d45b633c38e86fbc21e4e9377aa70045db6",
+      "source_blob": "f366330d9259a92e507f5d7ebc2877138e8dda2d"
+    },
+    {
+      "bytes": 1201,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre4/TerminalDisjoint/MiddleThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "00470802af9a29e7da5629952fc810b20177941480b566f818e1e12686d46d9e",
+      "source_blob": "46f9f7c90983dc450a965ca7fb7d03e0e631cb5e"
+    },
+    {
+      "bytes": 4479,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "aaf73c701f73cc973ccf7d967a2946ff3f49ffde9a49a46688de27788d8cfd95",
+      "source_blob": "bf17da041290b336acd4d1744c5f442916743e5c"
+    },
+    {
+      "bytes": 1295,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/Base.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "080e1ce32a45d3eaf71b5273680b39a420525fcdaf0153a53c8fd84068b2d624",
+      "source_blob": "3483e85252af9ce5cbaf3adfc8f5e72c57fc99c0"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/DistinguishedTriple.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "5c8e8bbf1de3f9d12e7231f519b49215ad5a7cfdae870f8bcd096dd0d5e19ca5",
+      "source_blob": "11775e9f030db5e01d38631c2e92678ecdbe8ed7"
+    },
+    {
+      "bytes": 1660,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/LeftOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "717337082e5ccb52771304c934c79fbd26978270c3309c7759491aa20111532c",
+      "source_blob": "dcc3a9a45b7facde340209e46b462aec0a79f7d4"
+    },
+    {
+      "bytes": 1318,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/LeftOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "f2db91c0e54f5ad8069a00a9250d1358626e11c0675b0e43c66a4538d5706327",
+      "source_blob": "5b14e961ba8e2757b42fe4cf99eb4ebebc0c6294"
+    },
+    {
+      "bytes": 1456,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/LeftOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "016fdc3952444055e7bfc372b2afa1929b73065704f408f4faeae73bca5e6cf8",
+      "source_blob": "8f62bb801d4bcc54cc0581d4e614f8fd57b7cd74"
+    },
+    {
+      "bytes": 1525,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/LeftOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "057feda3f25a10743d3afb1eb60aadee7abe0d9935de5163e5038d159c041df8",
+      "source_blob": "2f6b84054b52e88d2b031ff29ceb94891ec5f836"
+    },
+    {
+      "bytes": 1678,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/RightOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "166be5c56eb2e5fd7b6414bdfb686e62513e3db775793c7d2364784a8ac133d1",
+      "source_blob": "871eea433877209c317a36007f7905feb6d41cf4"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/RightOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "cd40f26de5f649ed0a571b1e00a39562c2e63ba7989ccf538740fb13ba8fe27d",
+      "source_blob": "a5b51f43a4fbe43803b0ab85011e1f14169e87a5"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/RightOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "11f2ddcb7fb4c3853d63fbd13f6e284ed4f32ced3553d3734534e2e6d9050c5f",
+      "source_blob": "a5c0f9cb72c637ad428d78c3ec3859d296f12f19"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/RightOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "a534eb5ebb90d81d586f6f2f20ba3f9d1943c4a889e99d675fb22a6951cc0d01",
+      "source_blob": "32bdb5c31a9d2224214dd0de5dbd37f788dfd7d6"
+    },
+    {
+      "bytes": 1197,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/TerminalDisjoint/FirstThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "e791fed999f37182d3921c0f6122afe6cbd361a28cb80831b9b6fe1d13755bed",
+      "source_blob": "999477e340d5fbc18d06b4d14707d12e146ed7d2"
+    },
+    {
+      "bytes": 1193,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/TerminalDisjoint/LastThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "ad1210b858e0335464a5ae84b56714aa7ef8baba59bfbf1cd0769b53cc18bd64",
+      "source_blob": "c17d90f2a0e93b060570fb31fda8df68687629e2"
+    },
+    {
+      "bytes": 1201,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre5/TerminalDisjoint/MiddleThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "cbb05c393774f632e99fc2e95af42d613dc8ead1d72b6a028c15fa25f1017b24",
+      "source_blob": "1adae3bd22aee8743d7817df0005630e58c17528"
+    },
+    {
+      "bytes": 4479,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "5758066d7a12ded5e8e7b0609a4a07e925f8ba458977123724a2f7239bd306fd",
+      "source_blob": "b24a4744aa035547c931c7c1cd00379d4d29981d"
+    },
+    {
+      "bytes": 1295,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/Base.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "09f64d3df34b95ac23836dc7691d5b72b1a43d71d0fce2b71c8f7ba0f984513d",
+      "source_blob": "674c8305f7b0960f70b047f951dd09796673a711"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/DistinguishedTriple.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "674b7d1ae85b19b7f423389abe01f74d5af18fde8b56446da83cb27c6d46495d",
+      "source_blob": "6befb5cfb42f821ecc609264c9fc445079e61a1e"
+    },
+    {
+      "bytes": 1660,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/LeftOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "653e92e4315878e849e37dee0b43a9a4b5b6e96baffc80c64ee7e5f694f376ac",
+      "source_blob": "9a5bb63a0e22fbc04248b42a6eca640a5ebf8fe5"
+    },
+    {
+      "bytes": 1318,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/LeftOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "51358b779674b7602a0a9521cb336a3ed1b92e443a29685a714861379b435130",
+      "source_blob": "2c1c8e464b06cf5ac0674f55b00e882a38cdb652"
+    },
+    {
+      "bytes": 1456,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/LeftOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "0f52baae082de4487986824c7783ef798df491bef6495a206972895aff6a886a",
+      "source_blob": "5408513c5637217318184e56230c3fbed82b2e24"
+    },
+    {
+      "bytes": 1525,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/LeftOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "6d18de6619f920136ef1166e656ba9ceeb1d3862c101a085db95a8187ea0bb34",
+      "source_blob": "1c6ee459cc1ce4712ecf74b741b07e839a1991b5"
+    },
+    {
+      "bytes": 1678,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/RightOptions.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "8d3803dfbb397432db25c3c954f84d12b956e1a93a2026ad19f06e5c14816b12",
+      "source_blob": "57e5f41cb0405b6694ce95538a67f8d0bf97804c"
+    },
+    {
+      "bytes": 1485,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/RightOrdinaryA.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "e2deae7c139fc73a1aa690fbfcaeb8d97314a9abdf66869d182c3aa8346ffd54",
+      "source_blob": "d573cee7fd166c493e44d450d1991d8c4d229d15"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/RightOrdinaryB.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "5504652d65eae0406be307e4860cbc27ffa71b8a7aad130fc13fe26a70055db0",
+      "source_blob": "7e5cd7785dfaa503820611e9feac8d40fa51fbab"
+    },
+    {
+      "bytes": 1465,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/RightOrdinaryC.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "59929767cee4d31641f83e64976812d69d965c957ad6a6e0cdc7918f2f7ddf54",
+      "source_blob": "5978e685ff1303282de3e88583ff6c1613b8cc2e"
+    },
+    {
+      "bytes": 1197,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/TerminalDisjoint/FirstThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "3785255c63ac8989a166dfc08f3e3484cb8354b1dbb8f81124c0cef6ed537198",
+      "source_blob": "ef7414232e204f688a317dff0a0267209b581d18"
+    },
+    {
+      "bytes": 1193,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/TerminalDisjoint/LastThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "9454099d18ec4513fd66df9a014f39e13f840f1c234194682bb594a6836e9ffe",
+      "source_blob": "8961f3474c4bb0e4fd81c78a5abca4c5122d2f5e"
+    },
+    {
+      "bytes": 1201,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/IsolatedReachability/Fibre6/TerminalDisjoint/MiddleThird.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "5467342b7511ce602622517a1f2810dfaa6bd0daedfed295fd5e393cb63aecd2",
+      "source_blob": "1f2da0406e2f0477953d06458b846767884cddb8"
+    },
+    {
+      "bytes": 7419,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/PencilTransport.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "58379e6b48509cbb7e8fecbcd019b70a78752028310162496ec825ff7be9a2ff",
+      "source_blob": "5c09f491d377e2d043948e5c7517048c78765d66"
+    },
+    {
+      "bytes": 10224,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/Reachability.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "061600847e8d8d721182b3aa7e7ea293d9ced6707525e257ec374056818147c9",
+      "source_blob": "2794a6c2608dd73142b71801075ff261f64d6fa9"
+    },
+    {
+      "bytes": 143469,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre0.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "4822b12b1ab90fdc0fe5068c40ea341db2f3c64d78794bb9cfad1aafb1a25c80",
+      "source_blob": "3c9afbf7a477463a0def01d87c2852b1b8eab47b"
+    },
+    {
+      "bytes": 144752,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre1.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "ff49f63e9c24373f60b2d000ed3e2f5253f53a780ad347a1feb56a37d14d4828",
+      "source_blob": "d318ef21de422727542a28f73e82d05c16832806"
+    },
+    {
+      "bytes": 144629,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre2.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "f3c201d8dcc160a0ffec2ceb184dcfd41536db77f84c95364bbfe78dc0ede598",
+      "source_blob": "4af76bc62a639133ccadf948f123305f8f823ed7"
+    },
+    {
+      "bytes": 144277,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre3.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "2cc809f9380a188d4487bbd69d13a83b4bb712a56a43ead09527c8482c432ba9",
+      "source_blob": "d61eb90fd8aac7cebb992e6463733eaf87c01100"
+    },
+    {
+      "bytes": 144065,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre4.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "6260f54316c27b73d380d4906ecd83bfb71da1d05ee7e45285b829c742d5fd5f",
+      "source_blob": "c719b931fc34253222169725202cc0545dbf63ad"
+    },
+    {
+      "bytes": 144417,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre5.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "88713d3561653167c3a7d2a2e3cbcbbbf45cca216aeeecdd6f898acae0d7dce6",
+      "source_blob": "056341af1e3b1004ce305015490dcba210543605"
+    },
+    {
+      "bytes": 144435,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre6.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "f56841d7fb2307f1fb5676f16647bf101b561756abf01495ce0e9d6f4e27407c",
+      "source_blob": "cdf6fc95c0cd0e8a1b0c169556ee895ad97e2e28"
+    },
+    {
+      "bytes": 7400,
+      "mode": "100644",
+      "path": "lean-certificates/PassantCodeQ13/WeightTen/SyndromeBits.lean",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "222a3ef539739996091c1a2977e51147b758861a3ca5cfe8697ca8467037505d",
+      "source_blob": "b56a39e366a62d532a27b0b1f92bb0f148b97580"
+    },
+    {
+      "bytes": 4808,
+      "mode": "100644",
+      "path": "lean-certificates/README.md",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "18ff5f244ca8b9051c2c3f537ec3188d04a17195fb3d801398b3c8dc05a1cd37",
+      "source_blob": "14a6be8df44b6ecdf7e903ce8c9fd4d0b19fc2bd"
+    },
+    {
+      "bytes": 567,
+      "mode": "100644",
+      "path": "lean-certificates/flake.lock",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "d09429301f88f348b7cbe8de2356bf024efa15063585c21c558afb515c3e77f5",
+      "source_blob": "a94690dcf77745bace173d0826ea8cbdf1cd9d34"
+    },
+    {
+      "bytes": 796,
+      "mode": "100644",
+      "path": "lean-certificates/flake.nix",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "19c90879eb88092c019a9e49d4c257275e232a3d8fb031f6a992541a9d58d45c",
+      "source_blob": "68c043a50d257cff8d8c3681964247158e1f4a2b"
+    },
+    {
+      "bytes": 4216,
+      "mode": "100644",
+      "path": "lean-certificates/generate_rank_transport.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "56bc474367cde405b533bd2ac1f64076f67d0e29ba95db9b62958bc04a919d12",
+      "source_blob": "f1279b49ef8b3f293446714d97c00762c14bc741"
+    },
+    {
+      "bytes": 19868,
+      "mode": "100644",
+      "path": "lean-certificates/generate_weight_ten_reachability.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "73555dca92062bc65595cfd53d561a85c46076dffd2be9af130955344ad19db7",
+      "source_blob": "ebba56a1f3b3fcb95ceecb389314edb5f4d303c9"
+    },
+    {
+      "bytes": 3362,
+      "mode": "100644",
+      "path": "lean-certificates/lake-manifest.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "b1812b799e9d05a4e8f8909e87305f7116c26f137f506bde2e3ca59c137925b8",
+      "source_blob": "53937185d911afbb7eeed03a8e95931167409807"
+    },
+    {
+      "bytes": 166,
+      "mode": "100644",
+      "path": "lean-certificates/lakefile.toml",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "97d95cc86bc3b3d40bbae3399df172e9eb5db48fddc58789ff07a643618f2fd1",
+      "source_blob": "e9b70f36d1f4e824e0308f53b58aaf5331976b6a"
+    },
+    {
+      "bytes": 29,
+      "mode": "100644",
+      "path": "lean-certificates/lean-toolchain",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "72681913b978b3f7c2f48229836771f736f6e97d833917726b2263afbc6108ed",
+      "source_blob": "2694eb767c1d5dc7ed415291f32eb95968bd1340"
+    },
+    {
+      "bytes": 22121,
+      "mode": "100644",
+      "path": "lean-certificates/weight_ten_reachability_manifest.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "cdb5300d08c8d491e09fc1d83f581d1a82956350aab9dcf58188af6c3c3a91b0",
+      "source_blob": "6e786c221e2bf30af3580bc5ff877f850f327937"
+    },
+    {
+      "bytes": 121152,
+      "mode": "100644",
+      "path": "passant_code_q13.pdf",
+      "rewrites": [],
+      "role": "release-output",
+      "sha256": "3963091209d7bac109ad5dd7f80100e6a1e74185662c0a49a188602ac8ccfc37",
+      "source_blob": "e5b67cf2481051a81da7d63fa6e68a723ea05fe8"
+    },
+    {
+      "bytes": 35061,
+      "mode": "100644",
+      "path": "passant_code_q13.tex",
+      "rewrites": [],
+      "role": "manuscript-source",
+      "sha256": "e230262195fc441ae5130f862a19cffc30aabcad9cbc6797c2456e9c79c96a63",
+      "source_blob": "2c2154c878336af37db742712939b39c954d9570"
+    },
+    {
+      "bytes": 8982,
+      "mode": "100644",
+      "path": "verification/README.md",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "e66d61c4a4f49b2b3da12ac0fa30a52032de1e4e772c672f2ee74dfab19067ef",
+      "source_blob": "78fb655d367d969036b82b83251c36cf822e10e4"
+    },
+    {
+      "bytes": 5539,
+      "mode": "100644",
+      "path": "verification/ambient_plane.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "5a627bcf94dea6a7e91205016798ac38585312cccd2a9550e33ae43587e414de",
+      "source_blob": "deaddbbc35ca05482c6e7063ce746bb4a0f40d3b"
+    },
+    {
+      "bytes": 26948,
+      "mode": "100644",
+      "path": "verification/check_q13_tangent_code.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "49ff490110856dd0a613c76a83dbfb30df6fc2dbfaee27db5fd597f3c375f36d",
+      "source_blob": "a45ac9359a33a7e59e9fac94be7c592afb98132e"
+    },
+    {
+      "bytes": 6422,
+      "mode": "100644",
+      "path": "verification/claim_map.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "51b139a94f20af07dc2960f18c61e7a184d63a2c7bc3c50e0a3c51164eb8c19c",
+      "source_blob": "cc866815d8b007ce7e59a641ae5e7f1a8f324358"
+    },
+    {
+      "bytes": 11428,
+      "mode": "100644",
+      "path": "verification/evidence_manifest.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "164b08fb7874bee97e022bd8cbe56cc14fd7b188195e4c4d82f6855610b309bc",
+      "source_blob": "80b53e7d46341885d51a4ced922b0499a35597f5"
+    },
+    {
+      "bytes": 7381,
+      "mode": "100644",
+      "path": "verification/generate_weight_ten_profiles.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "aafa51e1d9c595c85de1855b23a341f6a7d1859c029ce0b2cddff6416d5548f1",
+      "source_blob": "ae3ba62d062982caa21a4fbddbcf8e20ba0ee576"
+    },
+    {
+      "bytes": 1923,
+      "mode": "100644",
+      "path": "verification/hidden_field.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "422faf6be041359a6d5d6536b2e0bfb8596db17911402e55cb05899e83910943",
+      "source_blob": "aa4738fe201c36e09561c5bec0dbb7fe895baead"
+    },
+    {
+      "bytes": 8368,
+      "mode": "100644",
+      "path": "verification/minimum_geometry.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "720ac6a0a78fd9c5a9ba17f0289de4956ab14556cecead0ef87f6381f726252c",
+      "source_blob": "d1aa039fb3453deda28e152e5330b7d12312c6a8"
+    },
+    {
+      "bytes": 1645,
+      "mode": "100644",
+      "path": "verification/pair_reconstruction.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "cb9c1da169cef5f23402bb87d28d4f5885ddecb9ae7d92f784803a2d9d8d0ae6",
+      "source_blob": "1782699bd825d78ba3e42dc7186a6d996da6cbc0"
+    },
+    {
+      "bytes": 3367,
+      "mode": "100644",
+      "path": "verification/replay_weight_ten_profiles.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "c7add51ff18bd1b0109b16e0a1e2d5fa85ae94c34e4a245da241e57726277d2f",
+      "source_blob": "2621dd5e0bcf6a5c753e1cbde2fb3df38292da71"
+    },
+    {
+      "bytes": 18754,
+      "mode": "100644",
+      "path": "verification/verify_ambient_plane.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "1478b0e360ec8dbe9021ffb0ea2445f133ecbf36da251921e3bf163bd303788e",
+      "source_blob": "3be8c8fa7c054acaa81d84842b37d05d0add3dcb"
+    },
+    {
+      "bytes": 1289,
+      "mode": "100644",
+      "path": "verification/verify_evidence.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "26ae6b0220416c11aa1e1d3c2e3df364e11f6a69a7c71a95e10043dae0b05082",
+      "source_blob": "a6a5441500a25f8846080149a0e53564f61db7b9"
+    },
+    {
+      "bytes": 14589,
+      "mode": "100644",
+      "path": "verification/verify_hidden_field.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "353d6db53241505281687c382c52cd584acc500a0cbdc328cb93b80f817f14e6",
+      "source_blob": "6824c46fbb59477b0328339def3dd233b3a58ffb"
+    },
+    {
+      "bytes": 27489,
+      "mode": "100644",
+      "path": "verification/verify_minimum_geometry.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "8b4ccfd1d9e978b65aca90e6ccaf55614b60085bacf7ca0aefc9d6a8e9106eca",
+      "source_blob": "2e18e79e23306772ff4d48cdb71470fa5353c8af"
+    },
+    {
+      "bytes": 13388,
+      "mode": "100644",
+      "path": "verification/verify_pair_reconstruction.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "20f3d8050fe801050d85dd41b022f653487a8f39abeb30a4a19710d2eb4ecf5f",
+      "source_blob": "28478f491054e912fca2617c3ddef40fe020b51c"
+    },
+    {
+      "bytes": 11198,
+      "mode": "100644",
+      "path": "verification/verify_weight_eight_theta.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "fa9383a32b864b2ed05915f0ca4198ac889026b56a7be3d00f8d2897b078aac2",
+      "source_blob": "c0ae687e2bdfe037166e3f857b9fde3a1d9fe15e"
+    },
+    {
+      "bytes": 16785,
+      "mode": "100644",
+      "path": "verification/verify_weight_ten_moment.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "6e8fe1d00e54eef378df9f3656003096b7177856a8ee2b828af18e438854b596",
+      "source_blob": "e992bef0850c0b06c5df06764cd6f40edac2633d"
+    },
+    {
+      "bytes": 3679,
+      "mode": "100644",
+      "path": "verification/weight_eight_theta.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "689686d1f0ce3f57ba5e419a28ed44951a648477c42169ed3654cfdf58398eb9",
+      "source_blob": "3c46d15c543a4650a684c51be31f46c90b7cd75b"
+    },
+    {
+      "bytes": 14368,
+      "mode": "100644",
+      "path": "verification/weight_ten_moment.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "dcc16d78f1a8fc9368cb33a9702b5596f04c71df851a27fde1efba14a5b8fa57",
+      "source_blob": "f55bedd21733dbc6fc9f5e9043aab6e1ed00f10e"
+    },
+    {
+      "bytes": 4219,
+      "mode": "100644",
+      "path": "verification/weight_ten_profiles.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "46d71b19e8ef20becb377743d91b13c5ecbdd75a28d413c7a7c189cfc62a4404",
+      "source_blob": "6a81981620066eee659d897462fc966f92a1dc08"
+    }
+  ],
+  "github": "tavisrudd/q13-passant-code",
+  "main_sources": [
+    "passant_code_q13.tex"
+  ],
+  "manifest_self_excluded": true,
+  "paper_ids": [
+    "passant_code_q13"
+  ],
+  "paper_registry_sha256": "5f4582b32c009ec3446aa55f3f34974dd7d2e33ac56c44a346ebf6971cdd4f8c",
+  "release_output_policy": "legacy-unspecified",
+  "repository": "q13-passant-code",
+  "repository_map_sha256": "5a3d85d854d0e92508fd333a31109ab45177ce1d86ef5844901815753126d913",
+  "schema_version": 1,
+  "source_commit": "5c10e1ad3532b661aa27afb4066b165dced1988f"
+}
