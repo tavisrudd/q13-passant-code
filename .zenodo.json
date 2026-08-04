@@ -1,0 +1,35 @@
+{
+  "title": "Minimum-word reconstruction of PG(2,13) from a binary conic code",
+  "description": "Let C be a nonsingular conic in PG(2,13), and form the binary incidence code on its 78 internal points using the 78 passant lines. This preprint proves that the code has parameters [78,36,12]_2 and exactly 364 minimum words. Their weighted pair concurrences alone reconstruct the passant incidence matrix, the code, and the six-class elliptic association scheme. The resulting group action then reconstructs all points and lines of PG(2,13), the distinguished conic, and its polarity; no coordinates or triple concurrence are required. Equivalently, the weighted 2-section of the minimum-support hypergraph is a complete invariant of this marked conic-plane presentation. The four minimum-word families are one octahedral family and three chord-indexed punctured-conic families, and each spans the code. Structurally, the code is 12-dimensional over a canonical operator field F_8; this hidden scalar action explains why every minimum-word family spans. Exact positive-semidefinite and line-moment certificates exclude weights eight and ten, replacing the corresponding subset and syndrome searches.",
+  "creators": [
+    {
+      "name": "Rudd, Tavis",
+      "orcid": "0009-0003-6405-3275",
+      "affiliation": "Independent researcher"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "keywords": [
+    "conic code",
+    "passant lines",
+    "projective plane",
+    "finite geometry",
+    "coding theory",
+    "minimum weight words",
+    "association schemes",
+    "reconstruction",
+    "hidden field",
+    "formalized mathematics"
+  ],
+  "notes": "Correspondence: tavis@damnsimple.com",
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.21650878",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

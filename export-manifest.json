@@ -13,6 +13,24 @@
       "source_blob": null
     },
     {
+      "bytes": 1948,
+      "mode": "100644",
+      "path": ".zenodo.json",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "3313011e7b4863c5e3cfac0bb0edd388e1f70c5a2c4a9b11e46b36c7bc97ec6f",
+      "source_blob": "a3537c9d4dfa886c15ff1c24d3859fe825f29c60"
+    },
+    {
+      "bytes": 470,
+      "mode": "100644",
+      "path": "LICENSE",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "55bd30dbbfb4a62d77bfd74a183e68ac3fa392c12802e0b56ad02613b9248d7c",
+      "source_blob": "48fe1688b86d4e1feef1d929170e74cc8adff356"
+    },
+    {
       "bytes": 935,
       "mode": "100644",
       "path": "Makefile",
@@ -26,7 +44,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "04e53e89dc7ff1def93828766e39e079dbfa4fa02d7781e2751ddddb0cb88878",
+      "sha256": "52517b627ba4ac9d3010e8a964498288d98f0ac17a98ecc4e2866325358610a2",
       "source_blob": null
     },
     {
@@ -1960,5 +1978,5 @@
   "repository": "q13-passant-code",
   "repository_map_sha256": "5a3d85d854d0e92508fd333a31109ab45177ce1d86ef5844901815753126d913",
   "schema_version": 1,
-  "source_commit": "5c10e1ad3532b661aa27afb4066b165dced1988f"
+  "source_commit": "3af3f8665da0cdb8b0fc4754a8f45ba3381607bc"
 }
