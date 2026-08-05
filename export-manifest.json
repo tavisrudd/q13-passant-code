@@ -1,5 +1,5 @@
 {
-  "excluded_path_count": 190,
+  "excluded_path_count": 218,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
   "exporter_blob": "7bc6af6a40123bfa071466d9ed3faeaafb7e8d60",
@@ -31,14 +31,14 @@
       "source_blob": "48fe1688b86d4e1feef1d929170e74cc8adff356"
     },
     {
-      "bytes": 676,
+      "bytes": 1304,
       "mode": "100644",
       "path": "Makefile",
       "rewrites": [
         {
           "expected_count": 1,
-          "new": "all: passant_code_q13.pdf\n\ncheck: evidence passant_code_q13.pdf warnings\n",
-          "old": "all: lint passant_code_q13.pdf\n\ncheck: evidence lean lint passant_code_q13.pdf warnings\n",
+          "new": "all: passant_code_q13.pdf\n\ncheck: evidence manuscript\n",
+          "old": "all: lint passant_code_q13.pdf\n\ncheck: evidence lean lint manuscript\n",
           "reason": "the formal companion and the monorepo-wide TeX lint helper are outside the standalone repository boundary"
         },
         {
@@ -49,8 +49,8 @@
         },
         {
           "expected_count": 1,
-          "new": ".PHONY: all check evidence warnings clean distclean",
-          "old": ".PHONY: all check evidence lean lint warnings clean distclean",
+          "new": ".PHONY: all check evidence manuscript warnings clean distclean",
+          "old": ".PHONY: all check evidence lean lint manuscript warnings clean distclean",
           "reason": "the formal companion and the monorepo-wide TeX lint helper are outside the standalone repository boundary"
         },
         {
@@ -61,15 +61,15 @@
         }
       ],
       "role": "support",
-      "sha256": "f896c6c05ba50f1ad6b04de21f1e9bdd7c5cd4932d7d89b529c4a21961fb0a8e",
-      "source_blob": "fe31cf7706be914e2f808970441623c7ba18b8ab"
+      "sha256": "0bd016c8af65118b44aa27bdea4af0484ad8e26fb3b5e8eba8e78d7a4d9b2507",
+      "source_blob": "cdea18ba386a2c0dc66331fb6ccb97b072ce7693"
     },
     {
       "bytes": 297,
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "cab86c36024f03b4ea24a2b4f490b658c0d33d42d1b8db142e0aa1bddc3eb5c1",
+      "sha256": "558178f9887dffbff141a26e5f18f89c1c2eae45999db8e2312bdc01c465319e",
       "source_blob": null
     },
     {
@@ -82,22 +82,40 @@
       "source_blob": "f9aa57cff73f39b8c6a92752615547c7247f34b5"
     },
     {
-      "bytes": 121150,
+      "bytes": 567,
+      "mode": "100644",
+      "path": "flake.lock",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "9ae203c10f2e27ff1a11363a02ac43747d9766f8f17c975b5d825ed480d120cc",
+      "source_blob": "c06115a1e8e270fb2772ce0ef216d75ab95e492f"
+    },
+    {
+      "bytes": 2629,
+      "mode": "100644",
+      "path": "flake.nix",
+      "rewrites": [],
+      "role": "support",
+      "sha256": "9717287b35144a3e671f9b380b6bbaf4c8ec8da9561f5b2cc41fb2d51948c858",
+      "source_blob": "9d2f79dc11c9c405ea4f25266f03dbeede09245d"
+    },
+    {
+      "bytes": 123862,
       "mode": "100644",
       "path": "passant_code_q13.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "604a0c967a38bb3edb260bdf464abacc1744f087dc637277b2fe4e89df420964",
-      "source_blob": "837c32fd1cc9b92616713d52dac4cdceb811c8e5"
+      "sha256": "482d48764456a9aab9de0487d16a7c0be208b3eea8ab28e4904757e731ef6bf1",
+      "source_blob": "af07749295b92395a0c9a644df68ed466785b0bf"
     },
     {
-      "bytes": 35077,
+      "bytes": 36055,
       "mode": "100644",
       "path": "passant_code_q13.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "7256a94e34a1b4e6c8e4aa6ffa09c549d36d9453174c01eac5eec3ef20dd3158",
-      "source_blob": "d7feeedba5052799b9cb89071c242cd62578e169"
+      "sha256": "7f564ab3e6cee69a9cd5cf03a0af8b0b098dbea1cef7cb02583689f558aad04b",
+      "source_blob": "107a8af2be3d9bc214cedfea8bb50e6de8dc6398"
     },
     {
       "bytes": 9077,
@@ -118,6 +136,15 @@
       "source_blob": "deaddbbc35ca05482c6e7063ce746bb4a0f40d3b"
     },
     {
+      "bytes": 4732,
+      "mode": "100644",
+      "path": "verification/check_manuscript_build.py",
+      "rewrites": [],
+      "role": "verification",
+      "sha256": "3f08f447a8af13f303014965419cd29fe023f072cbe77525ce6b4baf2dff3260",
+      "source_blob": "a225169e0e27f3f079a7cc79fb60d4daeb12ff4a"
+    },
+    {
       "bytes": 26948,
       "mode": "100644",
       "path": "verification/check_q13_tangent_code.py",
@@ -136,13 +163,13 @@
       "source_blob": "cc866815d8b007ce7e59a641ae5e7f1a8f324358"
     },
     {
-      "bytes": 11428,
+      "bytes": 16361,
       "mode": "100644",
       "path": "verification/evidence_manifest.json",
       "rewrites": [],
       "role": "verification",
-      "sha256": "164b08fb7874bee97e022bd8cbe56cc14fd7b188195e4c4d82f6855610b309bc",
-      "source_blob": "80b53e7d46341885d51a4ced922b0499a35597f5"
+      "sha256": "4a6a2650b6a966f2d9d061982b866f8981b20cd31626189ad9436f1a1e48731c",
+      "source_blob": "3929870be00132a1d3ebfbf0e2baebe94293a735"
     },
     {
       "bytes": 7381,
@@ -291,7 +318,7 @@
   "paper_registry_sha256": "5f4582b32c009ec3446aa55f3f34974dd7d2e33ac56c44a346ebf6971cdd4f8c",
   "release_output_policy": "legacy-unspecified",
   "repository": "q13-passant-code",
-  "repository_map_sha256": "cefc87eca06986ec4a613c1b6ff3652e099c8779cfb9dcba178d81bac91ce8dd",
+  "repository_map_sha256": "1bdb09c56a03b75d686d0267263cefe6b18befe52a3bbbc522bbc9b68b74c8ba",
   "schema_version": 1,
-  "source_commit": "8723a2a75db716e50f4cf5070b57957d6ab4444e"
+  "source_commit": "656087c6d9485d7fda773943b5b71e980a1a003c"
 }

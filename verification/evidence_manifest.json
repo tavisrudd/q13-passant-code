@@ -140,8 +140,8 @@
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/StructuralUpgrade.lean",
-      "bytes": 5211,
-      "sha256": "d96f5b714386a1b47aed6c07fcba67a740affa196e94387a9223c5e6d13c2a41",
+      "bytes": 5684,
+      "sha256": "84bc98b8c8ba16de4a29d5973b08bb34630371fad5ec126df19fbf8b2e5ec458",
       "role": "paper-owned pair-only, toric, hidden-cubic, and 183-point plane finite gates"
     },
     {
@@ -152,9 +152,63 @@
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/Gates/AxiomAudit.lean",
-      "bytes": 6456,
-      "sha256": "b34f5bbe8627acc7deae98bc41c72c1e949285995234627581f369dedebb4630",
+      "bytes": 7484,
+      "sha256": "7eeba23079705669981a26ba6b2ebf04e66649d0b95860a05823179697e440c8",
       "role": "tracked axiom audit for all retained and structural aggregate terminals"
+    },
+    {
+      "paper_iv_path": "lean-certificates/generate_association_transport_data.py",
+      "bytes": 7666,
+      "sha256": "e728b57af710ce86fab578bf854f33af7d46614841a807f16faf271a9bd643b1",
+      "role": "deterministic generator and byte-for-byte checker for the elliptic relation row masks and the transposed minimum-word orbit support masks"
+    },
+    {
+      "paper_iv_path": "lean-certificates/PassantCodeQ13/AssociationTransport/RelationData.lean",
+      "bytes": 18927,
+      "sha256": "654002633fb767322c647f255ceb295ea35e423de9d3f376aed47166e3ac168e",
+      "role": "generated row masks of the four elliptic relation matrices and column masks of the four minimum-word orbits"
+    },
+    {
+      "paper_iv_path": "lean-certificates/generate_transporter_data.py",
+      "bytes": 9166,
+      "sha256": "1f6fd28ce7a1fbb23030ff93b0c56f8a498163425234b53cf2ae5d07bf11b187",
+      "role": "deterministic generator and byte-for-byte checker for the point and ordered-pair transporters of the symmetric-square action, refusing to emit unless the action is exhaustively verified transitive on the internal points and on each polar class"
+    },
+    {
+      "paper_iv_path": "lean-certificates/PassantCodeQ13/Equivariance/TransporterData.lean",
+      "bytes": 34286,
+      "sha256": "900423cd00c10b8551ceb70de24bf69eb3e34cdbd96f9d5c85b512bee8dbb399",
+      "role": "generated matrix indices transporting the base internal point to every internal point and each polar-class representative pair to every ordered distinct pair"
+    },
+    {
+      "paper_iv_path": "lean-certificates/generate_minimum_word_orbits.py",
+      "bytes": 5996,
+      "sha256": "c7f816895c4ca4f8b639055088234e816b0b8505207f96b45155c4971a5fb469",
+      "role": "deterministic generator and byte-for-byte checker for the four minimum-word orbit supports"
+    },
+    {
+      "paper_iv_path": "lean-certificates/PassantCodeQ13/MinimumWords/OrbitData.lean",
+      "bytes": 19481,
+      "sha256": "bc3d263f1dc305541e1df60c8901dfba98355dbcf43629d4922a22899d8f8556",
+      "role": "generated supports of the four minimum-word orbits of the normalized projective action"
+    },
+    {
+      "paper_iv_path": "lean-certificates/check_association_transport_statements.py",
+      "bytes": 6869,
+      "sha256": "0d2027aaa50266b78274a6b815ec9a30f81c62743287b560f446bb13b69db094",
+      "role": "independent cross-check that each association-transport statement, read as Lean elaborates it, holds of the committed masks: transpose direction, factor order, and index arity"
+    },
+    {
+      "paper_iv_path": "lean-certificates/generate_weight_ten_reachability.py",
+      "bytes": 19868,
+      "sha256": "73555dca92062bc65595cfd53d561a85c46076dffd2be9af130955344ad19db7",
+      "role": "deterministic generator and byte-for-byte checker for the isolated weight-ten reachability layer certificates and their transition data"
+    },
+    {
+      "paper_iv_path": "lean-certificates/weight_ten_reachability_manifest.json",
+      "bytes": 22121,
+      "sha256": "cdb5300d08c8d491e09fc1d83f581d1a82956350aab9dcf58188af6c3c3a91b0",
+      "role": "hash manifest of the generated isolated weight-ten reachability modules"
     }
   ],
   "commands": [
@@ -217,6 +271,36 @@
       "command": "python3 verify_hidden_field.py --check hidden_field.json",
       "output_contains": "q=13 hidden-field certificate: PASS",
       "certifies": "the compact F8 operator-field theorem and Frobenius Gram scalars hold exactly"
+    },
+    {
+      "cwd": "lean-certificates",
+      "command": "python3 generate_minimum_word_orbits.py --check",
+      "output_contains": "q=13 minimum-word orbit data: PASS",
+      "certifies": "the checked orbit supports are byte-identical to deterministic regeneration from the symmetric-square action of the normalized projective group"
+    },
+    {
+      "cwd": "lean-certificates",
+      "command": "python3 generate_association_transport_data.py --check",
+      "output_contains": "q=13 association transport data: PASS",
+      "certifies": "the checked relation and orbit column masks are byte-identical to deterministic regeneration from the normalized polar invariant and the projective action"
+    },
+    {
+      "cwd": "lean-certificates",
+      "command": "python3 generate_transporter_data.py --check",
+      "output_contains": "q=13 transporter data: PASS",
+      "certifies": "the tracked transporter indices are canonical, each one transports as claimed, and the symmetric-square action is transitive on the internal points and on each polar class"
+    },
+    {
+      "cwd": "lean-certificates",
+      "command": "python3 check_association_transport_statements.py",
+      "output_contains": "q=13 association transport statements: PASS",
+      "certifies": "every association-transport statement holds of the committed masks when the Lean definitions are evaluated independently"
+    },
+    {
+      "cwd": "lean-certificates",
+      "command": "python3 generate_weight_ten_reachability.py --check",
+      "output_contains": "q=13 isolated weight-ten reachability data: PASS",
+      "certifies": "the tracked isolated weight-ten reachability modules are byte-identical to deterministic regeneration from the indexed syndrome semantics"
     }
   ],
   "boundary": "The scripts are exact trusted executions. The old syndrome and clique replays remain independent cross-checks, while the theorem-facing weight-eight and weight-ten claims use the structural theta and moment certificates. Lean checks the generated rank data against the semantic incidence relation and proves incidence-map rank 42 and code dimension 36. The structural Lean packets and remaining human transports are recorded in claim_map.json and the tracked axiom audit."

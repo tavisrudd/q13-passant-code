@@ -34,11 +34,18 @@ from a binary conic code}
 \begingroup
 \makeatletter
 \let\clebschmaintitle\@title
-\def\@title{\large\textsc{The Clebsch cubic program --- IV}\\[0.7em]
+\def\@title{\large\textsc{The Clebsch cubic --- }\textbf{IV}\\[0.7em]
   \LARGE\clebschmaintitle}
 \makeatother
 \maketitle
 \endgroup
+
+\begin{center}
+\small\itshape
+From deep holes, the cubic takes shape, finds its bearings,\\
+stands fixed while its shadows move, \textbf{rebuilds the plane that cast it},\\
+and gathers its shadows home.
+\end{center}
 
 \begin{abstract}
 Let \(\cC\) be a nonsingular conic in \(\PG(2,13)\), and form the binary
@@ -53,8 +60,9 @@ of the minimum-support hypergraph is a complete invariant of this marked
 conic-plane presentation.  The four minimum-word families are one
 octahedral family and three chord-indexed punctured-conic families, and each
 spans the code.  Structurally, the code is \(12\)-dimensional over a canonical
-operator field \(\F_8\); this hidden scalar action explains why every
-minimum-word family spans.  Exact positive-semidefinite and line-moment
+operator field \(\F_8\) --- a form of Madison and Wu's module decomposition ---
+and that scalar action is why every family spans; we mark the scalar and build
+the action from minimum-word pair data.  Exact positive-semidefinite and line-moment
 certificates exclude weights eight and ten, replacing the corresponding
 subset and syndrome searches.
 \end{abstract}
@@ -137,9 +145,16 @@ Droms--Mellinger--Meyer~\cite{DromsMellingerMeyer2006}.  Their general bounds,
 as recorded in the later comparison table of Ma--Liu--Tian
 \cite[Table~1]{MaLiuTian2024}, specialize here to \(8\le d\le12\).
 Madison and Wu proved the general nullity formula
-\((q-1)^2/4\)~\cite[Corollary~6.3]{MadisonWu2012}.  Hollmann and Xiang
-constructed the elliptic association scheme afforded by the same conic
-action~\cite[Sections~3--5]{HollmannXiang2006}.  The identification of
+\((q-1)^2/4\)~\cite[Corollary~6.3]{MadisonWu2012}; their Theorem~6.1(i) splits
+the code over \(\overline{\F_2}\) into three non-isomorphic simple
+twelve-dimensional \(\operatorname{PSL}(2,13)\)-modules.  These form one
+Frobenius orbit, so the \(\F_2\)-form is irreducible of dimension thirty-six
+with endomorphism field \(\F_8\), and spanning by any minimum-word family
+follows.  We add the marking of \(A_9\) among the three conjugates and its
+recovery from pair data.  Hollmann and Xiang constructed the elliptic
+association scheme afforded by the same conic
+action~\cite[Sections~3--5]{HollmannXiang2006}, attributing its first
+description to Hollmann's thesis~\cite{HollmannThesis1982}.  The identification of
 involutions with off-conic points, with involution axis equal to polar line,
 is classical and is stated explicitly by Tranchida
 \cite[Section~2]{Tranchida2024}.  We determine the upper endpoint of the
@@ -806,6 +821,11 @@ S.~V.~Droms, K.~E.~Mellinger, and C.~Meyer,
 \newblock \emph{Designs, Codes and Cryptography} \textbf{40} (2006),
 343--356.
 \newblock doi:10.1007/s10623-006-0022-6.
+
+\bibitem{HollmannThesis1982}
+H.~D.~L.~Hollmann,
+\newblock \emph{Association schemes},
+\newblock Master's thesis, Eindhoven University of Technology (1982).
 
 \bibitem{HollmannXiang2006}
 H.~D.~L.~Hollmann and Q.~Xiang,
