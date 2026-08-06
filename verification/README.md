@@ -83,32 +83,59 @@ The shared Lean library contains these semantic, reusable modules:
 ```text
 RelativeConicArcs/ConicPassantCode.lean
 RelativeConicArcs/PassantCodeQ13/Geometry.lean
+RelativeConicArcs/PassantCodeQ13/PencilIncidence.lean
+RelativeConicArcs/PassantCodeQ13/PencilJoins.lean
 RelativeConicArcs/PassantCodeQ13/Rank.lean
 RelativeConicArcs/PassantCodeQ13/WeightEight.lean
 RelativeConicArcs/PassantCodeQ13/WeightTen.lean
 RelativeConicArcs/PassantCodeQ13/AssociationAlgebra.lean
 RelativeConicArcs/PassantCodeQ13/Reconstruction.lean
 RelativeConicArcs/PassantCodeQ13/StructuralUpgrade.lean
+RelativeConicArcs/PassantCodeQ13/LogicalSpine.lean
 RelativeConicArcs/Gates/PassantCodeQ13.lean
+RelativeConicArcs/Gates/PassantCodeQ13AxiomAudit.lean
 ```
 
-The paper-owned standalone Lake package contains finite leaves partitioned by
-mathematical role rather than build chronology:
+The paper-owned standalone Lake package contains the finite leaves.  Its
+modules are partitioned by mathematical role rather than build chronology, and
+the sharded families below are split so that each shard bounds one elaboration,
+never to record the order in which they were produced.
+
+These modules carry the semantic bridges, the generated data, the aggregate
+terminals, and the leaves that are not sharded:
 
 ```text
-PassantCodeQ13/WeightTen/IsolatedProfile/Fibre0.lean ... Fibre6.lean
-PassantCodeQ13/WeightTen/CycleProfile/Residue0.lean ... Residue6.lean
+PassantCodeQ13/Rank.lean
+PassantCodeQ13/RankTransportData.lean
+PassantCodeQ13/SemanticTransports.lean
+PassantCodeQ13/IndexedIncidenceTable.lean
+PassantCodeQ13/AssociationAlgebra.lean
+PassantCodeQ13/StructuralUpgrade.lean
+PassantCodeQ13/SymmetricSquareInvariance.lean
+PassantCodeQ13/Equivariance/TransporterData.lean
+PassantCodeQ13/WeightTen/Base.lean
+PassantCodeQ13/WeightTen/SyndromeBits.lean
+PassantCodeQ13/WeightTen/PencilTransport.lean
+PassantCodeQ13/WeightTen/Reachability.lean
+PassantCodeQ13/WeightTen/CycleExclusion.lean
 PassantCodeQ13/WeightTen/Aggregate.lean
+PassantCodeQ13/MinimumWords/Base.lean
+PassantCodeQ13/MinimumWords/NormalizedIndexTable.lean
+PassantCodeQ13/MinimumWords/OrbitData.lean
 PassantCodeQ13/MinimumWords/OrbitS4.lean
+PassantCodeQ13/MinimumWords/OrbitDihedralA.lean
+PassantCodeQ13/MinimumWords/OrbitDihedralB.lean
+PassantCodeQ13/MinimumWords/OrbitDihedralC.lean
 PassantCodeQ13/MinimumWords/OrbitDihedral.lean
 PassantCodeQ13/MinimumWords/Exhaustion.lean
+PassantCodeQ13/MinimumWords/ConcurrenceBase.lean
 PassantCodeQ13/MinimumWords/Reconstruction.lean
 PassantCodeQ13/AssociationTransport/Base.lean
-PassantCodeQ13/AssociationTransport/RelationSquares/RhoZero.lean
-PassantCodeQ13/AssociationTransport/RelationSquares/Nine.lean
-PassantCodeQ13/AssociationTransport/RelationSquares/Ten.lean
-PassantCodeQ13/AssociationTransport/RelationSquares/Twelve.lean
+PassantCodeQ13/AssociationTransport/PackedRows.lean
+PassantCodeQ13/AssociationTransport/RelationData.lean
+PassantCodeQ13/AssociationTransport/RelationMasks.lean
 PassantCodeQ13/AssociationTransport/RelationSquares.lean
+PassantCodeQ13/AssociationTransport/RelationCubic.lean
 PassantCodeQ13/AssociationTransport/OrbitS4.lean
 PassantCodeQ13/AssociationTransport/OrbitDihedralA.lean
 PassantCodeQ13/AssociationTransport/OrbitDihedralB.lean
@@ -121,7 +148,36 @@ PassantCodeQ13/Automorphisms/Signatures.lean
 PassantCodeQ13/Automorphisms/Transport.lean
 PassantCodeQ13/Gates/Main.lean
 PassantCodeQ13/Gates/AxiomAudit.lean
-PassantCodeQ13/StructuralUpgrade.lean
+```
+
+The remaining modules form sharded families, each indexed by the mathematical
+partition named in its directory:
+
+```text
+PassantCodeQ13/AssociationTransport/RelationMasks/{RhoZero,Nine,Ten,Twelve}.lean
+    one shard per elliptic relation, identifying its row masks
+PassantCodeQ13/AssociationTransport/RelationSquares/{RhoZero,Nine,Ten,Twelve}.lean
+    one shard per elliptic relation, identifying its squaring identity
+PassantCodeQ13/AssociationTransport/OrbitMasks/{Symmetric,DihedralA,DihedralB,DihedralC}.lean
+    one shard per minimum-word orbit, identifying its column masks
+PassantCodeQ13/MinimumWords/Concurrence/{Row,Pair}Block{One,Two,Three}.lean
+    the concurrence table split into blocks of first points
+PassantCodeQ13/MinimumWords/RowUniqueness/Residue{Zero..Six}.lean
+    one shard per residue of the row-extension argument
+PassantCodeQ13/MinimumWords/RowUniqueness/
+    {Base,GeometricRows,PairTransport,ConcurrenceTransport,Transport,
+     DecodeInjective,Aggregate}.lean
+PassantCodeQ13/WeightTen/IsolatedProfile/Fibre{0..6}.lean
+PassantCodeQ13/WeightTen/CycleProfile/Residue{0..6}.lean
+    one shard per pencil fibre and per cycle residue
+PassantCodeQ13/WeightTen/IsolatedReachability/Fibre{0..6}/*.lean
+    per fibre, the reachability case split over left options, ordinary
+    branches, the distinguished triple, and terminal disjointness
+PassantCodeQ13/WeightTen/CycleExclusion/Residue{0..6}.lean
+PassantCodeQ13/WeightTen/CycleExclusion/Aggregate.lean
+    one shard per cycle residue, with their aggregator
+PassantCodeQ13/WeightTen/ReachabilityData/IsolatedFibre{0..6}.lean
+    the generated reachability tables, one per pencil fibre
 ```
 
 The public aggregate transports its exact 42-column elimination certificate to semantic rank and

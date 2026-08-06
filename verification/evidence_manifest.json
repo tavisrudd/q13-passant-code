@@ -140,14 +140,14 @@
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/StructuralUpgrade.lean",
-      "bytes": 5684,
-      "sha256": "84bc98b8c8ba16de4a29d5973b08bb34630371fad5ec126df19fbf8b2e5ec458",
+      "bytes": 6713,
+      "sha256": "21cb4ee0d57ebc33ce47f68e3a2c1d3028a9c9076ffb6a8fdddda832683f2e23",
       "role": "paper-owned pair-only, toric, hidden-cubic, and 183-point plane finite gates"
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/Gates/Main.lean",
-      "bytes": 11150,
-      "sha256": "cd8b9a7a1e48fa3ab1e43606d867f426f41c68d8ccd077a4ebf160edf96fdc6b",
+      "bytes": 11331,
+      "sha256": "4c90136138a78373104a90bc8b3c71ac704b19499d3ea3cad067cbfcef994f93",
       "role": "paper-owned aggregate theorem terminals for the structural version"
     },
     {
@@ -170,14 +170,14 @@
     },
     {
       "paper_iv_path": "lean-certificates/generate_transporter_data.py",
-      "bytes": 9166,
-      "sha256": "1f6fd28ce7a1fbb23030ff93b0c56f8a498163425234b53cf2ae5d07bf11b187",
+      "bytes": 9462,
+      "sha256": "cdae829ea397645cbc202922bf173c5206f03f87d300ad35776a7d36396299be",
       "role": "deterministic generator and byte-for-byte checker for the point and ordered-pair transporters of the symmetric-square action, refusing to emit unless the action is exhaustively verified transitive on the internal points and on each polar class"
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/Equivariance/TransporterData.lean",
-      "bytes": 34286,
-      "sha256": "900423cd00c10b8551ceb70de24bf69eb3e34cdbd96f9d5c85b512bee8dbb399",
+      "bytes": 34522,
+      "sha256": "03c20be57873a2065df59acb08a0a4e141b92e84c6c6206083968f5fe4191f46",
       "role": "generated matrix indices transporting the base internal point to every internal point and each polar-class representative pair to every ordered distinct pair"
     },
     {
