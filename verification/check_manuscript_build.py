@@ -8,8 +8,8 @@ is made byte-reproducible by pinning ``SOURCE_DATE_EPOCH`` and setting
 otherwise embed. The pinned epoch is a build-normalization constant chosen so
 that repeated builds agree; it is not a claim about when the manuscript was
 written or released. Two builds of one source at different filesystem paths
-produce identical bytes, which is what lets an authority tree and an exported
-mirror carry the same PDF.
+produce identical bytes, which is what lets this repository and a
+standalone copy of it carry the same PDF.
 
 Determinism turns PDF staleness into an exact check. The rebuilt PDF must equal
 the tracked PDF byte for byte, which holds exactly when the tracked PDF is the
