@@ -140,33 +140,33 @@
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/StructuralUpgrade.lean",
-      "bytes": 6713,
-      "sha256": "21cb4ee0d57ebc33ce47f68e3a2c1d3028a9c9076ffb6a8fdddda832683f2e23",
+      "bytes": 10332,
+      "sha256": "91150884f49d3cfa1ec8eecca9dd11f2533fb125fd9bf718e031696bfd3d2fa4",
       "role": "paper-owned pair-only, toric, hidden-cubic, and 183-point plane finite gates"
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/Gates/Main.lean",
-      "bytes": 11331,
-      "sha256": "4c90136138a78373104a90bc8b3c71ac704b19499d3ea3cad067cbfcef994f93",
+      "bytes": 12380,
+      "sha256": "c5c949e303e13a3a02f333829b12804b963547a63ff5a26e5d6a1b08ab0409d4",
       "role": "paper-owned aggregate theorem terminals for the structural version"
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/Gates/AxiomAudit.lean",
-      "bytes": 7484,
-      "sha256": "7eeba23079705669981a26ba6b2ebf04e66649d0b95860a05823179697e440c8",
+      "bytes": 7393,
+      "sha256": "fa8c39d5797cbb194a949e83946afef1594112e1294af15b096c3cc367e9b505",
       "role": "tracked axiom audit for all retained and structural aggregate terminals"
     },
     {
       "paper_iv_path": "lean-certificates/generate_association_transport_data.py",
-      "bytes": 7666,
-      "sha256": "e728b57af710ce86fab578bf854f33af7d46614841a807f16faf271a9bd643b1",
+      "bytes": 7817,
+      "sha256": "9cd485690e63335c2b0b646dda14e28c14ae03539aac6cdb5e59ce7d047a2cb1",
       "role": "deterministic generator and byte-for-byte checker for the elliptic relation row masks and the transposed minimum-word orbit support masks"
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/AssociationTransport/RelationData.lean",
-      "bytes": 18927,
-      "sha256": "654002633fb767322c647f255ceb295ea35e423de9d3f376aed47166e3ac168e",
-      "role": "generated row masks of the four elliptic relation matrices and column masks of the four minimum-word orbits"
+      "bytes": 20991,
+      "sha256": "9d9da8154651a2424642a16ae6a8281510d588b4ad078fed2a8edb92fc9a661b",
+      "role": "generated row masks of five elliptic relation matrices and column masks of the four minimum-word orbits"
     },
     {
       "paper_iv_path": "lean-certificates/generate_transporter_data.py",

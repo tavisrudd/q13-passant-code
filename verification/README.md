@@ -110,6 +110,8 @@ PassantCodeQ13/RankTransportData.lean
 PassantCodeQ13/SemanticTransports.lean
 PassantCodeQ13/IndexedIncidenceTable.lean
 PassantCodeQ13/AssociationAlgebra.lean
+PassantCodeQ13/AssociationAlgebraIdentities.lean
+PassantCodeQ13/PlaneJoin.lean
 PassantCodeQ13/StructuralUpgrade.lean
 PassantCodeQ13/SymmetricSquareInvariance.lean
 PassantCodeQ13/Equivariance/TransporterData.lean
@@ -142,6 +144,7 @@ PassantCodeQ13/AssociationTransport/OrbitDihedralB.lean
 PassantCodeQ13/AssociationTransport/OrbitDihedralC.lean
 PassantCodeQ13/AssociationTransport.lean
 PassantCodeQ13/Automorphisms/Base.lean
+PassantCodeQ13/Automorphisms/AnchorOrbit.lean
 PassantCodeQ13/Automorphisms/TripleOrbit.lean
 PassantCodeQ13/Automorphisms/FourthAnchor.lean
 PassantCodeQ13/Automorphisms/Signatures.lean
@@ -154,22 +157,22 @@ The remaining modules form sharded families, each indexed by the mathematical
 partition named in its directory:
 
 ```text
-PassantCodeQ13/AssociationTransport/RelationMasks/{RhoZero,Nine,Ten,Twelve}.lean
+PassantCodeQ13/AssociationTransport/RelationMasks/{RhoZero,Three,Nine,Ten,Twelve}.lean
     one shard per elliptic relation, identifying its row masks
 PassantCodeQ13/AssociationTransport/RelationSquares/{RhoZero,Nine,Ten,Twelve}.lean
     one shard per elliptic relation, identifying its squaring identity
 PassantCodeQ13/AssociationTransport/OrbitMasks/{Symmetric,DihedralA,DihedralB,DihedralC}.lean
     one shard per minimum-word orbit, identifying its column masks
-PassantCodeQ13/MinimumWords/Concurrence/{Row,Pair}Block{One,Two,Three}.lean
-    the concurrence table split into blocks of first points
-PassantCodeQ13/MinimumWords/RowUniqueness/Residue{Zero..Six}.lean
-    one shard per residue of the row-extension argument
+PassantCodeQ13/MinimumWords/Concurrence/PairBlock{One,Two,Three}.lean
+    the pair concurrence table split into blocks of first points, each
+    block checked in two halves
+PassantCodeQ13/MinimumWords/SupportArc.lean
+    the minimum-word supports are arcs: no three of their points are
+    collinear, proved from the four representatives and the action
 PassantCodeQ13/MinimumWords/RowUniqueness/
-    {Base,GeometricRows,PairTransport,ConcurrenceTransport,Transport,
-     DecodeInjective,Aggregate}.lean
-PassantCodeQ13/WeightTen/IsolatedProfile/Fibre{0..6}.lean
-PassantCodeQ13/WeightTen/CycleProfile/Residue{0..6}.lean
-    one shard per pencil fibre and per cycle residue
+    {Base,GeometricRows,ConcurrenceTransport,PolarGram,
+     PassantJoinInvariant,QuadrupleGram,NormalizedTrace,BitangentSupport,
+     BitangentWitness,Transport,DecodeInjective}.lean
 PassantCodeQ13/WeightTen/IsolatedReachability/Fibre{0..6}/*.lean
     per fibre, the reachability case split over left options, ordinary
     branches, the distinguished triple, and terminal disjointness

@@ -1,5 +1,5 @@
 {
-  "excluded_path_count": 218,
+  "excluded_path_count": 208,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
   "exporter_blob": "7bc6af6a40123bfa071466d9ed3faeaafb7e8d60",
@@ -69,17 +69,17 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "049544162f651a648b9055318d7843222e66b780647eb9146cde3a3c2758655c",
+      "sha256": "8cf51898dd3c231f47bb2c9879cfe8297543e8b61dfbcd149d6c8e074ff7affc",
       "source_blob": null
     },
     {
-      "bytes": 3020,
+      "bytes": 3079,
       "mode": "100644",
       "path": "README.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "6e45b4328db0cd265478bfc7a63f97082fadf6b6822fc1f2e05c1a5973e6c06b",
-      "source_blob": "f9aa57cff73f39b8c6a92752615547c7247f34b5"
+      "sha256": "4f249736ae092033a5b81a3635bcb2a0bbd0982e20d3d54cf137199faf5f4492",
+      "source_blob": "856a54418771b725eed9ef20981c52aa55374c63"
     },
     {
       "bytes": 567,
@@ -118,13 +118,13 @@
       "source_blob": "4c5103ac8fd1e8855d15d94dd8ac299f4d72b393"
     },
     {
-      "bytes": 11874,
+      "bytes": 12009,
       "mode": "100644",
       "path": "verification/README.md",
       "rewrites": [],
       "role": "verification",
-      "sha256": "ade5d5745f820f99a4be48b26ae03e360b6e24144592d2da2f65631c0d8a0fac",
-      "source_blob": "adc303a8e14915f32eae04395db0679cb2f6dcaa"
+      "sha256": "fe8beabf9478a16c386e1a703ebdff7ba86984d79244bd31604b31528e59b9a8",
+      "source_blob": "0322c69cc216ceb6f70322e58c83e79a2798d847"
     },
     {
       "bytes": 5539,
@@ -163,13 +163,13 @@
       "source_blob": "cc866815d8b007ce7e59a641ae5e7f1a8f324358"
     },
     {
-      "bytes": 16361,
+      "bytes": 16358,
       "mode": "100644",
       "path": "verification/evidence_manifest.json",
       "rewrites": [],
       "role": "verification",
-      "sha256": "613e0549be93d503851165f33416eb38e045757fd0fd1bd0feb4a1492eb9078d",
-      "source_blob": "2954878b26adfd258b0d8dc67ba67dd08e1856b0"
+      "sha256": "d7e9b5e25c516ad93b705bf33aa45e5c5369e51cea2d8aab84c6f093f4923f24",
+      "source_blob": "706da245f7d2f18ed0575488aa3009d6ccb2afca"
     },
     {
       "bytes": 7381,
@@ -315,10 +315,10 @@
   "paper_ids": [
     "passant_code_q13"
   ],
-  "paper_registry_sha256": "603ca0770496b2e4fcbdb4cf5db5126a70f5ed52d5f7e1789d70e3fb83c0f21d",
+  "paper_registry_sha256": "425708671b56fda38b8dba3daaf10945ad37c8647dabf4dd5041d7b37205497d",
   "release_output_policy": "legacy-unspecified",
   "repository": "q13-passant-code",
   "repository_map_sha256": "59230e8d90cbd3a647c7577061816d50d5f3d2fa9ffa1a21e9d6da3c5251fba9",
   "schema_version": 1,
-  "source_commit": "8450caa9919558ccac42d15373d6234cbe5078db"
+  "source_commit": "96746f704348442e800307ed0ff23b448d169ad4"
 }
