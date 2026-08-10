@@ -1,6 +1,6 @@
 # Export provenance
 
-- Source snapshot commit: `dbcd3806e6e61491b30d3fce75bf4199b1803d6d`
+- Source snapshot commit: `90f3d7b784ec6654e57111a69030990a53f3c18e`
 - Repository identity: `tavisrudd/q13-passant-code`
 - Export method: deterministic, content-addressed source materialization.
 - File hashes and source blob identities are recorded in `export-manifest.json`.
