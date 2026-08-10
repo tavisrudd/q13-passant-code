@@ -7,6 +7,8 @@
 \usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage{array,booktabs}
 \usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
 \usepackage[hidelinks]{hyperref}
 
 
@@ -34,7 +36,7 @@ from the minimum words of a binary conic code}
 \begingroup
 \makeatletter
 \let\clebschmaintitle\@title
-\def\@title{\large\textsc{The Clebsch cubic --- }\textbf{IV}\\[0.7em]
+\def\@title{\large\textsc{Clebsch: Rigidity from Sparse Shadows --- }\textbf{IV}\\[0.7em]
   \LARGE\clebschmaintitle}
 \makeatother
 \maketitle
@@ -43,8 +45,8 @@ from the minimum words of a binary conic code}
 \begin{center}
 \small\itshape
 From deep holes, the cubic takes shape, finds its bearings,\\
-stands fixed while its shadows move, \textbf{rebuilds the plane that cast it},\\
-and gathers its shadows home.
+stands fixed while its shadows move; \textbf{from minimum words, the plane returns},\\
+and the scattered shadows gather home.
 \end{center}
 
 \begin{abstract}
@@ -194,10 +196,48 @@ layer itself is exhausted at one point, the octahedral construction has one
 bounded matching-profile check, and the recovered group/plane dictionary is
 independently replayed in the complete finite model.
 
-This is the fourth paper in a program on code-theoretic reconstruction around
-the Clebsch cubic.  The first paper begins from the conic code over
-\(\F_{11}\); the present \(q=13\) theorem is logically independent of the
-earlier papers.
+\medskip
+\noindent\textbf{Series perspective.}
+\emph{Clebsch: Rigidity from Sparse Shadows} asks when incomplete invariants
+determine the structures that produced them.  The present paper is the
+parallel lower branch: minimum-word pairs reconstruct a marked conic plane and
+polarity without a cubic identification.  Papers~I--III give three marked
+routes toward a common cubic--operator package; Paper~V will prove their exact
+transports and reverse recognition.  Figure~\ref{fig:series-map} records this
+division.  The present \(q=13\) theorem is logically independent of the other
+papers.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  x=1cm,y=1cm,
+  >=Latex,
+  paper/.style={draw,rounded corners=1.5pt,fill=black!2,
+    align=center,font=\footnotesize,minimum height=8mm,text width=29mm,
+    inner sep=2.5pt},
+  active/.style={paper,very thick,fill=black!12},
+  package/.style={paper,text width=38mm},
+  every edge/.style={draw}
+]
+\node[paper]   (p1) at (0,1.45) {\textbf{I}\\deep-hole syndrome};
+\node[paper]   (p2) at (0,0.35) {\textbf{II}\\quadratic trade};
+\node[paper]   (p3) at (0,-0.75) {\textbf{III}\\arithmetic/operator shadows};
+\node[package] (gold) at (5.25,0.35) {marked cubic and\\golden operator};
+\node[paper]   (p5) at (10.5,0.35) {\textbf{V}\\recognition and return};
+\node[active]  (p4) at (0,-2.05) {\textbf{IV}\\minimum-word pairs};
+\node[package] (plane) at (5.25,-2.05) {marked conic plane\\and polarity};
+
+\draw[dashed,->] (p1.east) -- ([yshift=3mm]gold.west);
+\draw[dashed,->] (p2.east) -- (gold.west);
+\draw[dashed,->] (p3.east) -- ([yshift=-3mm]gold.west);
+\draw[<->,thick] (gold.east) -- (p5.west);
+\draw[->,thick] (p4.east) -- (plane.west);
+\end{tikzpicture}
+\caption{Series map.  Dashed arrows mark the comparisons Paper~V will close;
+its two-way solid arrow marks recognition and return.  The lower solid arrow
+is Paper~IV's independent reconstruction.}
+\label{fig:series-map}
+\end{figure}
 
 The code belongs to the fixed-conic LDPC family introduced by
 Droms--Mellinger--Meyer~\cite{DromsMellingerMeyer2006}.  Their general bounds
@@ -1037,7 +1077,7 @@ in this \(q=13\) instance, the weighted minimum-support \(2\)-section, passant i
 matrix, binary code, elliptic scheme, and marked conic plane are mutually
 recoverable up to the stated isomorphisms.
 
-Within the Clebsch cubic program, this is the endpoint of the reconstruction
+Within \emph{Clebsch: Rigidity from Sparse Shadows}, this is the endpoint of the reconstruction
 theme: a code-theoretic shadow recovers its complete ambient geometry.  The
 argument is nevertheless standalone.  It uses neither the earlier papers nor
 a chosen Clebsch model, and it claims no uniform minimum-distance theorem
