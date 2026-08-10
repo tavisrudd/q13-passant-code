@@ -152,8 +152,8 @@
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/Gates/AxiomAudit.lean",
-      "bytes": 7393,
-      "sha256": "fa8c39d5797cbb194a949e83946afef1594112e1294af15b096c3cc367e9b505",
+      "bytes": 7376,
+      "sha256": "59a4dab98e02df7d9d3d0db48c66d83effbec6579250a53f380c025295ea4642",
       "role": "tracked axiom audit for all retained and structural aggregate terminals"
     },
     {
@@ -182,15 +182,27 @@
     },
     {
       "paper_iv_path": "lean-certificates/generate_minimum_word_orbits.py",
-      "bytes": 5996,
-      "sha256": "c7f816895c4ca4f8b639055088234e816b0b8505207f96b45155c4971a5fb469",
-      "role": "deterministic generator and byte-for-byte checker for the four minimum-word orbit supports"
+      "bytes": 9066,
+      "sha256": "ccccc32ea1f4eeb1e079bcaf52396c22e36f55252482dc2eab3babee98fc0416",
+      "role": "deterministic generator and byte-for-byte checker for the four minimum-word orbit supports, their normalized-matrix-to-orbit-position tables, and the 28 by 78 fixed-point stabilizer action-index table"
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/MinimumWords/OrbitData.lean",
-      "bytes": 19481,
-      "sha256": "bc3d263f1dc305541e1df60c8901dfba98355dbcf43629d4922a22899d8f8556",
-      "role": "generated supports of the four minimum-word orbits of the normalized projective action"
+      "bytes": 64428,
+      "sha256": "7d680dc9288aaa645586dfe590c158b6219d6725354cf1c1ebdb4c5725880ac5",
+      "role": "generated supports of the four minimum-word orbits, the position of every normalized projective matrix image in its displayed orbit, and all internal-point image indices for the fixed-point stabilizer"
+    },
+    {
+      "paper_iv_path": "lean-certificates/generate_fixed_point_exhaustion.py",
+      "bytes": 3206,
+      "sha256": "cb30375262dbdfceaa2e4852b816003c540407bcb775fd04239545a152523338",
+      "role": "deterministic generator and byte-for-byte checker for transparent exact-syndrome classifiers used by the proof-producing fixed-point exhaustion"
+    },
+    {
+      "paper_iv_path": "lean-certificates/PassantCodeQ13/MinimumWords/ExhaustionFiveOneData.lean",
+      "bytes": 111823,
+      "sha256": "7bc773f0b689c6a020c5b9fbb3c020eb7c9058901b3c547501d8ca4ba98a4b8b",
+      "role": "generated balanced exact-syndrome classifier for distinguished-fibre shard zero of the five-one fixed-point profile; Lean checks its behavior on both complete semantic half-domains"
     },
     {
       "paper_iv_path": "lean-certificates/check_association_transport_statements.py",
@@ -276,7 +288,13 @@
       "cwd": "lean-certificates",
       "command": "python3 generate_minimum_word_orbits.py --check",
       "output_contains": "q=13 minimum-word orbit data: PASS",
-      "certifies": "the checked orbit supports are byte-identical to deterministic regeneration from the symmetric-square action of the normalized projective group"
+      "certifies": "the checked orbit supports, matrix-to-orbit-position tables, and fixed-point stabilizer action-index rows are byte-identical to deterministic regeneration from the symmetric-square action of the normalized projective group"
+    },
+    {
+      "cwd": "lean-certificates",
+      "command": "python3 generate_fixed_point_exhaustion.py --check",
+      "output_contains": "q=13 fixed-point exhaustion classifier shard zero: PASS",
+      "certifies": "the transparent balanced classifier for five-one shard zero is byte-identical to deterministic regeneration from the complete semantic left-half syndrome set"
     },
     {
       "cwd": "lean-certificates",
