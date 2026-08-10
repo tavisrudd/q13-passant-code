@@ -152,11 +152,14 @@ as recorded in the later comparison table of Ma--Liu--Tian
 Madison and Wu proved the general nullity formula
 \((q-1)^2/4\)~\cite[Corollary~6.3]{MadisonWu2012}; their Theorem~6.1(i) splits
 the code over \(\overline{\F_2}\) into three non-isomorphic simple
-twelve-dimensional \(\operatorname{PSL}(2,13)\)-modules.  These form one
-Frobenius orbit, so the \(\F_2\)-form is irreducible of dimension thirty-six
-with endomorphism field \(\F_8\), and spanning by any minimum-word family
-follows.  We add the marking of \(A_9\) among the three conjugates and its
-recovery from pair data.  Hollmann and Xiang constructed the elliptic
+twelve-dimensional \(\operatorname{PSL}(2,13)\)-modules.  In
+Section~\ref{sec:hidden-field} we mark them by the eigenvalues
+\(\alpha,\alpha^2,\alpha^4\) of \(A_9\).  Frobenius cycles the three
+constituents, so their binary descent is irreducible; Schur descent then gives
+endomorphism field \(\F_8\).  The unmarked irreducibility already forces any
+nonzero minimum-word orbit to span.  What is new here is the marking of
+\(A_9\) among the three conjugates, its recovery from pair data, and direct
+Gram certificates for each of the four orbits.  Hollmann and Xiang constructed the elliptic
 association scheme afforded by the same conic
 action~\cite[Sections~3--5]{HollmannXiang2006}, attributing its first
 description to Hollmann's thesis~\cite{HollmannThesis1982}.  The identification of
@@ -211,7 +214,8 @@ tangents at \(P\).
 Segre's lemma of tangents in the coordinate-free form of
 Ball--Lavrauw~\cite[Lemma~27]{BallLavrauw2019} gives
 \(h(P,Q,R)=1\) for every triple in the hypothetical support.  Indeed, its
-hypotheses apply to this eight-arc over the odd field \(\F_{13}\), and with
+hypotheses apply with \(t=13+3-1-8=7\); hence the sign
+\((-1)^{t+1}\) is \(+1\).  With
 the cyclic order \(P,Q,R\) its tangent-product quotient is exactly the
 displayed \(h\) (not its negative; reversing the cycle only inverts it).  Fix
 \(P=(1:0:2)\).  Its other seven points would form a clique in the graph on
@@ -287,7 +291,9 @@ If \(v\) is the characteristic vector of a clique of size \(c>0\), then
 \]
 Thus \(c\le5\).  The set
 \(\{A_0,B_6,B_{12},C_1,C_3\}\) is a five-clique, so the bound is sharp.
-Moreover, its fourteen translates are linearly independent kernel vectors;
+For completeness, the exact certificate also classifies the extremal
+five-cliques, although this sharpening is not used to exclude weight eight.
+Its fourteen translates are linearly independent kernel vectors;
 nullity fourteen makes them a basis of \(\ker C\).  Equality in the
 quadratic-form bound puts every maximum-clique vector in this kernel, and
 solving the resulting \(0\)--\(1\) constraints in that basis gives precisely
@@ -444,7 +450,10 @@ are internal.  The set is a codeword for a structural reason.  If a passant
  B^2-4AC=B^2(1-r)
 \]
 would be a square, contrary to the line being passant.  Hence every passant
-meets \(S_r(e)\) in zero or two points.
+meets \(S_r(e)\) in zero or two points.  There is no missing endpoint case:
+a passant contains neither endpoint of the chord \(e=\{0,\infty\}\), so
+\(A,C\ne0\).  Thus neither zero nor infinity is a root, and the displayed
+quadratic accounts for the entire intersection with the punctured conic.
 
 For the remaining family, take the octahedral subgroup
 \(O\cong S_4\) whose conic-point orbits have sizes six and eight.  Let
@@ -465,13 +474,41 @@ For distinct coordinates put
 \[
  c(P,Q)=\#\{S\in\mathcal H:\{P,Q\}\subseteq S\}.
 \]
-The exact pair table is
+For comparison with Hollmann--Xiang, let \(u\) be their cross ratio, modulo
+inversion, and let
+\(\lambda=f(u)=1/4+1/(-2+u+u^{-1})\) be their modified label.  After swapping
+their first two conic coordinates and passing from points to polar lines,
+their Theorem~5.3~\cite{HollmannXiang2006} gives
+\[
+ \lambda=\widehat\rho_{\rm HX}(P^\perp,Q^\perp)=9\rho(P,Q).
+\]
+Thus the source-to-paper dictionary is
 \[
 \begin{array}{c|rrrrrr}
-\rho&0&1&3&9&10&12\\ \hline
-c&8&6&6&12&7&9.
+\{u,u^{-1}\}&\{12,12\}&\{4,10\}&\{3,9\}&\{5,8\}&\{2,7\}&\{6,11\}\\ \hline
+\lambda&0&9&1&3&12&4\\
+\text{paper relation}&A_0&A_1&A_3&A_9&A_{10}&A_{12}.
 \end{array}
 \]
+
+The exact pair table can be audited at one point.  Fix
+\(P=(1:0:2)\); one representative in each relation is displayed below.
+\[
+\begin{array}{c|cccccc}
+\rho&0&1&3&9&10&12\\ \hline
+Q&(1:0:11)&(1:0:5)&(1:0:7)&(1:1:6)&(1:1:7)&(1:2:10)\\
+\text{valency}&7&14&14&14&14&14\\
+c(P,Q)&8&6&6&12&7&9.
+\end{array}
+\]
+Direct counting of the four intrinsic support representatives gives these
+entries; transitivity on every relation transports them to all pairs.  The
+four generated support orbits have size \(91\), are disjoint, and deduplicate
+to all \(364\) minimum supports.  As a global check, the numbers of unordered
+pairs with concurrence \(8,6,12,7,9\) are respectively
+\(273,1092,546,546,546\).  The exact replay is
+\nolinkurl{verification/verify_pair_reconstruction.py}, with compact output
+in \nolinkurl{verification/pair_reconstruction.json}.
 Only the relations \(A_1\) and \(A_3\) are fused.  For a concurrence-six
 pair define
 \[
@@ -505,8 +542,12 @@ The pair data also recovers the code without first naming a row.  Let
 so \(\operatorname{im}P=K\).  Every coordinate occurs in
 \(364\cdot12/78=56\) minimum supports, making unary data constant.  Pair
 data suffices and unary data does not; reconstruction arity is exactly two.
+Here ``recovers'' means the marked code--hypergraph presentation up to
+isomorphism.  It does not choose an ordered projective frame or a labeling of
+the ground field.
 
 \section{The hidden field, spanning, and automorphisms}
+\label{sec:hidden-field}
 
 For internal points \(P=(x_P:y_P:z_P)\) and \(Q\), set
 \[
@@ -522,12 +563,31 @@ On distinct internal points, \(\rho\) takes the six values
 \(A_r\) for their adjacency matrices.  Polarity identifies \(A_0\) with
 \(M\), up to row order.
 
-The needed part of the integral intersection table reduces modulo two to
+For auditability, the needed integral intersection rows are printed here;
+columns are ordered as \(I,A_0,A_1,A_3,A_9,A_{10},A_{12}\):
+\[
+\begin{array}{c|rrrrrrr}
+ &I&A_0&A_1&A_3&A_9&A_{10}&A_{12}\\ \hline
+A_0^2   &7&0&0&0&1&1&1\\
+A_0A_9  &0&2&2&2&0&2&0\\
+A_0A_{10}&0&2&2&0&2&0&2\\
+A_0A_{12}&0&2&0&2&0&2&2\\
+A_9^2   &14&0&4&2&2&1&4\\
+A_{10}^2&14&0&2&4&2&4&1\\
+A_{12}^2&14&4&2&2&3&2&2.
+\end{array}
+\]
+These numbers come from fixing \(P=(1:0:2)\), using the six representatives
+in the preceding table, and counting intermediate internal points.
+Transitivity on each ordered relation makes those seven representative rows
+the full matrix identities.  Reducing modulo two gives
 \begin{equation}
 \label{eq:scheme}
 \begin{split}
  A_0^2&=I+A_9+A_{10}+A_{12},\\
  A_0A_r&=0\quad(r=9,10,12),\\
+ A_1(A_9+A_{10}+A_{12})&=0,\qquad
+ A_3(A_9+A_{10}+A_{12})=0,\\
  A_9^2&=A_{10},\qquad A_{10}^2=A_{12},\qquad A_{12}^2=A_9.
 \end{split}
 \end{equation}
@@ -535,7 +595,22 @@ These are parity reductions of intersection numbers.  The
 \(\PGL(2,13)\)-action is transitive on each relation, so fixing one point and
 substituting one representative of every relation checks all entries.
 
-Put \(B=A_9\).  Since \(A_0B=0\), the image of \(B\) lies in \(K\).  If
+Put \(B=A_9\) and
+\[
+ e_K=I+A_0^2=A_9+A_{10}+A_{12}.
+\]
+The same representative multiplication gives
+\(e_K^2=e_K\), while the two extra parity products in
+\eqref{eq:scheme} give \(A_1e_K=A_3e_K=0\); also
+\(A_0e_K=0\).  Hence \(\operatorname{im}e_K\subseteq K\), while
+\(e_Kx=x\) for every \(x\in K\); consequently \(e_K\) has image \(K\) and
+rank \(36\).  Thus on \(K\), the seven Bose--Mesner basis elements act as
+\[
+ (I,A_0,A_1,A_3,A_9,A_{10},A_{12})
+ =(1,0,0,0,B,B^2,B^4).
+\]
+
+Since \(A_0B=0\), the image of \(B\) lies in \(K\).  If
 \(x\in K\) and \(Bx=0\), then \eqref{eq:scheme} gives
 \[
  0=A_0^2x=(I+B+B^2+B^4)x=x.
@@ -554,7 +629,9 @@ If \(\alpha\) is a root of \(t^3+t^2+1\), then
 The identification of a named \(\alpha\) is canonical up to Frobenius.
 \end{proposition}
 
-Indeed, exact elimination gives \(\operatorname{rank}(B+I)=78\).  Restricting
+Indeed, exact elimination gives \(\operatorname{rank}(B+I)=78\).  The replay
+\nolinkurl{verification/verify_hidden_field.py} records independent bitset and
+dense eliminations in \nolinkurl{verification/hidden_field.json}.  Restricting
 the first identity in \eqref{eq:scheme} to \(K\) and factoring
 \[
  1+t+t^2+t^4=(t+1)(t^3+t^2+1)
@@ -562,11 +639,50 @@ the first identity in \eqref{eq:scheme} to \(K\) and factoring
 therefore gives \(B^3+B^2+I=0\).  The cubic has no root in \(\F_2\), so it
 is irreducible and makes \(K\) a vector space of dimension \(36/3=12\) over
 \(\F_8\).  The squaring identities in \eqref{eq:scheme} give the three
-displayed scalar operators.  This is an operator-field structure on the
+displayed scalar operators.  Together with the displayed action of all seven
+basis elements, this proves that the image of the whole binary Bose--Mesner
+algebra is exactly \(\F_2[B]\cong\F_8\).  This is an operator-field structure on the
 binary code, not a relabeling as a length-26 code over \(\F_8\).
 
+For completeness, here is the descent behind the module statement used in
+the introduction.  By Madison--Wu~\cite[Theorem~6.1(i)]{MadisonWu2012}, over
+\(\overline{\F_2}\) the code is the direct sum of three non-isomorphic simple
+constituents of dimension twelve.  Independently, the three distinct roots of
+the minimal polynomial of \(B\) give three \(G\)-stable eigenspaces, each of
+dimension twelve, so these are precisely the Madison--Wu constituents.
+Frobenius cycles them transitively.  A binary
+\(\operatorname{PSL}(2,13)\)-submodule becomes, after scalar extension, a
+Frobenius-stable sum of a subset of these three non-isomorphic simples; the
+only such subsets are empty and full.  Hence \(K\) is irreducible over
+\(\F_2\).  The constituents are absolutely simple and multiplicity-free, so
+endomorphism base change and Schur's lemma give
+\[
+ \operatorname{End}_{\F_2\operatorname{PSL}(2,13)}(K)
+ \otimes_{\F_2}\overline{\F_2}\cong\overline{\F_2}^{,3};
+\]
+the binary commutant therefore has dimension three over \(\F_2\).
+This commutant contains \(\F_2[B]\), so it equals \(\F_8\).  Since \(B\)
+also commutes with \(\operatorname{PGL}(2,13)\), inclusion of commutants gives
+\[
+ \operatorname{End}_{\F_2\operatorname{PSL}(2,13)}(K)
+ =\operatorname{End}_{\F_2\operatorname{PGL}(2,13)}(K)=\F_8.
+\]
+
 If \(N_i\) is the 91-by-78 support matrix of the \(i\)-th minimum-word
-orbit, direct pair counting in one intrinsic representative gives
+orbit, every point lies on fourteen supports in that orbit.  For one fixed
+point, the off-diagonal concurrence counts on
+\(A_0,A_1,A_3,A_9,A_{10},A_{12}\) are
+\[
+\begin{array}{c|rrrrrr}
+N_1&0&2&2&5&0&2\\
+N_2&0&2&2&3&2&2\\
+N_3&4&2&0&2&4&1\\
+N_4&4&0&2&2&1&4.
+\end{array}
+\]
+Each row is obtained from one intrinsic support representative and transported
+by transitivity of its 91-element orbit.  Reducing these counts and the
+diagonal count fourteen modulo two gives
 \[
  (N_1^{\mathsf T}N_1,N_2^{\mathsf T}N_2,
    N_3^{\mathsf T}N_3,N_4^{\mathsf T}N_4)
@@ -640,13 +756,16 @@ Let \(\mathcal I\) be the set of \(169\) involutions of \(G\), and put
 \item \(U\in U^\perp\) for \(U\in\Omega\), with no other
   \(\Omega\)--\(\Omega\) incidences;
 \item \(U\in j^\perp\) for \(U\in\Omega\), \(j\in\mathcal I\), exactly
-  when \(j\) normalizes \(U\);
+  when \(j\) normalizes \(U\), and symmetrically declare \(j\in U^\perp\);
 \item \(i\in j^\perp\) for distinct \(i,j\in\mathcal I\) exactly when
   \(ij\) is an involution.
 \end{enumerate}
 
-These rules are the trace polarity on the adjoint module.  Identify the
-standard plane with \(\mathbf P(\mathfrak{sl}_2(\F_{13}))\).  For traceless
+These rules were defined intrinsically, before coordinates.  Choose any
+isomorphism \(G\to\PGL(2,13)\) and transport them to the standard adjoint
+model; changing this choice merely composes the recovered plane with an
+automorphism and selects no preferred frame.  Identify the standard plane
+with \(\mathbf P(\mathfrak{sl}_2(\F_{13}))\).  For traceless
 \(A\), Cayley--Hamilton gives \(A^2=-\det(A)I\).  The fourteen singular
 matrix lines are the nilpotent conic and correspond to the Sylow subgroups;
 the nonsingular lines correspond bijectively to projective involutions.
@@ -661,9 +780,13 @@ equivalent to their product being an involution.  The three intrinsic rules
 therefore recover \(\PG(2,13)\), its conic \(\Omega\), and its polarity.
 
 The \(78\) original coordinates are also intrinsic inside this plane.  A
-coordinate stabilizer is a nonsplit-torus normalizer \(D_{28}\); its unique
-central involution identifies the coordinate with the involution class of
-centralizer order \(28\).  The other involution class has size \(91\).
+coordinate stabilizer is a nonsplit-torus normalizer \(D_{28}\).  Its unique
+central involution has centralizer containing this \(D_{28}\); the
+centralizer also has order \(28\), so the two groups are equal.  The resulting
+equivariant map identifies the two coset \(G\)-sets and is therefore a
+bijection from the 78 coordinates to the involution class of centralizer
+order \(28\).  The other involution class
+has size \(91\).
 Consequently the old matrix \(M\) is exactly the internal--internal block of
 the recovered polarity matrix.  Since Section~3 reconstructed \(G\) and
 \(M\) from weighted pairs alone, the whole marked plane is reconstructed at
@@ -720,7 +843,8 @@ dimension \(36\)
   prove rank \(42\) at \(q=13\).\\
 weight \(8\)
 & human/classical reduction; exact PSD certificate; Lean implication
-& Segre's lemma gives the 42-vertex graph.  Exact Fourier traces and rational
+& Segre's lemma gives \(h=1\); the saturated pencils and three cyclic
+  14-orbits give the 42-vertex graph.  Exact Fourier traces and rational
   Schur elimination certify the rank-28 form; Lean proves the quadratic-form
   clique implication.\\
 weight \(10\)
