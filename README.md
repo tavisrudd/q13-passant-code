@@ -1,4 +1,4 @@
-# Minimum-word reconstruction of PG(2,13) from a binary conic code
+# Reconstructing PG(2,13), its conic, and polarity from the minimum words of a binary conic code
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21783971-blue.svg)](https://doi.org/10.5281/zenodo.21783971)
 

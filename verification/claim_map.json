@@ -1,5 +1,5 @@
 {
-  "paper": "Minimum-word reconstruction of PG(2,13) from a binary conic code",
+  "paper": "Reconstructing PG(2,13), its conic, and polarity from the minimum words of a binary conic code",
   "schema": "paper-iv-structural-claim-map-v2",
   "status": "structural-human-proof-with-exact-evidence-and-partial-lean-mirror",
   "claims": [
