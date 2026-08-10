@@ -16,11 +16,11 @@ this marked conic-plane presentation.
 
 The four minimum-word families are one octahedral family and three
 chord-indexed punctured-conic families, and each one spans the code.
-Structurally the code is 12-dimensional over a canonical operator field F_8,
-and that hidden scalar action is what explains why every minimum-word family
-spans.  Exact positive-semidefinite and line-moment certificates exclude
-weights eight and ten, replacing the corresponding subset and syndrome
-searches.
+Structurally the code is 12-dimensional over a canonical operator field F_8.
+The marked scalar action is recovered from pair data, and the orbit-Gram
+operators give direct certificates that every minimum-word family spans.
+Exact positive-semidefinite and line-moment certificates exclude weights
+eight and ten, replacing the corresponding subset and syndrome searches.
 
 The theorem is a standalone coding result, developed from the computational
 companion of *Reconstructing the Clebsch code and its golden orientation from

@@ -7,6 +7,7 @@
 \usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage{array,booktabs}
 \usepackage{enumitem}
+\usepackage{needspace}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
 \usepackage[hidelinks]{hyperref}
@@ -36,7 +37,8 @@ from the minimum words of a binary conic code}
 \begingroup
 \makeatletter
 \let\clebschmaintitle\@title
-\def\@title{\large\textsc{Clebsch: Rigidity from Sparse Shadows --- }\textbf{IV}\\[0.7em]
+\def\@title{\par\vspace*{12mm}\noindent
+  \large\textsc{Clebsch: Rigidity from Sparse Shadows --- }\textbf{IV}\\[0.7em]
   \LARGE\clebschmaintitle}
 \makeatother
 \maketitle
@@ -44,8 +46,8 @@ from the minimum words of a binary conic code}
 
 \begin{center}
 \small\itshape
-From deep holes, the cubic takes shape, finds its bearings,\\
-stands fixed while its shadows move; \textbf{from minimum words, the plane returns},\\
+From deep holes, a cubic takes shape; its companion finds its bearings,\\
+the carrier stands fixed while their shadows move; \textbf{from minimum words, the plane returns},\\
 and the scattered shadows gather home.
 \end{center}
 
@@ -85,6 +87,51 @@ does not explain the geometry of the first codewords.  The code studied here
 behaves in the opposite way: the weighted pairs inside its minimum supports
 recover not only the parity checks but the full projective plane in which
 they arose.
+
+\Needspace{27\baselineskip}
+\medskip
+\noindent\textbf{Series perspective.}
+\emph{Clebsch: Rigidity from Sparse Shadows} asks when incomplete invariants
+determine the structures that produced them.  The present paper is the
+parallel lower branch: minimum-word pairs reconstruct a marked conic plane and
+polarity without a cubic identification.  Papers~I and III reconstruct
+marked conference companions, whereas Paper~II reconstructs a signed chordal
+companion.  Paper~V proves that they lie in one invariant pencil, recover the
+same six-axis carrier, and admit an exact oriented transport relative to a
+selected chordal line \cite{RuddCompanion2026}.  Figure~\ref{fig:series-map}
+records this division.  The present \(q=13\) theorem is logically independent
+of the other papers.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  x=1cm,y=1cm,
+  >=Latex,
+  paper/.style={draw,rounded corners=1.5pt,fill=black!2,
+    align=center,font=\footnotesize,minimum height=8mm,text width=29mm,
+    inner sep=2.5pt},
+  active/.style={paper,very thick,fill=black!12},
+  package/.style={paper,text width=38mm},
+  every edge/.style={draw}
+]
+\node[paper]   (p1) at (0,1.45) {\textbf{I}\\conference companion};
+\node[paper]   (p2) at (0,0.35) {\textbf{II}\\chordal companion};
+\node[paper]   (p3) at (0,-0.75) {\textbf{III}\\conference companion};
+\node[paper]   (p5) at (5.25,0.35) {\textbf{V}\\marked companion correspondence};
+\node[package] (gold) at (10.5,0.35) {one six-axis carrier\\conference \(+\) chordal};
+\node[active]  (p4) at (0,-2.05) {\textbf{IV}\\minimum-word pairs};
+\node[package] (plane) at (5.25,-2.05) {marked conic plane\\and polarity};
+\draw[<->] (p1.east) -- ([yshift=3mm]p5.west);
+\draw[<->] (p2.east) -- (p5.west);
+\draw[<->] (p3.east) -- ([yshift=-3mm]p5.west);
+\draw[->,thick] (p5.east) -- (gold.west);
+\draw[->,thick] (p4.east) -- (plane.west);
+\end{tikzpicture}
+\caption{Series map.  Upper double arrows are the marked transports and
+returns proved in Paper~V; its right arrow is the common-carrier theorem.
+The lower solid arrow is Paper~IV's independent reconstruction.}
+\label{fig:series-map}
+\end{figure}
 
 Fix a nonsingular conic \(\cC\subset\PG(2,13)\).  A line is
 \emph{passant} when it is disjoint from \(\cC(\F_{13})\).  Conic polarity
@@ -195,49 +242,6 @@ stabilizer orbits and thirty-three point-stabilizer orbits.  The minimum
 layer itself is exhausted at one point, the octahedral construction has one
 bounded matching-profile check, and the recovered group/plane dictionary is
 independently replayed in the complete finite model.
-
-\medskip
-\noindent\textbf{Series perspective.}
-\emph{Clebsch: Rigidity from Sparse Shadows} asks when incomplete invariants
-determine the structures that produced them.  The present paper is the
-parallel lower branch: minimum-word pairs reconstruct a marked conic plane and
-polarity without a cubic identification.  Papers~I--III give three marked
-routes toward a common cubic--operator package; Paper~V will prove their exact
-transports and reverse recognition.  Figure~\ref{fig:series-map} records this
-division.  The present \(q=13\) theorem is logically independent of the other
-papers.
-
-\begin{figure}[ht]
-\centering
-\begin{tikzpicture}[
-  x=1cm,y=1cm,
-  >=Latex,
-  paper/.style={draw,rounded corners=1.5pt,fill=black!2,
-    align=center,font=\footnotesize,minimum height=8mm,text width=29mm,
-    inner sep=2.5pt},
-  active/.style={paper,very thick,fill=black!12},
-  package/.style={paper,text width=38mm},
-  every edge/.style={draw}
-]
-\node[paper]   (p1) at (0,1.45) {\textbf{I}\\deep-hole syndrome};
-\node[paper]   (p2) at (0,0.35) {\textbf{II}\\quadratic trade};
-\node[paper]   (p3) at (0,-0.75) {\textbf{III}\\arithmetic/operator shadows};
-\node[package] (gold) at (5.25,0.35) {marked cubic and\\golden operator};
-\node[paper]   (p5) at (10.5,0.35) {\textbf{V}\\recognition and return};
-\node[active]  (p4) at (0,-2.05) {\textbf{IV}\\minimum-word pairs};
-\node[package] (plane) at (5.25,-2.05) {marked conic plane\\and polarity};
-
-\draw[dashed,->] (p1.east) -- ([yshift=3mm]gold.west);
-\draw[dashed,->] (p2.east) -- (gold.west);
-\draw[dashed,->] (p3.east) -- ([yshift=-3mm]gold.west);
-\draw[<->,thick] (gold.east) -- (p5.west);
-\draw[->,thick] (p4.east) -- (plane.west);
-\end{tikzpicture}
-\caption{Series map.  Dashed arrows mark the comparisons Paper~V will close;
-its two-way solid arrow marks recognition and return.  The lower solid arrow
-is Paper~IV's independent reconstruction.}
-\label{fig:series-map}
-\end{figure}
 
 The code belongs to the fixed-conic LDPC family introduced by
 Droms--Mellinger--Meyer~\cite{DromsMellingerMeyer2006}.  Their general bounds
@@ -1084,6 +1088,11 @@ a chosen Clebsch model, and it claims no uniform minimum-distance theorem
 beyond \(q=13\).
 
 \begin{thebibliography}{9}
+
+\bibitem{RuddCompanion2026}
+T.~Rudd,
+\newblock \emph{The Golden Companion Correspondence},
+\newblock Paper~V, companion manuscript, 2026.
 
 \bibitem{BallLavrauw2019}
 S.~Ball and M.~Lavrauw,
