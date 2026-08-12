@@ -40,7 +40,7 @@ from pathlib import Path
 PAPER = Path(__file__).resolve().parents[1]
 SOURCE = "passant_code_q13.tex"
 TRACKED_PDF = PAPER / "passant_code_q13.pdf"
-EXPECTED_PAGES = 15
+EXPECTED_PAGES = 16
 # 2026-01-01T00:00:00Z. Fixed so that independent builds of one source agree.
 DETERMINISTIC_EPOCH = "1767225600"
 
@@ -79,8 +79,15 @@ def build_pdf(build_root: Path) -> bytes:
         env=deterministic_environment(),
     )
     if completed.returncode != 0:
-        detail = (completed.stderr or completed.stdout).splitlines()
-        fail("build failed:\n" + "\n".join(detail[-20:]))
+        detail = (completed.stdout + "\n" + completed.stderr).splitlines()
+        diagnostics = [
+            line
+            for line in detail
+            if line.startswith("!")
+            or "LaTeX Error" in line
+            or "Float too large" in line
+        ]
+        fail("build failed:\n" + "\n".join(diagnostics[:10] + detail[-20:]))
 
     log = (build_root / Path(SOURCE).with_suffix(".log")).read_text(
         encoding="utf-8", errors="replace"

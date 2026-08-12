@@ -44,31 +44,29 @@ from the minimum words of a binary conic code}
 \maketitle
 \endgroup
 
-\begin{center}
-\small\itshape
-From deep holes, a cubic takes shape; its companion finds its bearings,\\
-the carrier stands fixed while their shadows move; \textbf{from minimum words, the plane returns},\\
-and the scattered shadows gather home.
-\end{center}
-
 \begin{abstract}
-Let \(\cC\) be a nonsingular conic in \(\PG(2,13)\), and let \(K\) be the
-binary column nullspace of its passant-by-internal incidence matrix: vectors
-on internal points annihilated by that matrix.
-We prove that the code has parameters \([78,36,12]_2\) and exactly \(364\)
-minimum words.  Their weighted pair concurrences alone reconstruct the
-passant incidence matrix, the code, and the six-class elliptic association
-scheme.  The resulting group action then reconstructs all points and lines
-of \(\PG(2,13)\), the distinguished conic, and its polarity; no coordinates
-or triple concurrence are required.  Equivalently, the weighted \(2\)-section
-of the minimum-support hypergraph is a complete invariant of this marked
-conic-plane presentation.  The four minimum-word families are one
-octahedral family and three chord-indexed punctured-conic families, and each
-spans the code.  The binary relation algebra acts on the code through a scalar
-field \(\F_8\), making it twelve-dimensional over that field; the four orbit
-Grams are nonzero scalars.  This marked action is recovered from pair data.
-An exact positive semidefinite certificate excludes weight eight; a line
-moment followed by exact stabilizer exhaustion excludes weight ten.
+How little of an incidence code is needed to reconstruct the geometry that
+produced it?  Let \(K\) be the binary nullspace of the
+passant-by-internal incidence matrix of a nonsingular conic in
+\(\PG(2,13)\).  We prove that \(K\) has parameters \([78,36,12]_2\) and
+exactly \(364\) minimum words.  They form four
+\(\PGL(2,13)\)-orbits---one octahedral family and three chord-indexed
+punctured-conic families---and every orbit spans \(K\).
+
+Weighted pair concurrences in these minimum supports recover the \(78\)
+passant incidence rows, the code, and the six-class elliptic association
+scheme.  Pair parity recovers \(K\), while unary minimum-support statistics
+are constant; reconstruction therefore has exact arity two.  The recovered
+scheme has automorphism group \(\PGL(2,13)\).  Its Sylow-\(13\) subgroups and
+involutions then reconstruct all \(183\) points and lines of
+\(\PG(2,13)\), the distinguished conic, and its polarity, without coordinates
+or a projective frame.  The binary relation algebra acts on \(K\) through
+\(\F_8\), making it twelve-dimensional over that field.
+
+The distance proof reduces weight eight to a positive-semidefinite clique
+obstruction and weight ten to two line-moment profiles followed by bounded
+stabilizer exhaustion.  The theorem is intentionally specific to \(q=13\):
+it gives complete ambient reconstruction, not a uniform distance formula.
 \end{abstract}
 
 \noindent\textbf{Keywords.} binary conic code; passant line; minimum-weight
@@ -81,57 +79,26 @@ elliptic association scheme; polarity; automorphism group.
 
 \section{Introduction and statement}
 
-Incidence codes usually remember less than the structures that define them.
-Row operations erase the chosen parity checks, and minimum distance alone
-does not explain the geometry of the first codewords.  The code studied here
-behaves in the opposite way: the weighted pairs inside its minimum supports
-recover not only the parity checks but the full projective plane in which
-they arose.
+We ask how little of an incidence code is needed to reconstruct the geometry
+that produced it.  The retained input is only the weighted pair data inside
+the minimum supports of a binary code; neither its parity-check matrix nor an
+ambient projective plane is supplied.  At \(q=13\) this pairwise shadow is
+complete: it recovers the incidence matrix, the elliptic association scheme,
+the full automorphism group, and finally the marked conic plane and its
+polarity.
 
 \Needspace{27\baselineskip}
 \medskip
-\noindent\textbf{Series perspective.}
-\emph{Clebsch: Rigidity from Sparse Shadows} asks when incomplete invariants
-determine the structures that produced them.  The present paper is the
-parallel lower branch: minimum-word pairs reconstruct a marked conic plane and
-polarity without a cubic identification.  Papers~I and III reconstruct
-marked conference companions, whereas Paper~II reconstructs a signed chordal
-companion.  Paper~V proves that they share one invariant pencil and six-axis
-carrier and, after marking a chordal line, recover each other with orientation
-\cite{RuddCompanion2026}.  Figure~\ref{fig:series-map}
-records this division.  The present \(q=13\) theorem is logically independent
-of the other papers.
-
-\begin{figure}[ht]
-\centering
-\begin{tikzpicture}[
-  x=1cm,y=1cm,
-  >=Latex,
-  paper/.style={draw,rounded corners=1.5pt,fill=black!2,
-    align=center,font=\footnotesize,minimum height=8mm,text width=29mm,
-    inner sep=2.5pt},
-  active/.style={paper,very thick,fill=black!12},
-  package/.style={paper,text width=38mm},
-  every edge/.style={draw}
-]
-\node[paper]   (p1) at (0,1.45) {\textbf{I}\\conference companion};
-\node[paper]   (p2) at (0,0.35) {\textbf{II}\\chordal companion};
-\node[paper]   (p3) at (0,-0.75) {\textbf{III}\\conference companion};
-\node[paper]   (p5) at (5.25,0.35) {\textbf{V}\\marked companion correspondence};
-\node[package] (gold) at (10.5,0.35) {one six-axis carrier\\conference \(+\) chordal};
-\node[active]  (p4) at (0,-2.05) {\textbf{IV}\\minimum-word pairs};
-\node[package] (plane) at (5.25,-2.05) {marked conic plane\\and polarity};
-\draw[<->] (p1.east) -- ([yshift=3mm]p5.west);
-\draw[<->] (p2.east) -- (p5.west);
-\draw[<->] (p3.east) -- ([yshift=-3mm]p5.west);
-\draw[->,thick] (p5.east) -- (gold.west);
-\draw[->,thick] (p4.east) -- (plane.west);
-\end{tikzpicture}
-\caption{Series map.  Upper double arrows are the marked transports and
-returns proved in Paper~V; its right arrow is the common-carrier theorem.
-The lower solid arrow is Paper~IV's independent reconstruction.}
-\label{fig:series-map}
-\end{figure}
+\noindent\textbf{Reconstruction perspective.}
+This is a standalone fixed-field inverse problem.  Starting from the
+minimum-support hypergraph, we ask for the least arity of support data needed
+to reconstruct the geometry erased by row reduction.  At \(q=13\), unary
+data are constant while weighted pair data recover the marked conic plane
+and polarity, so the exact arity is two.  The theorem is logically
+independent of the other Clebsch papers; its place in the programme is
+methodological.  A different sparse
+shadow---minimum-word pairs rather than syndrome or cubic data---again
+determines a much richer source structure.
 
 Fix a nonsingular conic \(\cC\subset\PG(2,13)\).  A line is
 \emph{passant} when it is disjoint from \(\cC(\F_{13})\).  Conic polarity
@@ -235,13 +202,12 @@ polarity.\\[-1pt]
 \end{tabular}
 \end{center}
 
-The reductions are structural except at small exact endpoints.  A rank-\(28\)
-positive semidefinite matrix excludes weight eight.  A global line moment
-reduces weight ten to two shapes, which are eliminated on four line
-stabilizer orbits and thirty-three point-stabilizer orbits.  The minimum
-layer itself is exhausted at one point, the octahedral construction has one
-bounded matching-profile check, and the recovered group/plane dictionary is
-independently replayed in the complete finite model.
+The reductions are structural except at small exact endpoints.  The finite
+leaves are the four line-stabilizer and thirty-three point-stabilizer orbits
+in weight ten, the one-point minimum-layer exhaustion, and one bounded
+matching-profile check for the octahedral construction.  The recovered
+group/plane dictionary is independently replayed in the complete finite
+model.
 
 The code belongs to the fixed-conic LDPC family introduced by
 Droms--Mellinger--Meyer~\cite{DromsMellingerMeyer2006}.  Their general bounds
@@ -288,9 +254,9 @@ least eight.
 \subsection{The tangent obstruction in weight eight}
 
 The mechanism has two steps.  A saturated passant pencil turns a hypothetical
-weight-eight support into a seven-clique in a local graph; a positive-
-semidefinite form bounds every clique in that graph by five.  On a first
-reading, the matrix entries below may be skipped once these two conclusions
+weight-eight support into a seven-clique in a local graph; a
+positive-semidefinite form bounds every clique in that graph by five.  On a
+first reading, the matrix entries below may be skipped once these two conclusions
 and the exact rank certificate are retained.
 
 Suppose that a word has weight eight and fix a support point \(P\).  Each of
@@ -689,6 +655,11 @@ The pair data also recovers the code without first naming a row.  Let
 so \(\operatorname{im}R_{\mathcal H}=K\).  Every coordinate occurs in
 \(364\cdot12/78=56\) minimum supports, making unary data constant.  Pair
 data suffices and unary data does not; reconstruction arity is exactly two.
+Indeed, intrinsic reconstruction is equivariant: the constant unary datum
+has automorphism group \(S_{78}\), whereas Section~\ref{sec:hidden-field}
+proves that the recovered marked presentation has automorphism group
+\(\PGL(2,13)\).  No intrinsic reconstruction of those nontrivial marked
+relations can therefore factor through unary data.
 Here ``recovers'' means the marked code--hypergraph presentation up to
 isomorphism.  It does not choose an ordered projective frame or a labeling of
 the ground field.
@@ -953,7 +924,8 @@ and the adjoint representation produces the ambient plane.  Exact execution
 enters only after those reductions.
 
 The accompanying \nolinkurl{verification/} directory contains separate
-canonical certificates for the theta matrix, moment--stabilizer leaves,
+evidence artifacts and replay records for the theta matrix,
+moment--stabilizer leaves,
 weighted-pair reconstruction, toric--octahedral geometry, ambient plane, and
 hidden operator field.  The earlier clique and syndrome programs remain as
 independent checks but are not theorem-facing proof leaves.  The minimum-word
@@ -980,7 +952,8 @@ toric parities, the hidden cubic on the relation-operator image, and both
 projective-plane uniqueness axioms on the normalized \(183\)-point model.
 Table~\ref{tab:trust} records the remaining division of proof.
 
-\begin{table}[ht]
+\clearpage
+\begin{table}[!ht]
 \centering
 \footnotesize
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.17\textwidth}
@@ -1000,7 +973,7 @@ weight \(8\)
   Schur elimination certify the rank-28 form; Lean proves the quadratic-form
   clique implication.\\
 weight \(10\)
-& human moment proof; exact stabilizer leaves; Lean algebra
+& human moment proof; finite certificates; Lean transport
 & Incidence and pair counts give \eqref{eq:weight-ten-moment}; four
   \(D_{14}\) and thirty-three \(D_{28}\) representatives close the two
   shapes.\\
@@ -1009,19 +982,24 @@ minimum layer
 & Both executions exhaust the \(56\) fixed-point words; projective
   transitivity and the double count give all \(364\).\\
 minimum geometry
-& human conic proof; bounded exact leaf; Lean parity checks
+& human conic proof; finite certificate; Lean parity checks
 & The toric families have a discriminant proof.  One octahedral matching
   profile and the four stabilizers are checked in standard form.\\
 pair reconstruction
-& human polarity proof; trusted exact data; Lean theorem
+& human polarity proof; finite certificate; Lean theorem
 & Pair counts and one common-neighbor count recover the scheme; color-eight
   neighborhoods recover the rows, and pair parity recovers the code.\\
+automorphism group
+& human concurrence transport; Lean finite classification; trusted replay
+& Human transport makes every support automorphism preserve the six-valued
+  scheme; the formal finite leaves identify its automorphisms with the 2184
+  projective maps, and Python independently replays the four-anchor test.\\
 ambient plane
-& human adjoint proof; trusted exact replay; Lean incidence gate
+& human adjoint proof; finite certificate; Lean incidence gate
 & The Sylow/involution rules are identified with trace polarity.  Lean checks
   the 183-point plane axioms; the group-theoretic census is exact Python.\\
 hidden field and spanning
-& human algebra; trusted matrix data; Lean theorem
+& human algebra; finite certificate; Lean theorem
 & The irreducible cubic makes \(K\cong\F_8^{12}\); checked Gram scalars and a
   kernel-checked image argument prove that every orbit spans.\\
 \bottomrule
@@ -1030,6 +1008,7 @@ hidden field and spanning
 \label{tab:trust}
 \end{table}
 
+\Needspace{15\baselineskip}
 The paper-owned aggregate namespace is
 \nolinkurl{PassantCodeQ13.Gates.Main}; its terminals are
 \begin{flushleft}
@@ -1081,18 +1060,13 @@ in this \(q=13\) instance, the weighted minimum-support \(2\)-section, passant i
 matrix, binary code, elliptic scheme, and marked conic plane are mutually
 recoverable up to the stated isomorphisms.
 
-Within \emph{Clebsch: Rigidity from Sparse Shadows}, this is the endpoint of the reconstruction
-theme: a code-theoretic shadow recovers its complete ambient geometry.  The
-argument is nevertheless standalone.  It uses neither the earlier papers nor
-a chosen Clebsch model, and it claims no uniform minimum-distance theorem
-beyond \(q=13\).
+The principal point is an exact information threshold.  Unary statistics of
+the minimum layer carry no distinguishing information, whereas its weighted
+\(2\)-section reconstructs the marked code and then the complete ambient
+conic plane.  Pair data are therefore a complete invariant of the marked
+presentation up to isomorphism.
 
 \begin{thebibliography}{9}
-
-\bibitem{RuddCompanion2026}
-T.~Rudd,
-\newblock \emph{The Golden Companion Correspondence},
-\newblock Paper~V, companion manuscript, 2026.
 
 \bibitem{BallLavrauw2019}
 S.~Ball and M.~Lavrauw,
@@ -1138,7 +1112,9 @@ L.~Ma, S.~Liu, and Z.~Tian,
 P.~Tranchida,
 \newblock Triples of involutions in \(\PGL(2,q)\) and their incidence
 geometries,
-\newblock arXiv:2411.10299, 2024.
+\newblock \emph{Innovations in Incidence Geometry} \textbf{22} (2025),
+no.~1--2, 25--46.
+\newblock doi:10.2140/iig.2025.22.25; arXiv:2411.10299.
 
 \end{thebibliography}
 

@@ -69,7 +69,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "eae6146ff29f0609a4909ee1236ed501b66d399b5faaa3b121207901ea2b72f6",
+      "sha256": "92515cc71311d797ea21bffa26a3f959f9bbe613a8d44a8e78c2ad40dd3e68a5",
       "source_blob": null
     },
     {
@@ -100,22 +100,22 @@
       "source_blob": "9d2f79dc11c9c405ea4f25266f03dbeede09245d"
     },
     {
-      "bytes": 149549,
+      "bytes": 145232,
       "mode": "100644",
       "path": "passant_code_q13.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "ff745f39a2d5a5c5a70124040c76cd89cc288cd5b42e2569eabcc73c3b76c149",
-      "source_blob": "cba77feb59025a5df1cafab49a5758038df6729a"
+      "sha256": "946da8dc9dd428e4dda45afd03cf453ba47057c842a4b3e6ea1c89dc211d8bf0",
+      "source_blob": "e7dd9b03e8519b0df65c82861bdf07bf50c86d11"
     },
     {
-      "bytes": 48714,
+      "bytes": 47780,
       "mode": "100644",
       "path": "passant_code_q13.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "79818c0043042b1eceab7ed4a414569322b6682fb96f46d3c6d11d0f2c216880",
-      "source_blob": "d9cdd5bb7300bbe42965cd50321b252e586aeb85"
+      "sha256": "999222615906ba1174d6df61f569eb54556d63447584e4871a62ece761e0e5f7",
+      "source_blob": "268e8e77d5b316dd5ca53a4fef6ad9a252e30dbc"
     },
     {
       "bytes": 12443,
@@ -136,13 +136,13 @@
       "source_blob": "deaddbbc35ca05482c6e7063ce746bb4a0f40d3b"
     },
     {
-      "bytes": 4735,
+      "bytes": 4956,
       "mode": "100644",
       "path": "verification/check_manuscript_build.py",
       "rewrites": [],
       "role": "verification",
-      "sha256": "3a3d0166381d4f1bc52aeaf8a0bee61d33336c6bac49b716d52a689e584b6d4e",
-      "source_blob": "6553a80da718a71e94a44deae597d05308c13f41"
+      "sha256": "333798fe83284e8eb44eee5495de0994ae58e149c9f5ad125371a8de2371b0f9",
+      "source_blob": "46ee51f8917e0795d21ff38d9384ae59908e0c2d"
     },
     {
       "bytes": 26948,
@@ -315,10 +315,10 @@
   "paper_ids": [
     "passant_code_q13"
   ],
-  "paper_registry_sha256": "d49a06e2b25e828827166586dfd3aad92342119e4e38decb1a695c5ad558003c",
+  "paper_registry_sha256": "ffc21b0a2a999815d4cd30d2416f39cd4b51c578dceb8416e599e4cb3257c553",
   "release_output_policy": "legacy-unspecified",
   "repository": "q13-passant-code",
-  "repository_map_sha256": "3837472b201ebe328ee04be49f3a87f4e080d1ca771a5d95081a287017af611c",
+  "repository_map_sha256": "2a861f5d01cb01433066950bd72b7bddb397ac5ba0a357dc236b20e9070744db",
   "schema_version": 1,
-  "source_commit": "90f3d7b784ec6654e57111a69030990a53f3c18e"
+  "source_commit": "20184be6facc3676f4e1c7be472fc79fbacaf6f9"
 }
