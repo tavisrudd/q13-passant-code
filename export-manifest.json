@@ -69,7 +69,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "466c271f41aae499e7d0cb4e5538a5cffd20eec47f6e187be299628b56d522b4",
+      "sha256": "d170529aa468025d66844e48d763e546aeea7c35fc13612097c1e181a0d1cd65",
       "source_blob": null
     },
     {
@@ -109,13 +109,13 @@
       "source_blob": "a31b12743fcf1fd4a82a4f05da0e52da4da5af87"
     },
     {
-      "bytes": 50058,
+      "bytes": 50041,
       "mode": "100644",
       "path": "passant_code_q13.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "448d68b400f90c654a67712ab50892ac744e84a79a2de7e0a4ebdea9ac75882e",
-      "source_blob": "f63add120c14b7d86dd22c0a7bee75c5e8871d3f"
+      "sha256": "e699249a64623e429a31241a4bb43861b4736e3ea1fed0adf5ed6aa1212add6a",
+      "source_blob": "06822bdb5669e124d9669f20f6bbade1c5672897"
     },
     {
       "bytes": 12443,
@@ -320,5 +320,5 @@
   "repository": "q13-passant-code",
   "repository_map_sha256": "b1287d69c4398954d5ac0d89e29bbd2425c5da957d3e7a6380f638513346803a",
   "schema_version": 1,
-  "source_commit": "1142b4bad82d93f1aeca77e1446dc85e0004cc04"
+  "source_commit": "92486f29367ea9f86e95c5f5df8ad07e952593b1"
 }
