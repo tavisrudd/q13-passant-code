@@ -2,7 +2,7 @@
   "excluded_path_count": 229,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
-  "exporter_blob": "7bc6af6a40123bfa071466d9ed3faeaafb7e8d60",
+  "exporter_blob": "bc16a3f02957af1342e19dfe7fad78e003d8c5dc",
   "files": [
     {
       "bytes": 108,
@@ -69,7 +69,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "92515cc71311d797ea21bffa26a3f959f9bbe613a8d44a8e78c2ad40dd3e68a5",
+      "sha256": "466c271f41aae499e7d0cb4e5538a5cffd20eec47f6e187be299628b56d522b4",
       "source_blob": null
     },
     {
@@ -100,22 +100,22 @@
       "source_blob": "9d2f79dc11c9c405ea4f25266f03dbeede09245d"
     },
     {
-      "bytes": 145232,
+      "bytes": 146044,
       "mode": "100644",
       "path": "passant_code_q13.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "946da8dc9dd428e4dda45afd03cf453ba47057c842a4b3e6ea1c89dc211d8bf0",
-      "source_blob": "e7dd9b03e8519b0df65c82861bdf07bf50c86d11"
+      "sha256": "1df9561b5f30c6bb18ecd7c44bd400270377e70c4acde645cdf780989299f0eb",
+      "source_blob": "a31b12743fcf1fd4a82a4f05da0e52da4da5af87"
     },
     {
-      "bytes": 47780,
+      "bytes": 50058,
       "mode": "100644",
       "path": "passant_code_q13.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "999222615906ba1174d6df61f569eb54556d63447584e4871a62ece761e0e5f7",
-      "source_blob": "268e8e77d5b316dd5ca53a4fef6ad9a252e30dbc"
+      "sha256": "448d68b400f90c654a67712ab50892ac744e84a79a2de7e0a4ebdea9ac75882e",
+      "source_blob": "f63add120c14b7d86dd22c0a7bee75c5e8871d3f"
     },
     {
       "bytes": 12443,
@@ -141,8 +141,8 @@
       "path": "verification/check_manuscript_build.py",
       "rewrites": [],
       "role": "verification",
-      "sha256": "333798fe83284e8eb44eee5495de0994ae58e149c9f5ad125371a8de2371b0f9",
-      "source_blob": "46ee51f8917e0795d21ff38d9384ae59908e0c2d"
+      "sha256": "f0eaafcf99546686455f3210dd0784b695c2365853702b3515f63c5075228ef8",
+      "source_blob": "3727549f7297c10a62d72482ce781cddf30c10f4"
     },
     {
       "bytes": 26948,
@@ -315,10 +315,10 @@
   "paper_ids": [
     "passant_code_q13"
   ],
-  "paper_registry_sha256": "ffc21b0a2a999815d4cd30d2416f39cd4b51c578dceb8416e599e4cb3257c553",
+  "paper_registry_sha256": "e3e739fd4bca142a8c245291c1d30125fa468718cc8351c23c2b2fc3c452e84e",
   "release_output_policy": "legacy-unspecified",
   "repository": "q13-passant-code",
-  "repository_map_sha256": "2a861f5d01cb01433066950bd72b7bddb397ac5ba0a357dc236b20e9070744db",
+  "repository_map_sha256": "b1287d69c4398954d5ac0d89e29bbd2425c5da957d3e7a6380f638513346803a",
   "schema_version": 1,
-  "source_commit": "20184be6facc3676f4e1c7be472fc79fbacaf6f9"
+  "source_commit": "1142b4bad82d93f1aeca77e1446dc85e0004cc04"
 }

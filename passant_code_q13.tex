@@ -7,6 +7,7 @@
 \usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage{array,booktabs}
 \usepackage{enumitem}
+\usepackage{float}
 \usepackage{needspace}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
@@ -38,7 +39,6 @@ from the minimum words of a binary conic code}
 \makeatletter
 \let\clebschmaintitle\@title
 \def\@title{\par\vspace*{12mm}\noindent
-  \large\textsc{Clebsch: Rigidity from Sparse Shadows --- }\textbf{IV}\\[0.7em]
   \LARGE\clebschmaintitle}
 \makeatother
 \maketitle
@@ -80,25 +80,16 @@ elliptic association scheme; polarity; automorphism group.
 \section{Introduction and statement}
 
 We ask how little of an incidence code is needed to reconstruct the geometry
-that produced it.  The retained input is only the weighted pair data inside
-the minimum supports of a binary code; neither its parity-check matrix nor an
-ambient projective plane is supplied.  At \(q=13\) this pairwise shadow is
-complete: it recovers the incidence matrix, the elliptic association scheme,
-the full automorphism group, and finally the marked conic plane and its
-polarity.
-
-\Needspace{27\baselineskip}
-\medskip
-\noindent\textbf{Reconstruction perspective.}
-This is a standalone fixed-field inverse problem.  Starting from the
+that produced it.  This is a fixed-field inverse problem: starting from the
 minimum-support hypergraph, we ask for the least arity of support data needed
-to reconstruct the geometry erased by row reduction.  At \(q=13\), unary
-data are constant while weighted pair data recover the marked conic plane
-and polarity, so the exact arity is two.  The theorem is logically
-independent of the other Clebsch papers; its place in the programme is
-methodological.  A different sparse
-shadow---minimum-word pairs rather than syndrome or cubic data---again
-determines a much richer source structure.
+to reconstruct the geometry erased by row reduction.  The retained input is
+only the weighted pair data inside the minimum supports of a binary code;
+neither its parity-check matrix nor an ambient projective plane is supplied.
+At \(q=13\) this pairwise shadow is complete: it recovers the incidence
+matrix, the elliptic association scheme, the full automorphism group, and
+finally the marked conic plane and its polarity.  Unary data are constant
+there, while weighted pair data recover that plane and its polarity, so the
+exact arity is two.
 
 Fix a nonsingular conic \(\cC\subset\PG(2,13)\).  A line is
 \emph{passant} when it is disjoint from \(\cC(\F_{13})\).  Conic polarity
@@ -1065,6 +1056,64 @@ the minimum layer carry no distinguishing information, whereas its weighted
 \(2\)-section reconstructs the marked code and then the complete ambient
 conic plane.  Pair data are therefore a complete invariant of the marked
 presentation up to isomorphism.
+
+\Needspace{34\baselineskip}
+\section*{Clebsch: Rigidity from Sparse Shadows}
+
+\begin{center}
+\begin{tabular}{@{}r@{\hskip 1.4em}l@{}}
+{\scriptsize I}   & From deep holes, a form arises;\\
+{\scriptsize II}  & beneath it, paired chords turn true;\\
+{\scriptsize III} & through many veils, the golden thread runs;\\
+{\scriptsize IV}  & \textbf{from bare, whispered words, a plane rises;}\\
+{\scriptsize V}   & beneath one form, two shadows, a hidden twist between.
+\end{tabular}
+\end{center}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  x=1cm,y=1cm,>=Latex,
+  paper/.style={draw,rounded corners=1.5pt,fill=black!2,
+    align=center,font=\footnotesize,minimum height=9mm,text width=34mm,
+    inner sep=2.5pt},
+  active/.style={paper,very thick,fill=black!12},
+  hinge/.style={paper,thick},
+  package/.style={paper,text width=48mm}
+]
+\node[paper]   (p1) at (0,1.9) {\textbf{I}\\deep-hole\\conference cubic};
+\node[paper]   (p2) at (0,0.35) {\textbf{II}\\matching-quotient\\chordal cubic};
+\node[paper]   (p3) at (0,-1.2) {\textbf{III}\\golden-descent\\conference cubic};
+\node[hinge]   (p5) at (5.5,0.35) {\textbf{V}\\marked cubic\\correspondence};
+\node[package] (gold) at (10.6,0.35) {one six-axis carrier\\conference \(+\) chordal};
+\node[active]  (p4) at (0,-3.6) {\textbf{IV}\\minimum-word pairs};
+\node[package] (plane) at (5.5,-3.6) {marked conic plane and polarity\\with an \(\F_8\)-marking};
+\draw[<->] (p1.east) -- ([yshift=3mm]p5.west);
+\draw[<->] (p2.east) -- (p5.west);
+\draw[<->] (p3.east) -- ([yshift=-3mm]p5.west);
+\draw[->,thick] (p5.east) -- (gold.west);
+\draw[->,thick] (p4.east) -- (plane.west);
+\end{tikzpicture}
+\caption{Programme map.  The upper double arrows are Paper~V's marked
+transports and returns between the chordal and conference shadows; the right
+arrow is its common-carrier reconstruction.  The lower solid arrow is
+Paper~IV's independent minimum-word reconstruction.  Only the residual
+\(C_2\)- and Frobenius-orbit markings are compared across the two branches.}
+\label{fig:programme-map}
+\end{figure}
+
+The five papers are logically independent; the map records reconstruction
+correspondences and thematic relations, not proof dependencies.
+
+Here the sparse shadow is literal: the \(364\) minimum words of the binary
+conic code are the starting data.  Unary support data are constant, while
+weighted pair concurrences recover the marked conic plane and its polarity,
+so the exact reconstruction arity is two.
+
+The theorem is logically independent of the other Clebsch papers; its place
+in the programme is methodological.  A different sparse shadow---minimum-word
+pairs rather than syndrome or cubic data---again determines a much richer
+source structure.
 
 \begin{thebibliography}{9}
 
