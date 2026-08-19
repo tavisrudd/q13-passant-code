@@ -1074,7 +1074,7 @@ presentation up to isomorphism.
   package/.style={paper,text width=48mm}
 ]
 \node[paper]   (p1) at (0,1.9) {\textbf{I}\\deep-hole\\conference cubic};
-\node[paper]   (p2) at (0,0.35) {\textbf{II}\\matching-quotient\\chordal cubic};
+\node[paper]   (p2) at (0,0.35) {\textbf{II}\\matching-quotient\\cubic moment};
 \node[paper]   (p3) at (0,-1.2) {\textbf{III}\\golden-descent\\conference cubic};
 \node[hinge]   (p5) at (5.5,0.35) {\textbf{V}\\marked cubic\\correspondence};
 \node[package] (gold) at (10.6,0.35) {one six-axis carrier\\conference \(+\) chordal};
@@ -1101,10 +1101,19 @@ Here the sparse shadow is literal: the \(364\) minimum words of the binary
 conic code are the starting data, and their weighted pair concurrences are
 the only input the reconstruction uses.
 
-The theorem is logically independent of the other Clebsch papers; its place
-in the programme is methodological.  A different sparse shadow---minimum-word
-pairs rather than syndrome or cubic data---again determines a much richer
-source structure.
+Its place in the programme is methodological: minimum-word pairs give a
+separate instance in which sparse data recover a substantially richer marked
+source.
+
+\section*{AI assistance disclosure}
+
+This project was developed with extensive assistance from OpenAI Codex and
+Anthropic Claude. Under the author's direction, the systems assisted with
+proof exploration, literature research, symbolic and finite computation,
+code and formal-proof development, verification, and manuscript drafting and
+revision. The author checked the resulting arguments, computations, code,
+and cited sources, reviewed and edited all AI-assisted material, and assumes
+responsibility for all content.
 
 \begin{thebibliography}{9}
 
@@ -1157,16 +1166,5 @@ no.~1--2, 25--46.
 \newblock doi:10.2140/iig.2025.22.25; arXiv:2411.10299.
 
 \end{thebibliography}
-
-\enlargethispage{5\baselineskip}
-\section*{AI assistance disclosure}
-
-This project was developed with extensive assistance from OpenAI Codex and
-Anthropic Claude. Under the author's direction, the systems assisted with
-proof exploration, literature research, symbolic and finite computation,
-code and formal-proof development, verification, and manuscript drafting and
-revision. The author checked the resulting arguments, computations, code,
-and cited sources, reviewed and edited all AI-assisted material, and assumes
-responsibility for all content.
 
 \end{document}
