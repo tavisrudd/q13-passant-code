@@ -69,7 +69,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "d170529aa468025d66844e48d763e546aeea7c35fc13612097c1e181a0d1cd65",
+      "sha256": "a4c44cddbbdac4f13c4128b51708b4d0828ae3cbc4425976fbc9c476ab6077aa",
       "source_blob": null
     },
     {
@@ -100,22 +100,22 @@
       "source_blob": "9d2f79dc11c9c405ea4f25266f03dbeede09245d"
     },
     {
-      "bytes": 146044,
+      "bytes": 145300,
       "mode": "100644",
       "path": "passant_code_q13.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "1df9561b5f30c6bb18ecd7c44bd400270377e70c4acde645cdf780989299f0eb",
-      "source_blob": "a31b12743fcf1fd4a82a4f05da0e52da4da5af87"
+      "sha256": "b5ecb21d60622cf82aa2c09211b0156de1769167c1e912df717298aa027cfac9",
+      "source_blob": "2a1d98e00fb546575479a18eac62b0bfb591d814"
     },
     {
-      "bytes": 50041,
+      "bytes": 49772,
       "mode": "100644",
       "path": "passant_code_q13.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "e699249a64623e429a31241a4bb43861b4736e3ea1fed0adf5ed6aa1212add6a",
-      "source_blob": "06822bdb5669e124d9669f20f6bbade1c5672897"
+      "sha256": "3a1d60e7a8f47272156993aa73073b72197897563d535c5b0dc5fb2e440524d8",
+      "source_blob": "a00f202418ddfb82e5de1046d91498d41f2a2e7c"
     },
     {
       "bytes": 12443,
@@ -141,8 +141,8 @@
       "path": "verification/check_manuscript_build.py",
       "rewrites": [],
       "role": "verification",
-      "sha256": "f0eaafcf99546686455f3210dd0784b695c2365853702b3515f63c5075228ef8",
-      "source_blob": "3727549f7297c10a62d72482ce781cddf30c10f4"
+      "sha256": "333798fe83284e8eb44eee5495de0994ae58e149c9f5ad125371a8de2371b0f9",
+      "source_blob": "46ee51f8917e0795d21ff38d9384ae59908e0c2d"
     },
     {
       "bytes": 26948,
@@ -320,5 +320,5 @@
   "repository": "q13-passant-code",
   "repository_map_sha256": "b1287d69c4398954d5ac0d89e29bbd2425c5da957d3e7a6380f638513346803a",
   "schema_version": 1,
-  "source_commit": "92486f29367ea9f86e95c5f5df8ad07e952593b1"
+  "source_commit": "62fc019fc11cda4b0669f8d7944b36a1ed07b610"
 }

@@ -35,14 +35,7 @@ from the minimum words of a binary conic code}
 \date{August 2026}
 
 \begin{document}
-\begingroup
-\makeatletter
-\let\clebschmaintitle\@title
-\def\@title{\par\vspace*{12mm}\noindent
-  \LARGE\clebschmaintitle}
-\makeatother
 \maketitle
-\endgroup
 
 \begin{abstract}
 How little of an incidence code is needed to reconstruct the geometry that
@@ -87,9 +80,8 @@ only the weighted pair data inside the minimum supports of a binary code;
 neither its parity-check matrix nor an ambient projective plane is supplied.
 At \(q=13\) this pairwise shadow is complete: it recovers the incidence
 matrix, the elliptic association scheme, the full automorphism group, and
-finally the marked conic plane and its polarity.  Unary data are constant
-there, while weighted pair data recover that plane and its polarity, so the
-exact arity is two.
+finally the marked conic plane and its polarity.  Unary data there are
+constant, so the exact reconstruction arity is two.
 
 Fix a nonsingular conic \(\cC\subset\PG(2,13)\).  A line is
 \emph{passant} when it is disjoint from \(\cC(\F_{13})\).  Conic polarity
@@ -1106,9 +1098,8 @@ The five papers are logically independent; the map records reconstruction
 correspondences and thematic relations, not proof dependencies.
 
 Here the sparse shadow is literal: the \(364\) minimum words of the binary
-conic code are the starting data.  Unary support data are constant, while
-weighted pair concurrences recover the marked conic plane and its polarity,
-so the exact reconstruction arity is two.
+conic code are the starting data, and their weighted pair concurrences are
+the only input the reconstruction uses.
 
 The theorem is logically independent of the other Clebsch papers; its place
 in the programme is methodological.  A different sparse shadow---minimum-word
