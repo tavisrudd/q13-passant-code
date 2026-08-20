@@ -69,17 +69,17 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "9f23b326146bb102d75735def94afa3834343dfd80c328f09485018a616c6ea9",
+      "sha256": "40e03991eff72869aa60ca8e58f1c9acd8fab240a2a957f1547d436adfa98147",
       "source_blob": null
     },
     {
-      "bytes": 3197,
+      "bytes": 3199,
       "mode": "100644",
       "path": "README.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "7b350110293e3660a13ddfc8827d3201986724c0a5c41b736bb06dbaf359fc34",
-      "source_blob": "21765a1fe478ae5c6f52652514af31594de77d62"
+      "sha256": "08fa189a09dc5b28ccf8f5a12146167d0efd4ef96e33ac7b19a06e706cab7b4e",
+      "source_blob": "a7327dfc02a80b05ebda576ccaedee77d292c898"
     },
     {
       "bytes": 567,
@@ -100,22 +100,22 @@
       "source_blob": "9d2f79dc11c9c405ea4f25266f03dbeede09245d"
     },
     {
-      "bytes": 145169,
+      "bytes": 145072,
       "mode": "100644",
       "path": "passant_code_q13.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "0ce9254e27e519170727cb3102a0591ad0608b5b3dc5dca71a171431db8cb7ac",
-      "source_blob": "53394bb9562e647116d865f14ac21dbdbfcc2bbd"
+      "sha256": "9a52af3f5f81d993e5f8260b08f31b0d83a53320ed2a8385d1fe0d30eedd62e2",
+      "source_blob": "70b3067c30e711a67e2566722575725ae5b3c1eb"
     },
     {
-      "bytes": 49658,
+      "bytes": 49698,
       "mode": "100644",
       "path": "passant_code_q13.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "fdaec6a4bbee83278503585d592537882358f4b55fc5e0b4ae5f367544c6f1b3",
-      "source_blob": "077822ebfdc4f968fca7cc3dd82862b091c6f878"
+      "sha256": "6a44b23dbdac0b63346c12f37b4e9bb4524ff408ec71284e3c6179b8fb97f48f",
+      "source_blob": "5c257e611e1bb7bb4f849b9ac94cf77276209074"
     },
     {
       "bytes": 12443,
@@ -318,7 +318,7 @@
   "paper_registry_sha256": "e3e739fd4bca142a8c245291c1d30125fa468718cc8351c23c2b2fc3c452e84e",
   "release_output_policy": "legacy-unspecified",
   "repository": "q13-passant-code",
-  "repository_map_sha256": "b1287d69c4398954d5ac0d89e29bbd2425c5da957d3e7a6380f638513346803a",
+  "repository_map_sha256": "c0542d39c9b7459acafaf90873f9f15956351a8dba3e6e52149c0dddd571c39b",
   "schema_version": 1,
-  "source_commit": "bb29815b8a0e57b42954ffba96a89dda15243640"
+  "source_commit": "91817b51a4689bce7c81f78d21441557d6e17550"
 }
