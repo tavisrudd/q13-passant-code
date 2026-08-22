@@ -1,6 +1,6 @@
 # Reconstructing PG(2,13), its conic, and polarity from the minimum words of a binary conic code
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21783971-blue.svg)](https://doi.org/10.5281/zenodo.21783971)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21783970-blue.svg)](https://doi.org/10.5281/zenodo.21783970)
 
 [Read the paper (PDF).](passant_code_q13.pdf)
 
