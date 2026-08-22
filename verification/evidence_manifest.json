@@ -1,7 +1,7 @@
 {
   "schema": "q13-passant-code-structural-evidence-v2",
   "source": {
-    "work": "Reconstructing the Clebsch code and its golden orientation from its deep-hole syndrome locus, and its computational companion Computational strengthenings of Clebsch syndrome rigidity",
+    "work": "Reconstructing the Clebsch Code from Its Deep-Hole Syndrome Locus, and its computational companion Computational strengthenings of Clebsch syndrome rigidity",
     "concept_doi": "10.5281/zenodo.21650878",
     "relation": "Four programs of that companion were copied into this paper and adapted here. Each adapted file records the SHA-256 digest of the exact antecedent it was copied from, so the derivation is checkable against any published revision of the companion without naming a repository layout."
   },

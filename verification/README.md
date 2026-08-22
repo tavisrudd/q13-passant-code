@@ -36,8 +36,7 @@ The arbitrary-word weight-ten profile terminal is
 ## Derived evidence programs
 
 Four programs here were copied from the computational companion of
-*Reconstructing the Clebsch code and its golden orientation from its deep-hole
-syndrome locus* (concept DOI
+*Reconstructing the Clebsch Code from Its Deep-Hole Syndrome Locus* (concept DOI
 [`10.5281/zenodo.21650878`](https://doi.org/10.5281/zenodo.21650878)) and then
 adapted:
 
@@ -51,9 +50,8 @@ adapted:
 `evidence_manifest.json` records, for each of the four, the SHA-256 digest of
 the exact antecedent it was copied from together with the digest of the file as
 it now stands, so the derivation stays checkable against any published revision
-of the companion. These files are regular files owned by this paper. Later
-changes must keep paper-local names and semantics, preserve those antecedent
-digests, and refresh the current-file digests.
+of the companion. These files are regular files owned by this paper, and the
+manifest preserves both their antecedent and current-file digests.
 
 The current paper-local entry points are:
 
@@ -202,16 +200,13 @@ the human projective-transitivity and double-count argument.  The aggregate also
 automorphism of the six-valued polar-relation scheme with one of the 2184 normalized
 symmetric-square projective maps.  The passage from support-hypergraph automorphisms to
 polar-relation automorphisms remains the human concurrence transport.  Its axiom report comes
-from the pinned toolchain's actual `#print axioms` output. Task identifiers,
-manuscript section numbers, private reports, and workflow status language are
-forbidden from module names, declaration names, comments, and generated
-banners.
+from the pinned toolchain's actual `#print axioms` output.
 
-## Semantic mirror and finite-leaf target
+## Formal coverage and finite leaves
 
-The preferred endpoint is a semantic Lean mirror of the human mechanisms,
-with kernel checking at irreducibly finite leaves. It should eventually
-establish, apart from Mathlib's standard logical axioms:
+The formal surface is a partial semantic mirror of the human mechanisms,
+with kernel checking at irreducibly finite leaves. The complete manuscript
+chain additionally requires:
 
 - the binary code has length 78, dimension 36, and minimum distance 12;
 - its minimum layer has 364 words in the stated four orbits;
@@ -222,13 +217,11 @@ establish, apart from Mathlib's standard logical axioms:
   `PGL(2,13)`.
 
 This formal surface is supporting evidence, not the manuscript's narrative
-spine. It should preserve the human mechanisms. In particular, it
-formalizes the tangent-graph reduction and theta implication in weight eight,
+spine. It formalizes the tangent-graph reduction and theta implication in weight eight,
 the global moment compression in weight ten, pair-neighborhood reconstruction,
 three toric parities, the hidden cubic, both normalized projective-plane
 uniqueness axioms, the mod-two association-algebra spanning argument, and the
 anchor proof of the elliptic-scheme automorphism group. Exact PSD positivity,
 stabilizer tables, and the group-theoretic Sylow/involution census remain
-named paper-owned trusted leaves.
-It should not replace the entire theorem by an opaque enumeration of
-`2^78` words.
+named paper-owned trusted leaves. No exhaustive enumeration of
+`2^78` words is part of the artifact.
