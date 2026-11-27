@@ -56,8 +56,8 @@
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/SemanticTransports.lean",
-      "bytes": 4359,
-      "sha256": "28ef54a2ded2d4717860613a2f7696f6fd3d2ee4a4037a264bbc68feca6cb3f6",
+      "bytes": 4447,
+      "sha256": "766d59e8e29358097dabd7895431db1e07baf43273aa9f14b7141deb161b4b95",
       "role": "kernel-checked identification of executable rank 42 with semantic incidence-map rank and code dimension 36"
     },
     {
@@ -133,27 +133,27 @@
       "role": "canonical compact hidden-F8 certificate"
     },
     {
-      "paper_iv_path": "../../lean/RelativeConicArcs/PassantCodeQ13/StructuralUpgrade.lean",
-      "bytes": 6828,
-      "sha256": "3c72f16b205dcc68816c4b3bfecbecbb20c45883db3b645b920ad09cd61c5be3",
+      "paper_iv_path": "../../lean/TavisRuddFiniteGeom/Papers/Q13PassantCode/StructuralUpgrade.lean",
+      "bytes": 6837,
+      "sha256": "7349fecb8ebe15e3ce4292df75d6095485e435a94e97c644701ae769ad4dd639",
       "role": "shared kernel-checked theta, moment, pair-recovery, discriminant, hidden-cubic, and recovered-plane interfaces"
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/StructuralUpgrade.lean",
-      "bytes": 10332,
-      "sha256": "91150884f49d3cfa1ec8eecca9dd11f2533fb125fd9bf718e031696bfd3d2fa4",
+      "bytes": 10321,
+      "sha256": "c4214db38f8fbfc3039d176c938efc397a78bbce1592ff29528c0f2b1031b6ee",
       "role": "paper-owned pair-only, toric, hidden-cubic, and 183-point plane finite gates"
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/Gates/Main.lean",
-      "bytes": 12380,
-      "sha256": "c5c949e303e13a3a02f333829b12804b963547a63ff5a26e5d6a1b08ab0409d4",
+      "bytes": 12553,
+      "sha256": "b917435966571fd1343cc944a1594bf6616c5e19246f74e93bf1071d7b28637e",
       "role": "paper-owned aggregate theorem terminals for the structural version"
     },
     {
       "paper_iv_path": "lean-certificates/PassantCodeQ13/Gates/AxiomAudit.lean",
-      "bytes": 7376,
-      "sha256": "59a4dab98e02df7d9d3d0db48c66d83effbec6579250a53f380c025295ea4642",
+      "bytes": 7412,
+      "sha256": "878c2ae7dce1e71a25b4288b30cd0e16e57df8e610c09aab4a601194662eb5ef",
       "role": "tracked axiom audit for all retained and structural aggregate terminals"
     },
     {
@@ -206,24 +206,42 @@
     },
     {
       "paper_iv_path": "lean-certificates/check_association_transport_statements.py",
-      "bytes": 6869,
-      "sha256": "0d2027aaa50266b78274a6b815ec9a30f81c62743287b560f446bb13b69db094",
+      "bytes": 6878,
+      "sha256": "8bd2fcf48b5eb2f3bbb91595cc8805e87e3d77582cfe70e1c600bc3afded45ea",
       "role": "independent cross-check that each association-transport statement, read as Lean elaborates it, holds of the committed masks: transpose direction, factor order, and index arity"
     },
     {
       "paper_iv_path": "lean-certificates/generate_weight_ten_reachability.py",
-      "bytes": 19868,
-      "sha256": "73555dca92062bc65595cfd53d561a85c46076dffd2be9af130955344ad19db7",
+      "bytes": 19958,
+      "sha256": "5e623f65298bcb1cabf5b7a3b6b56475aab7858c16f93f38c481de49f4b806f2",
       "role": "deterministic generator and byte-for-byte checker for the isolated weight-ten reachability layer certificates and their transition data"
     },
     {
       "paper_iv_path": "lean-certificates/weight_ten_reachability_manifest.json",
       "bytes": 22121,
-      "sha256": "cdb5300d08c8d491e09fc1d83f581d1a82956350aab9dcf58188af6c3c3a91b0",
+      "sha256": "301c4be2ebb5bb579b1538c38d6641c9a731c06e4c22fc88865a0d5bfdfb5ee1",
       "role": "hash manifest of the generated isolated weight-ten reachability modules"
+    },
+    {
+      "paper_iv_path": "verification/generate_sparse_shadow_export.py",
+      "bytes": 4859,
+      "sha256": "2c7bca5b33b4a260f9ea8869babece2954e9d31a19d33ea731f45ba1b3f6c263",
+      "role": "deterministic generator and byte-for-byte checker for the complete weighted-pair section and a three-generator PGL(2,13) coordinate action"
+    },
+    {
+      "paper_iv_path": "verification/sparse_shadow_export.json",
+      "bytes": 286997,
+      "sha256": "dc6134d95673be20ea5dc452883bedb10d23ca922bafcf158d61470e5b987d77",
+      "role": "paper-owned sparse-shadow export of all 3003 pair concurrences and the generating coordinate action"
     }
   ],
   "commands": [
+    {
+      "cwd": "verification",
+      "command": "python3 generate_sparse_shadow_export.py --check sparse_shadow_export.json",
+      "output_contains": "Paper IV sparse-shadow export: PASS",
+      "certifies": "the tracked export is byte-identical to deterministic regeneration from all 364 minimum supports and its three permutations generate a group of order 2184"
+    },
     {
       "cwd": "verification",
       "command": "python3 generate_weight_ten_profiles.py --check",

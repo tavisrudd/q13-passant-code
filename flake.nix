@@ -45,7 +45,7 @@
 
           # Adds poppler-utils, for papers whose checks read the rendered PDF.
           manuscript-pdf = pkgs.mkShell {
-            packages = base ++ [ pkgs.poppler_utils ];
+            packages = base ++ [ pkgs.poppler-utils ];
           };
 
           # Adds sympy to the Python environment.

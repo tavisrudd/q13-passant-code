@@ -29,9 +29,9 @@ certificate and its kernel-checked quadratic-form implication. The old
 weight-ten syndrome shards are likewise retained as an independent replay;
 the theorem-facing proof uses the global moment and stabilizer certificates.
 The normalized transport terminals remain
-`RelativeConicArcs.Gates.PassantCodeQ13.weightEight_semantic_transport`.
+`TavisRuddFiniteGeom.Papers.Q13PassantCode.SemanticGate.weightEight_semantic_transport`.
 The arbitrary-word weight-ten profile terminal is
-`RelativeConicArcs.Gates.PassantCodeQ13.arbitrary_weightTen_profile_transport`.
+`TavisRuddFiniteGeom.Papers.Q13PassantCode.SemanticGate.arbitrary_weightTen_profile_transport`.
 
 ## Derived evidence programs
 
@@ -67,6 +67,8 @@ recovery and expansion masks used by the semantic rank theorem.
 - `verify_weight_ten_moment.py --check weight_ten_moment.json` for the global moment and two
   stabilizer leaves;
 - `verify_pair_reconstruction.py --check pair_reconstruction.json` for exact arity-two recovery;
+- `generate_sparse_shadow_export.py --check sparse_shadow_export.json` for the complete
+  78-coordinate weighted-pair section and generating `PGL(2,13)` action consumed by the sparse-shadow reconstruction tool;
 - `verify_minimum_geometry.py --check minimum_geometry.json` for the toric--octahedral families;
 - `verify_ambient_plane.py --check ambient_plane.json` for the Sylow/involution plane; and
 - `verify_hidden_field.py --check hidden_field.json` for the compact operator-field theorem.
@@ -79,19 +81,20 @@ with `python3 verify_evidence.py`.
 The shared Lean library contains these semantic, reusable modules:
 
 ```text
-RelativeConicArcs/ConicPassantCode.lean
-RelativeConicArcs/PassantCodeQ13/Geometry.lean
-RelativeConicArcs/PassantCodeQ13/PencilIncidence.lean
-RelativeConicArcs/PassantCodeQ13/PencilJoins.lean
-RelativeConicArcs/PassantCodeQ13/Rank.lean
-RelativeConicArcs/PassantCodeQ13/WeightEight.lean
-RelativeConicArcs/PassantCodeQ13/WeightTen.lean
-RelativeConicArcs/PassantCodeQ13/AssociationAlgebra.lean
-RelativeConicArcs/PassantCodeQ13/Reconstruction.lean
-RelativeConicArcs/PassantCodeQ13/StructuralUpgrade.lean
-RelativeConicArcs/PassantCodeQ13/LogicalSpine.lean
-RelativeConicArcs/Gates/PassantCodeQ13.lean
-RelativeConicArcs/Gates/PassantCodeQ13AxiomAudit.lean
+TavisRuddFiniteGeom/Foundation/Coding.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/IncidenceCode.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/Geometry.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/PencilIncidence.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/PencilJoins.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/Rank.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/WeightEight.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/WeightTen.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/AssociationAlgebra.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/Reconstruction.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/StructuralUpgrade.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/LogicalSpine.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/SemanticGate.lean
+TavisRuddFiniteGeom/Papers/Q13PassantCode/SemanticAxiomAudit.lean
 ```
 
 The paper-owned standalone Lake package contains the finite leaves.  Its
